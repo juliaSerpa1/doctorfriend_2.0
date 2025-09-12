@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "tr"
+  },
+  "callback_default": {
+    "title_error": "Beklenmeyen bir hata oluştu. \nLütfen daha sonra tekrar deneyin.",
+    "title_sucess": "Başarı",
+    "confirm_text": "EVET",
+    "cancel_text": "HAYIR"
+  },
+  "input": {
+    "is_empty": "Bu alan zorunludur."
+  },
+  "loading_error": {
+    "title": "Beklenmeyen bir hata oluştu!",
+    "error_message": "Beklenmeyen bir hata oluştu."
+  },
+  "location_input": {
+    "error_location_unabled": "Konum servisi devre dışı",
+    "error_location_denied": "Konum erişim izni reddedildi",
+    "error_location_denied_forever": "Konum erişim izni reddedildi, tekrar isteyemeyiz!",
+    "btn_current_location": "Mevcut konum",
+    "btn_select_on_map": "Haritada seç",
+    "error_unselected_location": "Konum seçilmedi!"
+  },
+  "notifications": {
+    "title": "Bildirimler"
+  },
+  "today": {
+    "text": "Bugün"
+  },
+  "days_of_week": {
+    "list": [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe",
+      "Cuma",
+      "Cumartesi",
+      "Pazar"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "Ocak",
+      "Şubat",
+      "Mart",
+      "Nisan",
+      "Mayıs",
+      "Haziran",
+      "Temmuz",
+      "Ağustos",
+      "Eylül",
+      "Ekim",
+      "Kasım",
+      "Aralık"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Hoş geldiniz!",
+    "call": "Bugün size nasıl yardımcı olabiliriz?",
+    "btn_1": "Profesyonel ara",
+    "btn_2": "Profesyonel olarak giriş yap",
+    "btn_3": "Bayilik başvurusu yap"
+  },
+  "forgot_pass_screen": {
+    "success": "Kurtarma e-postası gönderildi",
+    "confirm_text": "Tamam!",
+    "title": "Şifreyi Kurtar",
+    "email": "E-posta",
+    "btn": "E-posta Gönder"
+  },
+  "login_screen": {
+    "update_account_title": "Hesabınız profesyonel değil",
+    "update_account_content": "Profesyonel profili olarak güncellemek ister misiniz?",
+    "title": "Giriş Yap",
+    "email": "E-posta",
+    "pass": "Şifre",
+    "enter": "Giriş Yap",
+    "forgot_pass": "Şifreyi unuttum!",
+    "register": "Hesabım yok!",
+    "google": "Google ile giriş yap",
+    "apple": "Apple ile giriş yap"
+  },
+  "signup_screen": {
+    "title": "Profesyonel Olarak Kaydol",
+    "no_lat_lng": "Doğru arama sağlamak için önerilen bir adres seçin",
+    "profession": "Meslek",
+    "specialty": "Uzmanlık Alanı",
+    "name": "Ad ve Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "city": "Çalışma Şehri",
+    "pass": "Şifre Oluştur",
+    "pass_repeat": "Şifreyi Onayla",
+    "privacy_policy_text": "Şartları kabul ediyorum ve ",
+    "privacy_policy_text_link": "gizlilik politikasını okuduğumu ve anladığımı onaylıyorum.*",
+    "contact_text_agree": "Uymam gereken profesyonel kurallar hakkında bilgi sahibi olduğumu ve profesyonel kayıt numarasının ve uzmanlık alanının (uygulanabilir olduğu durumlarda) dahil edilmesi gerektiğini kabul ediyorum.* Verilerinizi doldurduğunuzda, doctorfriend.com.tr'in sizinle iletişime geçmesini kabul ediyorsunuz. İletişime geçmek istemiyorsanız, verilerinizi istediğiniz zaman silinmesini talep edebilirsiniz. Lütfen bizimle iletişime geçin.",
+    "enter": "Kaydol",
+    "login": "Zaten hesabım var!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Teklif bulunamadı",
+    "error_offer_not_available": "Teklif mevcut değil",
+    "call": "Pro özelliklerini kullanmaya devam etmek için yükseltme yapın",
+    "bay": "Devam Et",
+    "no_offer_available": "Şu anda kullanılabilir teklif yok",
+    "contact_text_call": "Zaten aktif bir aboneliğiniz varsa ve hala bu bildirimi görüyorsanız, lütfen doğru hesapla giriş yaptığınızdan emin olun ya da bizimle iletişime geçin",
+    "terms": "Kullanım Şartları",
+    "privacy_policy": "Gizlilik Politikası",
+    "actived": "AKTİF",
+    "offer_type_info": "Her ay otomatik olarak yenilenir",
+    "bay_for": "Sadece ",
+    "offer_type": " / ay",
+    "offer_0": "Kursları kaydedin ve profesyonel topluluğa tanıtın",
+    "offer_1": "Site aramalarında öncelik",
+    "offer_2": "Fotoğraf galerisi",
+    "offer_3": "E-posta hatırlatıcıları",
+    "offer_4": "Temel kullanıcı profili yönetimi",
+    "offer_5": "Özelleştirilebilir aylık takvim",
+    "offer_6": "Ve daha fazlası...",
+    "manage_subscription": "Aboneliği Yönet"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Tüm mevcut müşterilere randevu hatırlatması gönder: ",
+    "send_email_for_all": "Tümüne randevu hatırlatması gönder",
+    "no_time_available": "Uygun zaman yok",
+    "schedule_not_registered": "{text} için takvim kaydedilmemiş!",
+    "register_schedule": "Kaydet!",
+    "telemedicine": "Online danışmanlık",
+    "in_local": "Yerel danışmanlık"
+  },
+  "schedule_telemedicine": {
+    "title": "Online danışmanlık mı?",
+    "not": "Hayır",
+    "yes": "Evet"
+  },
+  "telemedicine_worn": {
+    "title": "Önemli Uyarı",
+    "not_show_again": "Bir daha gösterme",
+    "close": "Tamam!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedisin modu",
+    "is_telemedicine": "Zaman dilimleri online danışmanlık olarak kaydedilecek",
+    "is_not_telemedicine": "Zaman dilimleri yerel danışmanlık olarak kaydedilecek"
+  },
+  "add_schedule": {
+    "title": "Randevu oluştur",
+    "telemedicine_worn": "Lütfen hastanıza sanal danışmanlık odasına nasıl erişeceğine dair talimatları verin.",
+    "schedule_for": "Randevu için...",
+    "name": "Ad ve soyad",
+    "phone": "Telefon numarası",
+    "email": "E-posta",
+    "visit_type": "Ziyaret türü",
+    "note": "Not",
+    "btn_schedule": "Randevu oluştur"
+  },
+  "scheduled_customer": {
+    "notified_text": "Hatırlatma gönderildi!",
+    "delete_schedule": "Randevu silindi: ",
+    "send_email_confirm": "Randevu hatırlatmasını gönder ",
+    "send_email_is_proccessing": "İşleniyor...",
+    "send_email_error": "Gönderme hatası ;(",
+    "send_email_pendding": "Beklemede",
+    "title": "Randevu",
+    "telemedicine_worn": "Lütfen hastanıza sanal danışmanlık odasına nasıl erişeceğine dair talimatları verin.",
+    "status_canceled": "İptal edildi!",
+    "status_scheduled": "Şu tarihe kadar planlandı...",
+    "confirmed": "Onaylandı: ",
+    "send_email": "Randevu hatırlatmasını gönder",
+    "note": "Not"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Kaydetme hatası",
+    "title": "Haftalık takvim ayarla",
+    "save": "Tercihleri kaydet"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Haftalık takvim",
+    "preferences_btn_confirm": "Ayarla",
+    "preferences_btn_cancel": "Sonra",
+    "preferences_btn_content": "Aylık takvimi kolayca oluşturmak için haftalık takvimi ayarlayın. Bu, çalışma saatlerini hızlı ve verimli bir şekilde ayarlamanızı sağlar.",
+    "delete_schedule": "{month} {year} takvimi silinsin mi?",
+    "for": "için",
+    "save_schedule": "Takvimi kaydet",
+    "save": "Kaydet"
+  },
+  "schedule": {
+    "title": "Takvim"
+  },
+  "settings_schedule": {
+    "title": "Takvimi ayarla"
+  },
+  "common_questions_screen": {
+    "title": "Sıkça Sorulan Sorular",
+    "suport": "Teknik destek: "
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "worns": "Hatırlatmalar/Uyarılar",
+    "profile_on_site": "Web sitesindeki profilim",
+    "subcription_status_free": "Ücretsiz deneme",
+    "subcription_status_pro": "Pro kullanıcı",
+    "subcription_status_show": "Abonelikler",
+    "available_plans": "Mevcut planları gör",
+    "days_left": "{amount} gün kaldı",
+    "suport": "Destek",
+    "manual_modal_title": "Sistem Kılavuzu - Doctor Friend",
+    "manual": "Sistem kılavuzu",
+    "common_question": "Sıkça sorulan sorular",
+    "terms": "Kullanım şartları",
+    "privacy_policy": "Gizlilik politikası"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Hatırlatma/Uyarı ({amount})",
+    "title": "Hatırlatmalar/Uyarılar",
+    "help": "Randevu sürecinde müşterilere gösterilecek hatırlatmalar veya uyarılar bu alana girilebilir. Örnek: Maske takmak tesis içinde zorunludur.",
+    "save": "Kaydet"
+  },
+  "evaluetions_rate": {
+    "title": "Ortalama değerlendirme: ",
+    "show": "Değerlendirmeleri gör ({amount})",
+    "no_evaluetion": "Hiç değerlendirme bulunmamaktadır"
+  },
+  "response_evaluation": {
+    "title": "Değerlendirmeye yanıt ver",
+    "response": "'{name}' yanıtı",
+    "save": "Kaydet"
+  },
+  "update_about_me": {
+    "title": "Hakkımda",
+    "label": "Bana biraz kendinden bahset",
+    "save": "Kaydet"
+  },
+  "update_common_questions": {
+    "question": "Soru ({amount})",
+    "response": "Yanıt ({amount})",
+    "title": "Sıkça Sorulan Sorular",
+    "save": "Kaydet"
+  },
+  "update_contact": {
+    "title": "İletişim Bilgileri",
+    "phone": "Telefon 1",
+    "commercial_phone": "Telefon 2",
+    "crm": "Kayıt Numarası",
+    "pix": "PIX",
+    "save": "Kaydet"
+  },
+  "update_diseases_treated": {
+    "title": "Tedavi Edilen Hastalıklar",
+    "save": "Kaydet"
+  },
+  "update_experience": {
+    "experience": "Deneyim ({amount})",
+    "title": "Deneyim",
+    "save": "Kaydet"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Sağlık Sigortası",
+    "save": "Kaydet"
+  },
+  "update_languages": {
+    "language": "Dil ({amount})",
+    "title": "Diller",
+    "save": "Kaydet"
+  },
+  "update_links": {
+    "title": "İletişim Bilgileri",
+    "site": "Web Sitesi",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Kaydet"
+  },
+  "update_services": {
+    "service": "Hizmet ({amount})",
+    "price": "Fiyat",
+    "title": "Hizmetler",
+    "save": "Kaydet"
+  },
+  "update_time_zone": {
+    "title": "Zaman dilimini düzenle",
+    "label": "Zaman dilimi",
+    "save": "Kaydet"
+  },
+  "update_training": {
+    "training": "Eğitim ({amount})",
+    "title": "Eğitim",
+    "save": "Kaydet"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Doğru arama sağlamak için önerilen bir adres seçin",
+    "title": "Faaliyet Şehri Düzenle",
+    "label": "Faaliyet Şehri",
+    "save": "Kaydet"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Hesap silinsin mi?",
+    "confirm_content": "Tüm verileriniz kaybolacak",
+    "title": "Hesabı Sil",
+    "pass": "Şifre",
+    "delete": "Hesabı Sil"
+  },
+  "evaluations_screen": {
+    "title": "Değerlendirmeler",
+    "evaluation_hide": "Değerlendirmeyi diğerlerinden gizle",
+    "evaluation_show": "Değerlendirmeyi diğerlerine göster",
+    "to_response": "Yanıtla"
+  },
+  "update_address_screen": {
+    "title": "Hizmet Adresini Düzenle",
+    "zipe_code": "Posta Kodu",
+    "street": "Sokak",
+    "number": "Numara",
+    "neighborhood": "Mahalle",
+    "complement": "Ek",
+    "city": "Şehir",
+    "state": "Eyalet",
+    "country": "Ülke",
+    "save": "Kaydet"
+  },
+  "update_images_screen": {
+    "title": "Galeri",
+    "edit_info": "Seçmek ve düzenlemek için resme basılı tutun",
+    "save": "Kaydet",
+    "photos": "Fotoğraflar: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Şifre değişikliği e-postası {email} adresine gönderildi. Devam etmek için e-postanızı kontrol edin",
+    "email_sended_confirm": "Tamam!",
+    "request_reset_pass_title": "Şifre değiştirme talep edilsin mi?",
+    "title": "Profil Düzenle",
+    "name": "Ad ve Soyad",
+    "profession": "Meslek",
+    "specialty": "Uzmanlık Alanı",
+    "pass": "Mevcut şifre",
+    "save": "Kaydet",
+    "update_pass": "Şifreyi değiştir!",
+    "delete_account": "Hesabı Sil!"
+  },
+  "user_screen": {
+    "logout_confirm": "Hesabınızdan çıkmak istiyor musunuz?",
+    "edit_error": "Veriler kaydedilemedi!",
+    "title": "Profil",
+    "contact": "İletişim:",
+    "email": "E-posta:",
+    "phone": "Telefon 1:",
+    "commercial_phone": "Telefon 2:",
+    "crm": "Kayıt Numarası",
+    "pix": "PIX Anahtarı:",
+    "links": "Bağlantılar:",
+    "site": "Web Sitesi:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Hizmetler:",
+    "experience": "Deneyim:",
+    "diseases_treated": "Tedavi Edilen Hastalıklar:",
+    "health_insurance": "Sağlık Sigortaları:",
+    "languages": "Diller:",
+    "about_me": "Hakkımda:",
+    "training": "Eğitim:",
+    "time_zone": "Zaman Dilimi:",
+    "city": "Çalışma Şehri:",
+    "address": "Hizmet Adresi:",
+    "galery": "Galeri:",
+    "common_questions": "Sıkça Sorulan Sorular:",
+    "verified_profile": "Doğrulanmış Profil",
+    "no_verified_profile": "Profili Doğrula"
+  },
+  "weview": {
+    "on_out": "Gezintiden çıkmak istiyor musunuz?",
+    "error_data": "HATA: {error}",
+    "error_connection": "Bağlantınızı kontrol edin ve tekrar deneyin.",
+    "try_again": "Tekrar Dene",
+    "go_back": "Geri Dön"
+  },
+  "schedule_reminder": {
+    "title": "{date} için Randevu Hatırlatıcısı"
+  },
+  "home_screen": {
+    "menu_settings": "Ayarlar",
+    "menu_schedule": "Program",
+    "menu_profile": "Profil",
+    "menu_education": "Tıbbi Eğitim"
+  },
+  "map_screen": {
+    "select": "Seçin...",
+    "title": "Harita"
+  },
+  "account_state": {
+    "rejected_title": "\"Doctor Friend\" Hesap Başvurunuzun Reddedilmesi",
+    "analysis_title": "Hesabınız İnceleniyor",
+    "rejection_text": "Sevgili {name}, \n\nUmarım iyisinizdir. Üzgün bir şekilde, dikkatli bir incelemeden sonra \"Doctor Friend\" hesabınızın başvurusu reddedilmiştir. \n\nBunun hayal kırıklığı yaratabileceğini anlıyoruz ve kararın belirli kriterlere dayalı olarak verildiğini temin ederiz. Ek bilgilere ihtiyaç duyarsanız veya bir hata yapıldığını düşünüyorsanız, lütfen bizimle iletişime geçmekten çekinmeyin. \n\n\"Doctor Friend\"'e gösterdiğiniz ilgi için teşekkür ederiz ve gelecekte ihtiyaçlarınıza cevap verebilmek için fırsat bulmayı umuyoruz. \n\nSaygılarımızla, \n\nDoctor Friend Ekibi",
+    "analysis_text": "Merhaba {name}, \n\nHesabınızın şu anda \"Doctor Friend\" tarafından incelendiğini size bildirmek istiyoruz. Ekibimiz, güvenli ve verimli bir deneyim sağlamak için bilgilerinizi gözden geçiriyor. \n\nİnceleme tamamlandığında size bildirim yapılacaktır. Sabır ve anlayışınız için teşekkür ederiz. \n\nYardımcı olmamızı veya herhangi bir sorunuz varsa, lütfen bizimle iletişime geçmekten çekinmeyin. \n\nSaygılarımızla, \n\nDoctor Friend Ekibi"
+  },
+  "education_screen": {
+    "title": "Tıbbi Eğitim",
+    "profession": "Bir meslek seçin",
+    "amount": "Sonuçlar",
+    "my_courses": "Kurslarım"
+  },
+  "education_card": {
+    "go_to_course": "Kursa Git",
+    "edit": "Düzenle"
+  },
+  "my_courses_screen": {
+    "title": "Kurslarım ({amount})",
+    "add_courses": "Kurs Ekle"
+  },
+  "course_form_screen": {
+    "title": "Kurs Kaydet",
+    "title_edit": "Kursu Düzenle",
+    "description": "Kursa bağlı meslekleri seçin",
+    "professions": "İlgili Meslekler",
+    "link_course": "Kurs Linki",
+    "title_course": "Kurs Başlığı",
+    "description_course": "Kurs Açıklaması",
+    "thumbnail_course": "Kapak Resmi Linki",
+    "next_step": "Devam Et",
+    "save": "Kaydet",
+    "notify": "Bildirim Gönder",
+    "notify_all": "Tüm profesyonellere",
+    "notify_only_related": "Sadece kursla ilgili profesyonellere",
+    "onDelete": "Kursu silmek istiyor musunuz?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "İnsan Anatomisi",
+    "placeholder_description_course": "İnsan anatomisi kursu hakkında detaylı açıklama",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Lütfen geçerli bir URL girin",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+    "invalidZipCode": "Lütfen geçerli bir posta kodu girin",
+    "invalidPass": "Şifre en az 6 karakter olmalıdır.",
+    "invalidConfirmPass": "Şifreler uyuşmuyor",
+    "invalid_time_alread_exists": "Zaman zaten mevcut ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Kullanıcı Doğrulaması",
+    "document_capture": "Belge Tarama",
+    "selfie_capture": "Selfie Tarama",
+    "verify_user": "Kullanıcıyı Doğrula",
+    "pick_document_title": "Fotoğraflı Belge",
+    "pick_selfie_title": "Selfie"
+  }
+}

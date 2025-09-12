@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "da"
+  },
+  "callback_default": {
+    "title_error": "Der opstod en uventet fejl. \nPrøv igen senere.",
+    "title_sucess": "Succes",
+    "confirm_text": "JA",
+    "cancel_text": "NEJ"
+  },
+  "input": {
+    "is_empty": "Feltet er påkrævet."
+  },
+  "loading_error": {
+    "title": "Der opstod en uventet fejl!",
+    "error_message": "Der opstod en uventet fejl."
+  },
+  "location_input": {
+    "error_location_unabled": "Lokationstjeneste deaktiveret",
+    "error_location_denied": "Tilladelse til at få adgang til lokationen blev nægtet",
+    "error_location_denied_forever": "Tilladelse til at få adgang til lokationen blev nægtet, vi kan ikke anmode igen!",
+    "btn_current_location": "Aktuel lokation",
+    "btn_select_on_map": "Vælg på kortet",
+    "error_unselected_location": "Lokation ikke angivet!"
+  },
+  "notifications": {
+    "title": "Notifikationer"
+  },
+  "today": {
+    "text": "I dag"
+  },
+  "days_of_week": {
+    "list": [
+      "mandag",
+      "tirsdag",
+      "onsdag",
+      "torsdag",
+      "fredag",
+      "lørdag",
+      "søndag"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "januar",
+      "februar",
+      "marts",
+      "april",
+      "maj",
+      "juni",
+      "juli",
+      "august",
+      "september",
+      "oktober",
+      "november",
+      "december"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Velkommen!",
+    "call": "Hvordan kan vi hjælpe i dag?",
+    "btn_1": "Find professionel",
+    "btn_2": "Log ind som professionel",
+    "btn_3": "Bliv franchisetager"
+  },
+  "forgot_pass_screen": {
+    "success": "Gendannelses-email sendt til",
+    "confirm_text": "Ok!",
+    "title": "Gendan Adgangskode",
+    "email": "Email",
+    "btn": "Send Email"
+  },
+  "login_screen": {
+    "update_account_title": "Din konto er ikke professionel",
+    "update_account_content": "Opdatere til professionelt profil?",
+    "title": "Login",
+    "email": "Email",
+    "pass": "Adgangskode",
+    "enter": "Log ind",
+    "forgot_pass": "Glemt adgangskode!",
+    "register": "Har ikke en konto!",
+    "google": "Log ind med Google",
+    "apple": "Log ind med Apple"
+  },
+  "signup_screen": {
+    "title": "Tilmeld dig som professionel",
+    "no_lat_lng": "Vælg en foreslået adresse for at sikre korrekt søgning",
+    "profession": "Profession",
+    "specialty": "Specialisering",
+    "name": "Navn og efternavn",
+    "email": "Email",
+    "phone": "Telefon",
+    "city": "By for arbejde",
+    "pass": "Opret adgangskode",
+    "pass_repeat": "Bekræft adgangskode",
+    "privacy_policy_text": "Jeg accepterer vilkår og betingelser, og bekræfter at jeg har læst og forstået",
+    "privacy_policy_text_link": "privatlivspolitik.*",
+    "contact_text_agree": "Jeg erklærer mig bekendt med de professionelle normer, jeg skal følge, og nødvendigheden af at inkludere registreringsnummer og specialitet (hvis relevant).* Ved at udfylde dine oplysninger accepterer du, at doctorfriend.com.br kontakter dig for at tilbyde sine tjenester. Du kan når som helst anmode om at få dine data slettet, hvis du ikke ønsker at blive kontaktet. Kontakt os venligst.",
+    "enter": "Tilmeld",
+    "login": "Har allerede en konto!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Tilbud ikke fundet",
+    "error_offer_not_available": "Tilbud ikke tilgængeligt",
+    "call": "Opgrader for at fortsætte med at bruge Pro-funktionerne",
+    "bay": "Fortsæt",
+    "no_offer_available": "Ingen tilbud tilgængelige lige nu",
+    "contact_text_call": "Hvis du allerede har et aktivt abonnement og stadig ser denne besked, bedes du kontrollere, om du er logget ind med den rigtige konto, eller kontakt vores",
+    "terms": "Brugsvilkår",
+    "privacy_policy": "Privatlivspolitik",
+    "actived": "AKTIVERET",
+    "offer_type_info": "Fornyes automatisk hver måned",
+    "bay_for": "Kun for ",
+    "offer_type": " / måned",
+    "offer_0": "Registrer kurser og promover dem til fagfællesskabet",
+    "offer_1": "Prioritet i søgninger på hjemmesiden",
+    "offer_2": "Fotogalleri",
+    "offer_3": "Påmindelser via email",
+    "offer_4": "Brugerprofil grundlæggende administration",
+    "offer_5": "Brugerdefineret månedlig kalender",
+    "offer_6": "Og meget mere...",
+    "manage_subscription": "Administrer abonnement"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Send påmindelse om tidsplan til alle tilgængelige kunder på ",
+    "send_email_for_all": "Send påmindelse om tidsplan til alle",
+    "no_time_available": "Ingen tilgængelige tider",
+    "schedule_not_registered": "Tidsplan for {text} ikke registreret!",
+    "register_schedule": "Registrer!",
+    "telemedicine": "Online konsultation",
+    "in_local": "Lokalt møde"
+  },
+  "schedule_telemedicine": {
+    "title": "Online konsultation?",
+    "not": "Nej",
+    "yes": "Ja"
+  },
+  "telemedicine_worn": {
+    "title": "Vigtig advarsel",
+    "not_show_again": "Vis ikke igen",
+    "close": "Okay!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedicin tilstand",
+    "is_telemedicine": "Tiderne vil blive registreret som telemedicin",
+    "is_not_telemedicine": "Tiderne vil blive registreret som lokal konsultation"
+  },
+  "add_schedule": {
+    "title": "Planlæg konsultation",
+    "telemedicine_worn": "Venligst giv din patient adgangsinstruktioner til det virtuelle konsultationsrum.",
+    "schedule_for": "Planlæg for...",
+    "name": "For- og efternavn",
+    "phone": "Telefonnummer",
+    "email": "E-mail",
+    "visit_type": "Besøgs type",
+    "note": "Bemærkning",
+    "btn_schedule": "Planlæg"
+  },
+  "scheduled_customer": {
+    "notified_text": "Påmindelse sendt!",
+    "delete_schedule": "Slet tidsplan for: ",
+    "send_email_confirm": "Sender påmindelse til ",
+    "send_email_is_proccessing": "Behandler...",
+    "send_email_error": "Fejl ved afsendelse ;(",
+    "send_email_pendding": "Afventer",
+    "title": "Tidsplan",
+    "telemedicine_worn": "Venligst giv din patient adgangsinstruktioner til det virtuelle konsultationsrum.",
+    "status_canceled": "Annulleret!",
+    "status_scheduled": "Planlagt for...",
+    "confirmed": "Bekræftet: ",
+    "send_email": "Send påmindelse om tidsplan",
+    "note": "Bemærkning"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Fejl ved gemning",
+    "title": "Opsæt ugentlig tidsplan",
+    "save": "Gem præferencer"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Ugentlig tidsplan",
+    "preferences_btn_confirm": "Opsæt",
+    "preferences_btn_cancel": "Senere",
+    "preferences_btn_content": "For nemt at oprette månedlig tidsplan, opsæt den ugentlige tidsplan. Dette vil gøre det hurtigt og effektivt at konfigurere arbejdstider.",
+    "delete_schedule": "Slet tidsplan for {month} {year}?",
+    "for": "for",
+    "save_schedule": "Gem tidsplan",
+    "save": "Gem"
+  },
+  "schedule": {
+    "title": "Tidsplan"
+  },
+  "settings_schedule": {
+    "title": "Opsæt tidsplan"
+  },
+  "common_questions_screen": {
+    "title": "Ofte stillede spørgsmål",
+    "suport": "Teknisk support: "
+  },
+  "settings": {
+    "title": "Indstillinger",
+    "worns": "Påmindelser/Advarsler",
+    "profile_on_site": "Min profil på websitet",
+    "subcription_status_free": "Gratis vurdering",
+    "subcription_status_pro": "Pro-bruger",
+    "subcription_status_show": "Abonnementer",
+    "available_plans": "Se tilgængelige planer",
+    "days_left": "{amount} dage tilbage",
+    "suport": "Support",
+    "manual_modal_title": "Systemmanual - Doctor Friend",
+    "manual": "Systemmanual",
+    "common_question": "Ofte stillede spørgsmål",
+    "terms": "Brugsbetingelser",
+    "privacy_policy": "Privatlivspolitik"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Påmindelse/Advarsel ({amount})",
+    "title": "Påmindelser/Advarsler",
+    "help": "Indtast påmindelser eller advarsler til kunderne under tidsbestillingsprocessen. Eksempel: Brug af mundbind er påkrævet på faciliteterne.",
+    "save": "Gem"
+  },
+  "evaluetions_rate": {
+    "title": "Gennemsnitlig bedømmelse: ",
+    "show": "Se bedømmelser ({amount})",
+    "no_evaluetion": "Ingen bedømmelser tilgængelige"
+  },
+  "response_evaluation": {
+    "title": "Svar på bedømmelse",
+    "response": "Svar '{name}'",
+    "save": "Gem"
+  },
+  "update_about_me": {
+    "title": "Om mig",
+    "label": "Fortæl lidt om dig selv",
+    "save": "Gem"
+  },
+  "update_common_questions": {
+    "question": "Spørgsmål ({amount})",
+    "response": "Svar ({amount})",
+    "title": "Ofte stillede spørgsmål",
+    "save": "Gem"
+  },
+  "update_contact": {
+    "title": "Kontaktinformation",
+    "phone": "Telefon 1",
+    "commercial_phone": "Telefon 2",
+    "crm": "Registreringsnummer",
+    "pix": "PIX",
+    "save": "Gem"
+  },
+  "update_diseases_treated": {
+    "title": "Behandlede sygdomme",
+    "save": "Gem"
+  },
+  "update_experience": {
+    "experience": "Erfaring ({amount})",
+    "title": "Erfaring indenfor",
+    "save": "Gem"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Sundhedsforsikring",
+    "save": "Gem"
+  },
+  "update_languages": {
+    "language": "Sprog ({amount})",
+    "title": "Sprog",
+    "save": "Gem"
+  },
+  "update_links": {
+    "title": "Kontaktinformation",
+    "site": "Hjemmeside",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Gem"
+  },
+  "update_services": {
+    "service": "Service ({amount})",
+    "price": "Pris",
+    "title": "Tjenester",
+    "save": "Gem"
+  },
+  "update_time_zone": {
+    "title": "Rediger tidszone",
+    "label": "Tidszone",
+    "save": "Gem"
+  },
+  "update_training": {
+    "training": "Uddannelse ({amount})",
+    "title": "Uddannelse",
+    "save": "Gem"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Vælg en foreslået adresse for at sikre korrekt søgning",
+    "title": "Rediger operationens by",
+    "label": "Operationens by",
+    "save": "Gem"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Slette konto?",
+    "confirm_content": "Alle dine data vil gå tabt",
+    "title": "Slet konto",
+    "pass": "Adgangskode",
+    "delete": "Slet konto"
+  },
+  "evaluations_screen": {
+    "title": "Bedømmelser",
+    "evaluation_hide": "Skjul bedømmelse for andre",
+    "evaluation_show": "Vis bedømmelse for andre",
+    "to_response": "Svar"
+  },
+  "update_address_screen": {
+    "title": "Rediger serviceadresse",
+    "zipe_code": "Postnummer",
+    "street": "Vej",
+    "number": "Nummer",
+    "neighborhood": "Kvarter",
+    "complement": "Supplerende",
+    "city": "By",
+    "state": "Stat",
+    "country": "Land",
+    "save": "Gem"
+  },
+  "update_images_screen": {
+    "title": "Galleri",
+    "edit_info": "Hold på billedet for at vælge og redigere",
+    "save": "Gem",
+    "photos": "Fotos: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Ændringsmail til {email} er sendt. Tjek mailen for at fortsætte med ændringen",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Anmode om ændring af adgangskode?",
+    "title": "Rediger profil",
+    "name": "Fornavn og Efternavn",
+    "profession": "Erhverv",
+    "specialty": "Specialisering",
+    "pass": "Nuværende adgangskode",
+    "save": "Gem",
+    "update_pass": "Ændre adgangskode!",
+    "delete_account": "Slet konto!"
+  },
+  "user_screen": {
+    "logout_confirm": "Vil du logge ud af din konto?",
+    "edit_error": "Kunne ikke gemme data!",
+    "title": "Profil",
+    "contact": "Kontakt:",
+    "email": "E-mail:",
+    "phone": "Telefon 1:",
+    "commercial_phone": "Telefon 2:",
+    "crm": "Registreringsnummer",
+    "pix": "PIX nøgle:",
+    "links": "Links:",
+    "site": "Websted:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Tjenester:",
+    "experience": "Erfaring i:",
+    "diseases_treated": "Behandlede sygdomme:",
+    "health_insurance": "Sundhedsforsikringer:",
+    "languages": "Sprog:",
+    "about_me": "Om mig:",
+    "training": "Uddannelse:",
+    "time_zone": "Tidszone:",
+    "city": "Arbejdshjemsted:",
+    "address": "Behandlingsadresse:",
+    "galery": "Galleri:",
+    "common_questions": "Ofte stillede spørgsmål:",
+    "verified_profile": "Verificeret profil",
+    "no_verified_profile": "Bekræft profil"
+  },
+  "weview": {
+    "on_out": "Vil du forlade navigationen?",
+    "error_data": "FEJL: {error}",
+    "error_connection": "Tjek din forbindelse og prøv igen.",
+    "try_again": "Prøv igen",
+    "go_back": "Gå tilbage"
+  },
+  "schedule_reminder": {
+    "title": "Aftale påmindelse for {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Indstillinger",
+    "menu_schedule": "Tidsplan",
+    "menu_profile": "Profil",
+    "menu_education": "Medicinsk Uddannelse"
+  },
+  "map_screen": {
+    "select": "Vælg...",
+    "title": "Kort"
+  },
+  "account_state": {
+    "rejected_title": "Afslag på din kontoanmodning i \"Doctor Friend\"",
+    "analysis_title": "Din konto er under behandling",
+    "rejection_text": "Kære {name}, \n\nVi håber, at du har det godt. Vi er kede af at meddele, at efter en grundig gennemgang er din kontoanmodning i \"Doctor Friend\" blevet afvist. \n\nVi forstår, at dette kan være skuffende, og vi vil gerne forsikre dig om, at beslutningen blev truffet ud fra specifikke kriterier. Hvis der er behov for yderligere oplysninger eller hvis du mener, at der er sket en fejl, er du velkommen til at kontakte os for at drøfte dette. \n\nVi takker for din interesse i \"Doctor Friend\" og håber, at vi kan imødekomme dine behov i fremtiden. \n\nVenlig hilsen, \n\nDoctor Friend Team",
+    "analysis_text": "Hej {name}, \n\nVi vil gerne informere dig om, at din konto i \"Doctor Friend\" i øjeblikket er under behandling. Vores team gennemgår dine oplysninger for at sikre en sikker og effektiv oplevelse. \n\nDu vil modtage en notifikation, når behandlingen er færdig. Vi takker for din tålmodighed og forståelse. \n\nHvis du har brug for hjælp eller har spørgsmål, er du velkommen til at kontakte os. \n\nVenlig hilsen, \n\nDoctor Friend Team"
+  },
+  "education_screen": {
+    "title": "Medicinsk Uddannelse",
+    "profession": "Vælg et erhverv",
+    "amount": "Resultater",
+    "my_courses": "Mine Kurser"
+  },
+  "education_card": {
+    "go_to_course": "Gå til Kursus",
+    "edit": "Rediger"
+  },
+  "my_courses_screen": {
+    "title": "Mine Kurser ({amount})",
+    "add_courses": "Tilmeld Kursus"
+  },
+  "course_form_screen": {
+    "title": "Tilmeld Kursus",
+    "title_edit": "Rediger Kursus",
+    "description": "Vælg de erhverv, der er relateret til kurset",
+    "professions": "Relaterede erhverv",
+    "link_course": "Kursuslink",
+    "title_course": "Kursets titel",
+    "description_course": "Kursusbeskrivelse",
+    "thumbnail_course": "Coverbillede link",
+    "next_step": "Fortsæt",
+    "save": "Gem",
+    "notify": "Underret",
+    "notify_all": "Alle fagfolk",
+    "notify_only_related": "Kun de fagfolk, der er relateret til kurset",
+    "onDelete": "Fjerne kursus?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Human Anatomi",
+    "placeholder_description_course": "Detaljeret beskrivelse af human anatomi kursus",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Indtast venligst en gyldig URL",
+    "invalidEmail": "Indtast venligst en gyldig e-mail",
+    "invalidZipCode": "Indtast venligst et gyldigt postnummer",
+    "invalidPass": "Adgangskode skal være mindst 6 tegn lang.",
+    "invalidConfirmPass": "Adgangskoder stemmer ikke overens",
+    "invalid_time_alread_exists": "Tiden eksisterer allerede ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Brugerverifikation",
+    "document_capture": "Dokumentoptagelse",
+    "selfie_capture": "Selfie-optagelse",
+    "verify_user": "Verificer bruger",
+    "pick_document_title": "Billede-ID-dokument",
+    "pick_selfie_title": "Selfie"
+  }
+}

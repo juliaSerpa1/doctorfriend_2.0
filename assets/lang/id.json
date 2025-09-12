@@ -1,0 +1,441 @@
+{
+  "lang": {
+    "name": "id"
+  },
+  "callback_default": {
+    "title_error": "Terjadi kesalahan yang tidak terduga. \nCoba lagi nanti.",
+    "title_sucess": "Sukses",
+    "confirm_text": "YA",
+    "cancel_text": "TIDAK"
+  },
+  "input": {
+    "is_empty": "Kolom ini wajib diisi."
+  },
+  "loading_error": {
+    "title": "Terjadi kesalahan yang tidak terduga!",
+    "error_message": "Terjadi kesalahan yang tidak terduga."
+  },
+  "location_input": {
+    "error_location_unabled": "Layanan lokasi dinonaktifkan",
+    "error_location_denied": "Izin untuk mengakses lokasi ditolak",
+    "error_location_denied_forever": "Izin untuk mengakses lokasi ditolak, kami tidak bisa meminta lagi!",
+    "btn_current_location": "Lokasi saat ini",
+    "btn_select_on_map": "Pilih di Peta",
+    "error_unselected_location": "Lokasi tidak dipilih!"
+  },
+  "notifications": {
+    "title": "Pemberitahuan"
+  },
+  "today": {
+    "text": "Hari ini"
+  },
+  "days_of_week": {
+    "list": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"]
+  },
+  "months_of_year": {
+    "list": [
+      "Januari",
+      "Februari",
+      "Maret",
+      "April",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Selamat datang!",
+    "call": "Bagaimana kami bisa membantu hari ini?",
+    "btn_1": "Cari profesional",
+    "btn_2": "Masuk sebagai profesional",
+    "btn_3": "Jadi franchisee"
+  },
+  "forgot_pass_screen": {
+    "success": "Email pemulihan dikirim ke",
+    "confirm_text": "OK!",
+    "title": "Pulihkan Kata Sandi",
+    "email": "Email",
+    "btn": "Kirim Email"
+  },
+  "login_screen": {
+    "update_account_title": "Akun Anda bukan profesional",
+    "update_account_content": "Perbarui ke profil profesional?",
+    "title": "Masuk",
+    "email": "Email",
+    "pass": "Kata Sandi",
+    "enter": "Masuk",
+    "forgot_pass": "Lupa Kata Sandi!",
+    "register": "Tidak Punya Akun!",
+    "google": "Masuk dengan Google",
+    "apple": "Masuk dengan Apple"
+  },
+  "signup_screen": {
+    "title": "Daftar Sebagai Profesional",
+    "no_lat_lng": "Pilih alamat yang disarankan untuk memastikan pencarian yang tepat",
+    "profession": "Profesi",
+    "specialty": "Spesialisasi",
+    "name": "Nama Depan dan Belakang",
+    "email": "Email",
+    "phone": "Telepon",
+    "city": "Kota Kerja",
+    "pass": "Buat Kata Sandi",
+    "pass_repeat": "Konfirmasi Kata Sandi",
+    "privacy_policy_text": "Saya menerima syarat dan ketentuan, dan saya mengonfirmasi telah membaca dan memahami",
+    "privacy_policy_text_link": "kebijakan privasi.*",
+    "contact_text_agree": "Saya menyatakan sadar akan norma profesional yang harus diikuti dan kebutuhan untuk menyertakan nomor registrasi profesional dan spesialisasi (jika berlaku).* Dengan mengisi data Anda, Anda setuju bahwa doctorfriend.com.br dapat menghubungi Anda untuk menawarkan layanan mereka. Anda dapat meminta penghapusan data Anda kapan saja jika Anda tidak ingin dihubungi. Cukup hubungi kami.",
+    "enter": "Daftar",
+    "login": "Sudah Punya Akun!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Penawaran tidak ditemukan",
+    "error_offer_not_available": "Penawaran tidak tersedia",
+    "call": "Perbarui untuk terus menggunakan fitur Pro",
+    "bay": "Lanjutkan",
+    "no_offer_available": "Tidak ada penawaran tersedia saat ini",
+    "contact_text_call": "Jika Anda sudah memiliki langganan aktif dan masih melihat pemberitahuan ini, harap periksa apakah Anda masuk dengan akun yang benar atau hubungi",
+    "terms": "Syarat Penggunaan",
+    "privacy_policy": "Kebijakan Privasi",
+    "actived": "AKTIF",
+    "offer_type_info": "Diperbarui secara otomatis setiap bulan",
+    "bay_for": "Hanya ",
+    "offer_type": " / bulan",
+    "offer_0": "Daftarkan kursus dan promosikan kepada komunitas profesional",
+    "offer_1": "Prioritas dalam pencarian di situs",
+    "offer_2": "Galeri foto",
+    "offer_3": "Pengingat melalui email",
+    "offer_4": "Manajemen profil pengguna dasar",
+    "offer_5": "Jadwal bulanan yang dapat disesuaikan",
+    "offer_6": "Dan masih banyak lagi...",
+    "manage_subscription": "Kelola Langganan"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Kirim pengingat jadwal kepada semua klien yang tersedia di ",
+    "send_email_for_all": "Kirim pengingat kepada semua",
+    "no_time_available": "Tidak ada waktu yang tersedia",
+    "schedule_not_registered": "Jadwal untuk {text} belum terdaftar!",
+    "register_schedule": "Daftarkan!",
+    "telemedicine": "Konsultasi online",
+    "in_local": "Konsultasi langsung"
+  },
+  "schedule_telemedicine": {
+    "title": "Konsultasi online?",
+    "not": "Tidak",
+    "yes": "Ya"
+  },
+  "telemedicine_worn": {
+    "title": "Peringatan Penting",
+    "not_show_again": "Jangan tampilkan lagi",
+    "close": "Oke!"
+  },
+  "telemedicine": {
+    "checkbox": "Mode telemedis",
+    "is_telemedicine": "Waktu akan didaftarkan sebagai telemedis",
+    "is_not_telemedicine": "Waktu akan didaftarkan sebagai konsultasi langsung"
+  },
+  "add_schedule": {
+    "title": "Jadwalkan konsultasi",
+    "telemedicine_worn": "Harap berikan petunjuk akses ke ruang konsultasi virtual kepada pasien Anda.",
+    "schedule_for": "Jadwalkan untuk...",
+    "name": "Nama lengkap",
+    "phone": "Nomor telepon",
+    "email": "Email",
+    "visit_type": "Jenis kunjungan",
+    "note": "Catatan",
+    "btn_schedule": "Jadwalkan"
+  },
+  "scheduled_customer": {
+    "notified_text": "Pengingat dikirim!",
+    "delete_schedule": "Hapus jadwal untuk: ",
+    "send_email_confirm": "Kirim pengingat ke ",
+    "send_email_is_proccessing": "Memproses...",
+    "send_email_error": "Gagal mengirim ;(",
+    "send_email_pendding": "Tertunda",
+    "title": "Jadwal",
+    "telemedicine_worn": "Harap berikan petunjuk akses ke ruang konsultasi virtual kepada pasien Anda.",
+    "status_canceled": "Dibatalkan!",
+    "status_scheduled": "Dijadwalkan untuk...",
+    "confirmed": "Dikonfirmasi: ",
+    "send_email": "Kirim Pengingat Jadwal",
+    "note": "Catatan"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Gagal menyimpan",
+    "title": "Atur Jadwal Mingguan",
+    "save": "Simpan preferensi"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Jadwal mingguan",
+    "preferences_btn_confirm": "Atur",
+    "preferences_btn_cancel": "Nanti",
+    "preferences_btn_content": "Untuk mempermudah pembuatan jadwal bulanan, atur jadwal mingguan. Ini memungkinkan konfigurasi waktu kerja dengan cepat dan efisien.",
+    "delete_schedule": "Hapus jadwal bulan {month} {year}?",
+    "for": "untuk",
+    "save_schedule": "Simpan Jadwal",
+    "save": "Simpan"
+  },
+  "schedule": {
+    "title": "Jadwal"
+  },
+  "settings_schedule": {
+    "title": "Atur Jadwal"
+  },
+  "common_questions_screen": {
+    "title": "Pertanyaan Umum",
+    "suport": "Dukungan teknis: "
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "worns": "Pengingat/Peringatan",
+    "profile_on_site": "Profil saya di situs",
+    "subcription_status_free": "Uji coba gratis",
+    "subcription_status_pro": "Pengguna Pro",
+    "subcription_status_show": "Langganan",
+    "available_plans": "Lihat Paket yang Tersedia",
+    "days_left": "{amount} hari tersisa",
+    "suport": "Dukungan",
+    "manual_modal_title": "Panduan Sistem - Doctor Friend",
+    "manual": "Panduan sistem",
+    "common_question": "Pertanyaan Umum",
+    "terms": "Syarat Penggunaan",
+    "privacy_policy": "Kebijakan Privasi"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Pengingat/Peringatan ({amount})",
+    "title": "Pengingat/Peringatan",
+    "help": "Masukkan pengingat atau peringatan untuk klien di sini selama proses penjadwalan. Contoh: Masker wajib digunakan di area fasilitas.",
+    "save": "Simpan"
+  },
+  "evaluetions_rate": {
+    "title": "Penilaian rata-rata: ",
+    "show": "Lihat penilaian ({amount})",
+    "no_evaluetion": "Tidak ada penilaian tersedia"
+  },
+  "response_evaluation": {
+    "title": "Tanggapi penilaian",
+    "response": "Tanggapi '{name}'",
+    "save": "Simpan"
+  },
+  "update_about_me": {
+    "title": "Tentang saya",
+    "label": "Ceritakan sedikit tentang diri Anda",
+    "save": "Simpan"
+  },
+  "update_common_questions": {
+    "question": "Pertanyaan ({amount})",
+    "response": "Jawaban ({amount})",
+    "title": "Pertanyaan yang sering diajukan",
+    "save": "Simpan"
+  },
+  "update_contact": {
+    "title": "Informasi kontak",
+    "phone": "Telepon 1",
+    "commercial_phone": "Telepon 2",
+    "crm": "Nomor Registrasi",
+    "pix": "PIX",
+    "save": "Simpan"
+  },
+  "update_diseases_treated": {
+    "title": "Penyakit yang diobati",
+    "save": "Simpan"
+  },
+  "update_experience": {
+    "experience": "Pengalaman ({amount})",
+    "title": "Pengalaman di bidang",
+    "save": "Simpan"
+  },
+  "update_health_insurance": {
+    "plan": "Rencana ({amount})",
+    "title": "Asuransi Kesehatan",
+    "save": "Simpan"
+  },
+  "update_languages": {
+    "language": "Bahasa ({amount})",
+    "title": "Bahasa",
+    "save": "Simpan"
+  },
+  "update_links": {
+    "title": "Informasi kontak",
+    "site": "Situs web",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Simpan"
+  },
+  "update_services": {
+    "service": "Layanan ({amount})",
+    "price": "Harga",
+    "title": "Layanan",
+    "save": "Simpan"
+  },
+  "update_time_zone": {
+    "title": "Edit zona waktu",
+    "label": "Zona waktu",
+    "save": "Simpan"
+  },
+  "update_training": {
+    "training": "Pelatihan ({amount})",
+    "title": "Pelatihan",
+    "save": "Simpan"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Pilih alamat yang disarankan untuk memastikan pencarian yang benar",
+    "title": "Edit Kota Operasi",
+    "label": "Kota Operasi",
+    "save": "Simpan"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Hapus Akun?",
+    "confirm_content": "Semua data Anda akan hilang",
+    "title": "Hapus Akun",
+    "pass": "Kata sandi",
+    "delete": "Hapus Akun"
+  },
+  "evaluations_screen": {
+    "title": "Penilaian",
+    "evaluation_hide": "Sembunyikan penilaian dari orang lain",
+    "evaluation_show": "Tampilkan penilaian untuk orang lain",
+    "to_response": "Tanggapi"
+  },
+  "update_address_screen": {
+    "title": "Edit Alamat Layanan",
+    "zipe_code": "Kode Pos",
+    "street": "Jalan",
+    "number": "Nomor",
+    "neighborhood": "Lingkungan",
+    "complement": "Komplemen",
+    "city": "Kota",
+    "state": "Provinsi",
+    "country": "Negara",
+    "save": "Simpan"
+  },
+  "update_images_screen": {
+    "title": "Galeri",
+    "edit_info": "Tahan gambar untuk memilih dan mengedit",
+    "save": "Simpan",
+    "photos": "Foto: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Email perubahan kata sandi telah dikirim ke {email}. Periksa email untuk melanjutkan perubahan",
+    "email_sended_confirm": "Oke!",
+    "request_reset_pass_title": "Minta perubahan kata sandi?",
+    "title": "Edit Profil",
+    "name": "Nama dan Nama Belakang",
+    "profession": "Profesi",
+    "specialty": "Spesialisasi",
+    "pass": "Kata sandi saat ini",
+    "save": "Simpan",
+    "update_pass": "Ubah Kata Sandi!",
+    "delete_account": "Hapus Akun!"
+  },
+  "user_screen": {
+    "logout_confirm": "Apakah Anda ingin keluar dari akun?",
+    "edit_error": "Gagal menyimpan data!",
+    "title": "Profil",
+    "contact": "Kontak:",
+    "email": "Email:",
+    "phone": "Telepon 1:",
+    "commercial_phone": "Telepon 2:",
+    "crm": "Nomor Registrasi",
+    "pix": "Kunci PIX:",
+    "links": "Tautan:",
+    "site": "Situs Web:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Layanan:",
+    "experience": "Pengalaman di:",
+    "diseases_treated": "Penyakit yang ditangani:",
+    "health_insurance": "Asuransi Kesehatan:",
+    "languages": "Bahasa:",
+    "about_me": "Tentang saya:",
+    "training": "Pendidikan:",
+    "time_zone": "Zona Waktu:",
+    "city": "Kota tempat bekerja:",
+    "address": "Alamat Layanan:",
+    "galery": "Galeri:",
+    "common_questions": "Pertanyaan yang sering diajukan:",
+    "verified_profile": "Profil Terverifikasi",
+    "no_verified_profile": "Verifikasi Profil"
+  },
+  "weview": {
+    "on_out": "Apakah Anda ingin keluar dari navigasi?",
+    "error_data": "KESALAHAN: {error}",
+    "error_connection": "Periksa koneksi Anda dan coba lagi.",
+    "try_again": "Coba Lagi",
+    "go_back": "Kembali"
+  },
+  "schedule_reminder": {
+    "title": "Pengingat Jadwal untuk {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Pengaturan",
+    "menu_schedule": "Jadwal",
+    "menu_profile": "Profil",
+    "menu_education": "Pendidikan Kedokteran"
+  },
+  "map_screen": {
+    "select": "Pilih...",
+    "title": "Peta"
+  },
+  "account_state": {
+    "rejected_title": "Penolakan Permintaan Akun Anda di \"Doctor Friend\"",
+    "analysis_title": "Akun Anda sedang dianalisis",
+    "rejection_text": "Kepada {name}, \n\nKami harap Anda dalam keadaan baik. Kami sangat menyesal memberitahukan bahwa, setelah melakukan analisis yang cermat, permintaan akun Anda di \"Doctor Friend\" ditolak. \n\nKami memahami bahwa ini bisa mengecewakan, dan kami ingin memastikan bahwa keputusan ini diambil berdasarkan kriteria tertentu. Jika Anda memerlukan informasi tambahan atau merasa ada kesalahan, jangan ragu untuk menghubungi kami untuk diskusi lebih lanjut. \n\nTerima kasih atas minat Anda pada \"Doctor Friend\" dan kami berharap dapat melayani kebutuhan Anda di kesempatan yang akan datang. \n\nSalam hormat, \n\nTim Doctor Friend",
+    "analysis_text": "Halo {name}, \n\nKami ingin memberi tahu Anda bahwa akun Anda di \"Doctor Friend\" saat ini sedang dalam proses analisis. Tim kami sedang meninjau informasi Anda untuk memastikan pengalaman yang aman dan efisien. \n\nAnda akan menerima pemberitahuan setelah analisis selesai. Kami menghargai kesabaran dan pengertian Anda. \n\nJika Anda memerlukan bantuan atau memiliki pertanyaan, jangan ragu untuk menghubungi kami. \n\nSalam hormat, \n\nTim Doctor Friend"
+  },
+  "education_screen": {
+    "title": "Pendidikan Kedokteran",
+    "profession": "Pilih profesi",
+    "amount": "Hasil",
+    "my_courses": "Kursus Saya"
+  },
+  "education_card": {
+    "go_to_course": "Akses Kursus",
+    "edit": "Edit"
+  },
+  "my_courses_screen": {
+    "title": "Kursus Saya ({amount})",
+    "add_courses": "Daftar Kursus"
+  },
+  "course_form_screen": {
+    "title": "Daftar Kursus",
+    "title_edit": "Edit Kursus",
+    "description": "Pilih profesi yang terkait dengan kursus",
+    "professions": "Profesi terkait",
+    "link_course": "Tautan kursus",
+    "title_course": "Judul kursus",
+    "description_course": "Deskripsi kursus",
+    "thumbnail_course": "Tautan gambar sampul",
+    "next_step": "Lanjutkan",
+    "save": "Simpan",
+    "notify": "Pemberitahuan",
+    "notify_all": "Semua profesional",
+    "notify_only_related": "Hanya profesional yang terkait dengan kursus",
+    "onDelete": "Hapus kursus?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Anatomi Manusia",
+    "placeholder_description_course": "Deskripsi rinci tentang kursus anatomi manusia",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Harap masukkan URL yang valid",
+    "invalidEmail": "Harap masukkan email yang valid",
+    "invalidZipCode": "Harap masukkan kode pos yang valid",
+    "invalidPass": "Kata sandi harus memiliki setidaknya 6 karakter.",
+    "invalidConfirmPass": "Kata sandi tidak cocok",
+    "invalid_time_alread_exists": "Waktu sudah ada ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Verifikasi Pengguna",
+    "document_capture": "Pemindaian dokumen",
+    "selfie_capture": "Pemindaian selfie",
+    "verify_user": "Verifikasi pengguna",
+    "pick_document_title": "Dokumen dengan foto",
+    "pick_selfie_title": "Selfie"
+  }
+}

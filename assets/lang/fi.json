@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "fi"
+  },
+  "callback_default": {
+    "title_error": "Odottamaton virhe tapahtui. \nYritä uudelleen myöhemmin.",
+    "title_sucess": "Onnistuminen",
+    "confirm_text": "KYLLÄ",
+    "cancel_text": "EI"
+  },
+  "input": {
+    "is_empty": "Kenttä on pakollinen."
+  },
+  "loading_error": {
+    "title": "Odottamaton virhe tapahtui!",
+    "error_message": "Odottamaton virhe tapahtui."
+  },
+  "location_input": {
+    "error_location_unabled": "Sijaintipalvelu pois päältä",
+    "error_location_denied": "Sijaintiluvan myöntäminen evätty",
+    "error_location_denied_forever": "Sijaintilupa evätty, emme voi pyytää uudelleen!",
+    "btn_current_location": "Nykyinen sijainti",
+    "btn_select_on_map": "Valitse kartalta",
+    "error_unselected_location": "Sijaintia ei ole valittu!"
+  },
+  "notifications": {
+    "title": "Ilmoitukset"
+  },
+  "today": {
+    "text": "Tänään"
+  },
+  "days_of_week": {
+    "list": [
+      "maanantai",
+      "tiistai",
+      "keskiviikko",
+      "torstai",
+      "perjantai",
+      "lauantai",
+      "sunnuntai"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "tammikuu",
+      "helmikuu",
+      "maaliskuu",
+      "huhtikuu",
+      "toukokuu",
+      "kesäkuu",
+      "heinäkuu",
+      "elokuu",
+      "syyskuu",
+      "lokakuu",
+      "marraskuu",
+      "joulukuu"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Tervetuloa!",
+    "call": "Miten voimme auttaa tänään?",
+    "btn_1": "Etsi ammattilainen",
+    "btn_2": "Kirjaudu ammattilaisena",
+    "btn_3": "Liity franchising-yrittäjäksi"
+  },
+  "forgot_pass_screen": {
+    "success": "Palautussähköposti lähetetty osoitteeseen",
+    "confirm_text": "Ok!",
+    "title": "Palauta salasana",
+    "email": "Sähköposti",
+    "btn": "Lähetä sähköposti"
+  },
+  "login_screen": {
+    "update_account_title": "Tili ei ole ammattikäyttöön",
+    "update_account_content": "Päivitä ammattiprofiiliksi?",
+    "title": "Kirjaudu sisään",
+    "email": "Sähköposti",
+    "pass": "Salasana",
+    "enter": "Kirjaudu sisään",
+    "forgot_pass": "Unohdin salasanan!",
+    "register": "Ei tiliä!",
+    "google": "Kirjaudu sisään Googlella",
+    "apple": "Kirjaudu sisään Applella"
+  },
+  "signup_screen": {
+    "title": "Rekisteröidy ammattilaiseksi",
+    "no_lat_lng": "Valitse ehdotettu osoite oikean haun varmistamiseksi",
+    "profession": "Ammatti",
+    "specialty": "Erikoisala",
+    "name": "Etunimi ja sukunimi",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "city": "Toiminta-alue",
+    "pass": "Luo salasana",
+    "pass_repeat": "Vahvista salasana",
+    "privacy_policy_text": "Hyväksyn ehdot ja vahvistan, että olen lukenut ja ymmärtänyt",
+    "privacy_policy_text_link": "tietosuojakäytännön.*",
+    "contact_text_agree": "Hyväksyn ammattikäytännöt, joita minun on noudatettava, ja ymmärrän, että ammattilaisrekisterin ja erikoisalan numero on lisättävä (tarvittaessa).* Täyttämällä tietosi hyväksyt, että doctorfriend.com.br ottaa yhteyttä tarjotakseen palveluitaan. Voit pyytää tietojesi poistamista milloin tahansa, jos et halua olla yhteydessä. Ota yhteyttä meihin.",
+    "enter": "Rekisteröidy",
+    "login": "Onko sinulla jo tili?"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Tarjous ei löytynyt",
+    "error_offer_not_available": "Tarjous ei ole saatavilla",
+    "call": "Päivitä Pro-ominaisuuksien käyttämiseksi",
+    "bay": "Jatka",
+    "no_offer_available": "Ei tarjouksia saatavilla tällä hetkellä",
+    "contact_text_call": "Jos sinulla on aktiivinen tilaus ja näet edelleen tämän ilmoituksen, varmista, että olet kirjautunut oikeaan tiliin tai ota yhteyttä",
+    "terms": "Käyttöehdot",
+    "privacy_policy": "Tietosuojakäytäntö",
+    "actived": "AKTIIVINEN",
+    "offer_type_info": "Uudistuu automaattisesti kuukauden välein",
+    "bay_for": "Vain ",
+    "offer_type": " / kuukausi",
+    "offer_0": "Rekisteröi kursseja ja mainosta ammattiyhteisölle",
+    "offer_1": "Etusija haussa verkkosivustolla",
+    "offer_2": "Valokuvagalleria",
+    "offer_3": "Sähköpostimuistutukset",
+    "offer_4": "Perusprofiilinhallinta",
+    "offer_5": "Mukautettava kuukausikalenteri",
+    "offer_6": "Ja paljon muuta...",
+    "manage_subscription": "Hallitse tilausta"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Lähetä muistutus kaikille saatavilla oleville asiakkaille ",
+    "send_email_for_all": "Lähetä muistutus kaikille",
+    "no_time_available": "Ei saatavilla olevia aikoja",
+    "schedule_not_registered": "{text} aikataulu ei ole rekisteröity!",
+    "register_schedule": "Rekisteröi!",
+    "telemedicine": "Verkossa tapahtuva neuvonta",
+    "in_local": "Paikallinen neuvonta"
+  },
+  "schedule_telemedicine": {
+    "title": "Verkossa tapahtuva neuvonta?",
+    "not": "Ei",
+    "yes": "Kyllä"
+  },
+  "telemedicine_worn": {
+    "title": "Tärkeä varoitus",
+    "not_show_again": "Älä näytä enää",
+    "close": "Ok!"
+  },
+  "telemedicine": {
+    "checkbox": "Telelääketieteen tila",
+    "is_telemedicine": "Aikataulut rekisteröidään telelääketieteeksi",
+    "is_not_telemedicine": "Aikataulut rekisteröidään paikalliseksi neuvonnaksi"
+  },
+  "add_schedule": {
+    "title": "Aikatauluta neuvonta",
+    "telemedicine_worn": "Anna potilaallesi ohjeet virtuaaliseen neuvontahuoneeseen pääsemiseksi.",
+    "schedule_for": "Aikatauluta...",
+    "name": "Etunimi ja sukunimi",
+    "phone": "Puhelinnumero",
+    "email": "Sähköposti",
+    "visit_type": "Vierailun tyyppi",
+    "note": "Huomautus",
+    "btn_schedule": "Aikatauluta"
+  },
+  "scheduled_customer": {
+    "notified_text": "Muistutus lähetetty!",
+    "delete_schedule": "Poista aikataulu: ",
+    "send_email_confirm": "Lähetetään muistutus ",
+    "send_email_is_proccessing": "Käsitellään...",
+    "send_email_error": "Virhe lähetettäessä ;(",
+    "send_email_pendding": "Odottava",
+    "title": "Aikataulu",
+    "telemedicine_worn": "Anna potilaallesi ohjeet virtuaaliseen neuvontahuoneeseen pääsemiseksi.",
+    "status_canceled": "Peruutettu!",
+    "status_scheduled": "Aikataulutettu...",
+    "confirmed": "Vahvistettu: ",
+    "send_email": "Lähetä muistutus aikataulusta",
+    "note": "Huomautus"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Virhe tallentamisessa",
+    "title": "Määritä viikoittainen aikataulu",
+    "save": "Tallenna asetukset"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Viikoittainen aikataulu",
+    "preferences_btn_confirm": "Määritä",
+    "preferences_btn_cancel": "Myöhemmin",
+    "preferences_btn_content": "Helpottaa kuukausittaisten aikataulujen luomista määrittämällä viikoittainen aikataulu. Tämä nopeuttaa ja tehostaa aikataulujen määrittämistä.",
+    "delete_schedule": "Haluatko poistaa aikataulun {month} {year}?",
+    "for": "kohteelle",
+    "save_schedule": "Tallenna aikataulu",
+    "save": "Tallenna"
+  },
+  "schedule": {
+    "title": "Aikataulu"
+  },
+  "settings_schedule": {
+    "title": "Määritä aikataulu"
+  },
+  "common_questions_screen": {
+    "title": "Usein kysytyt kysymykset",
+    "suport": "Tekninen tuki: "
+  },
+  "settings": {
+    "title": "Asetukset",
+    "worns": "Muistutukset/Varoitukset",
+    "profile_on_site": "Profiilini verkkosivustolla",
+    "subcription_status_free": "Ilmainen arvio",
+    "subcription_status_pro": "Pro-käyttäjä",
+    "subcription_status_show": "Tilaukset",
+    "available_plans": "Näytä saatavilla olevat suunnitelmat",
+    "days_left": "{amount} päivää jäljellä",
+    "suport": "Tuki",
+    "manual_modal_title": "Järjestelmän käyttöopas - Doctor Friend",
+    "manual": "Järjestelmän käyttöopas",
+    "common_question": "Usein kysytyt kysymykset",
+    "terms": "Käyttöehdot",
+    "privacy_policy": "Tietosuojakäytäntö"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Muistutus/Varoitus ({amount})",
+    "title": "Muistutukset/Varoitukset",
+    "help": "Syötä tähän alueeseen muistutuksia tai varoituksia asiakkaille aikatauluprosessin aikana. Esimerkiksi: Kasvomaskin käyttö on pakollista tiloissa.",
+    "save": "Tallenna"
+  },
+  "evaluetions_rate": {
+    "title": "Keskimääräinen arvio: ",
+    "show": "Näytä arviot ({amount})",
+    "no_evaluetion": "Ei arvioita saatavilla"
+  },
+  "response_evaluation": {
+    "title": "Vastaa arvioon",
+    "response": "Vastaa '{name}'",
+    "save": "Tallenna"
+  },
+  "update_about_me": {
+    "title": "Tietoja minusta",
+    "label": "Kerro vähän itsestäsi",
+    "save": "Tallenna"
+  },
+  "update_common_questions": {
+    "question": "Kysymys ({amount})",
+    "response": "Vastaus ({amount})",
+    "title": "Usein kysytyt kysymykset",
+    "save": "Tallenna"
+  },
+  "update_contact": {
+    "title": "Yhteystiedot",
+    "phone": "Puhelin 1",
+    "commercial_phone": "Puhelin 2",
+    "crm": "Rekisterinumero",
+    "pix": "PIX",
+    "save": "Tallenna"
+  },
+  "update_diseases_treated": {
+    "title": "Hoidetut sairaudet",
+    "save": "Tallenna"
+  },
+  "update_experience": {
+    "experience": "Kokemus ({amount})",
+    "title": "Kokemus alalta",
+    "save": "Tallenna"
+  },
+  "update_health_insurance": {
+    "plan": "Suunnitelma ({amount})",
+    "title": "Terveysvakuutus",
+    "save": "Tallenna"
+  },
+  "update_languages": {
+    "language": "Kieli ({amount})",
+    "title": "Kielet",
+    "save": "Tallenna"
+  },
+  "update_links": {
+    "title": "Yhteystiedot",
+    "site": "Verkkosivusto",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Tallenna"
+  },
+  "update_services": {
+    "service": "Palvelu ({amount})",
+    "price": "Hinta",
+    "title": "Palvelut",
+    "save": "Tallenna"
+  },
+  "update_time_zone": {
+    "title": "Muokkaa aikavyöhykettä",
+    "label": "Aikavyöhyke",
+    "save": "Tallenna"
+  },
+  "update_training": {
+    "training": "Koulutus ({amount})",
+    "title": "Koulutus",
+    "save": "Tallenna"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Valitse ehdotettu osoite varmistaaksesi oikean haun",
+    "title": "Muokkaa toiminta-alueen kaupunkia",
+    "label": "Toiminta-alueen kaupunki",
+    "save": "Tallenna"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Haluatko poistaa tilin?",
+    "confirm_content": "Kaikki tietosi menetetään",
+    "title": "Poista tili",
+    "pass": "Salasana",
+    "delete": "Poista tili"
+  },
+  "evaluations_screen": {
+    "title": "Arviot",
+    "evaluation_hide": "Piilota arvio muilta",
+    "evaluation_show": "Näytä arvio muille",
+    "to_response": "Vastaa"
+  },
+  "update_address_screen": {
+    "title": "Muokkaa palveluosoitetta",
+    "zipe_code": "Postinumero",
+    "street": "Katu",
+    "number": "Numero",
+    "neighborhood": "Naapurusto",
+    "complement": "Lisäosa",
+    "city": "Kaupunki",
+    "state": "Osavaltio",
+    "country": "Maa",
+    "save": "Tallenna"
+  },
+  "update_images_screen": {
+    "title": "Galleria",
+    "edit_info": "Pidä kuvaa painettuna valitaksesi ja muokataksesi",
+    "save": "Tallenna",
+    "photos": "Valokuvat: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Salasanan vaihto -sähköposti lähetetty osoitteeseen {email}. Tarkista sähköposti jatkaaksesi muutosta",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Pyydä salasanan muutosta?",
+    "title": "Muokkaa profiilia",
+    "name": "Etunimi ja sukunimi",
+    "profession": "Ammatti",
+    "specialty": "Erikoisala",
+    "pass": "Nykyinen salasana",
+    "save": "Tallenna",
+    "update_pass": "Vaihda salasana!",
+    "delete_account": "Poista tili!"
+  },
+  "user_screen": {
+    "logout_confirm": "Haluatko kirjautua ulos tililtäsi?",
+    "edit_error": "Tietojen tallentaminen epäonnistui!",
+    "title": "Profiili",
+    "contact": "Yhteystiedot:",
+    "email": "Sähköposti:",
+    "phone": "Puhelin 1:",
+    "commercial_phone": "Puhelin 2:",
+    "crm": "Rekisteröintinumero",
+    "pix": "PIX-avain:",
+    "links": "Linkit:",
+    "site": "Verkkosivusto:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Palvelut:",
+    "experience": "Kokemus alalta:",
+    "diseases_treated": "Hoidetut sairaudet:",
+    "health_insurance": "Terveysvakuutukset:",
+    "languages": "Kielet:",
+    "about_me": "Minusta:",
+    "training": "Koulutus:",
+    "time_zone": "Aikavyöhyke:",
+    "city": "Työskentelykaupunki:",
+    "address": "Palvelupaikka:",
+    "galery": "Galleria:",
+    "common_questions": "Usein kysytyt kysymykset:",
+    "verified_profile": "Vahvistettu profiili",
+    "no_verified_profile": "Vahvista profiili"
+  },
+  "weview": {
+    "on_out": "Haluatko poistua selaamisesta?",
+    "error_data": "VIRHE: {error}",
+    "error_connection": "Tarkista yhteytesi ja yritä uudelleen.",
+    "try_again": "Yritä uudelleen",
+    "go_back": "Palaa takaisin"
+  },
+  "schedule_reminder": {
+    "title": "Ajanvarausmuistutus {date}."
+  },
+  "home_screen": {
+    "menu_settings": "Asetukset",
+    "menu_schedule": "Aikataulu",
+    "menu_profile": "Profiili",
+    "menu_education": "Lääketieteellinen koulutus"
+  },
+  "map_screen": {
+    "select": "Valitse...",
+    "title": "Kartta"
+  },
+  "account_state": {
+    "rejected_title": "\"Doctor Friend\" -tilisi hylkäys",
+    "analysis_title": "Tilisi on tarkastelussa",
+    "rejection_text": "Hyvä {name}, \n\nToivottavasti voit hyvin. Meidän on valitettavasti ilmoitettava, että \"Doctor Friend\" -tilisi pyyntö on hylätty huolellisen tarkastelun jälkeen. \n\nYmmärrämme, että tämä voi olla pettymys, ja haluamme vakuuttaa, että päätös on tehty tiettyjen kriteerien perusteella. Jos tarvitset lisätietoja tai uskot, että virhe on tapahtunut, ota meihin yhteyttä keskustellaksesi asiasta. \n\nKiitos kiinnostuksestasi \"Doctor Friend\" -palveluun, ja toivomme, että voimme täyttää tarpeesi tulevaisuudessa. \n\nYstävällisin terveisin, \n\nDoctor Friend -tiimi",
+    "analysis_text": "Hei {name}, \n\nHaluamme ilmoittaa, että tilisi \"Doctor Friend\" -palvelussa on tällä hetkellä tarkastelussa. Tiimimme käy läpi tietojasi varmistaakseen turvallisen ja tehokkaan käyttökokemuksen. \n\nSaat ilmoituksen, kun tarkastus on valmis. Kiitämme kärsivällisyydestäsi ja ymmärryksestäsi. \n\nJos tarvitset apua tai sinulla on kysyttävää, älä epäröi ottaa yhteyttä meihin. \n\nYstävällisin terveisin, \n\nDoctor Friend -tiimi"
+  },
+  "education_screen": {
+    "title": "Lääketieteellinen koulutus",
+    "profession": "Valitse ammatti",
+    "amount": "Tulokset",
+    "my_courses": "Omat kurssit"
+  },
+  "education_card": {
+    "go_to_course": "Siirry kurssille",
+    "edit": "Muokkaa"
+  },
+  "my_courses_screen": {
+    "title": "Omat kurssit ({amount})",
+    "add_courses": "Lisää kurssi"
+  },
+  "course_form_screen": {
+    "title": "Rekisteröi kurssi",
+    "title_edit": "Muokkaa kurssia",
+    "description": "Valitse kurssiin liittyvät ammatit",
+    "professions": "Ammattilaisalueet",
+    "link_course": "Kurssin linkki",
+    "title_course": "Kurssin otsikko",
+    "description_course": "Kurssin kuvaus",
+    "thumbnail_course": "Kansikuva-linkki",
+    "next_step": "Jatka",
+    "save": "Tallenna",
+    "notify": "Ilmoita",
+    "notify_all": "Kaikille ammattilaisille",
+    "notify_only_related": "Vain kurssiin liittyville ammattilaisille",
+    "onDelete": "Poista kurssi?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Ihmisen anatomia",
+    "placeholder_description_course": "Yksityiskohtainen kuvaus ihmisen anatomian kurssista",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Syötä kelvollinen URL-osoite",
+    "invalidEmail": "Syötä kelvollinen sähköpostiosoite",
+    "invalidZipCode": "Syötä kelvollinen postinumero",
+    "invalidPass": "Salasanassa tulee olla vähintään 6 merkkiä.",
+    "invalidConfirmPass": "Salasanat eivät täsmää",
+    "invalid_time_alread_exists": "Aika on jo olemassa ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Käyttäjän vahvistus",
+    "document_capture": "Dokumentin kaappaus",
+    "selfie_capture": "Selfie-kaappaus",
+    "verify_user": "Vahvista käyttäjä",
+    "pick_document_title": "Valokuvallinen asiakirja",
+    "pick_selfie_title": "Selfie"
+  }
+}

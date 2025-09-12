@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "795953190428",
+    "project_id": "doctor-friend-74a87",
+    "storage_bucket": "doctor-friend-74a87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795953190428:android:452578079a3a0baa9131d9",
+        "android_client_info": {
+          "package_name": "br.com.doctorfriend.profissional"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795953190428-43mr2im4i33hk253t7544dnadg2kqu00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.doctorfriend.profissional",
+            "certificate_hash": "d4e687af7808a9d219037177a869e87fdb9390d0"
+          }
+        },
+        {
+          "client_id": "795953190428-7po9vm8frr75on7sl0v29vhtdsbup6bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.doctorfriend.profissional",
+            "certificate_hash": "01e34d4f2b176edc167f14bd1eb47466e8deab6d"
+          }
+        },
+        {
+          "client_id": "795953190428-cuqhqbkbgqie7s039ul5r42fh64u1cfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.doctorfriend.profissional",
+            "certificate_hash": "3a3d4086f8baeb3bca7f87b17fde2086a7dd3bc8"
+          }
+        },
+        {
+          "client_id": "795953190428-gbcbv3iv77su42dmi0ji01r0gdt31kro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHq4qMQm5tfSMqEMpmE0gy8TS86W33rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795953190428-7a8srq13mk1pehl8v6bq1ftq5uhdaq13.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "795953190428-0n3ql57enck1ud74gpdiju483p2a0p5v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.doctorfriend",
+                "app_store_id": "6504113963"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

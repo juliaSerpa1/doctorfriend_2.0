@@ -1,0 +1,451 @@
+{
+  "lang": {
+    "name": "ar"
+  },
+  "callback_default": {
+    "title_error": "حدث خطأ غير متوقع. \nيرجى المحاولة مرة أخرى لاحقًا.",
+    "title_sucess": "نجاح",
+    "confirm_text": "نعم",
+    "cancel_text": "لا"
+  },
+  "input": {
+    "is_empty": "حقل مطلوب."
+  },
+  "loading_error": {
+    "title": "حدث خطأ غير متوقع!",
+    "error_message": "خطأ غير متوقع!"
+  },
+  "location_input": {
+    "error_location_unabled": "تم تعطيل خدمة الموقع",
+    "error_location_denied": "تم رفض إذن الوصول إلى الموقع",
+    "error_location_denied_forever": "تم رفض إذن الوصول إلى الموقع بشكل دائم، لا يمكننا طلبه مرة أخرى!",
+    "btn_current_location": "الموقع الحالي",
+    "btn_select_on_map": "اختر من الخريطة",
+    "error_unselected_location": "لم يتم توفير الموقع!"
+  },
+  "today": {
+    "text": "اليوم"
+  },
+  "notifications": {
+    "title": "الإشعارات"
+  },
+  "days_of_week": {
+    "list": [
+      "الاثنين",
+      "الثلاثاء",
+      "الأربعاء",
+      "الخميس",
+      "الجمعة",
+      "السبت",
+      "الأحد"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "يناير",
+      "فبراير",
+      "مارس",
+      "أبريل",
+      "مايو",
+      "يونيو",
+      "يوليو",
+      "أغسطس",
+      "سبتمبر",
+      "أكتوبر",
+      "نوفمبر",
+      "ديسمبر"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "مرحبًا!",
+    "call": "كيف يمكننا مساعدتك اليوم؟",
+    "btn_1": "البحث عن محترف",
+    "btn_2": "تسجيل الدخول كمحترف",
+    "btn_3": "كن صاحب الامتياز"
+  },
+  "forgot_pass_screen": {
+    "success": "تم إرسال بريد إلكتروني لاستعادة الحساب إلى",
+    "confirm_text": "حسنًا!",
+    "title": "استعادة كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "btn": "إرسال البريد الإلكتروني"
+  },
+  "login_screen": {
+    "update_account_title": "حسابك ليس حساب محترف",
+    "update_account_content": "هل تريد التحديث إلى ملف تعريف محترف؟",
+    "title": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "pass": "كلمة المرور",
+    "enter": "تسجيل الدخول",
+    "forgot_pass": "نسيت كلمة المرور!",
+    "register": "ليس لديك حساب!",
+    "google": "تسجيل الدخول باستخدام Google",
+    "apple": "تسجيل الدخول باستخدام Apple"
+  },
+  "signup_screen": {
+    "title": "التسجيل كمحترف",
+    "no_lat_lng": "اختر عنوانًا مقترحًا لضمان البحث الصحيح",
+    "profession": "المهنة",
+    "specialty": "التخصص",
+    "name": "الاسم الأول والأخير",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "city": "مدينة العمل",
+    "state": "الولاية",
+    "country": "الدولة",
+    "pass": "إنشاء كلمة المرور",
+    "pass_repeat": "تأكيد كلمة المرور",
+    "privacy_policy_text": "أوافق على الشروط والأحكام وأؤكد أنني قرأت وفهمت ",
+    "privacy_policy_text_link": "سياسة الخصوصية.*",
+    "contact_text_agree": "أعلن أنني على علم بالقواعد المهنية التي يجب اتباعها والحاجة إلى تضمين أرقام التسجيل المهني والتخصص (عند الاقتضاء).* بملء بياناتك، فإنك تقبل أن يتواصل معك doctorfriend.com.br لتقديم خدماتهم. يمكنك طلب حذف بياناتك في أي وقت إذا كنت لا ترغب في الاتصال بك. فقط اتصل بنا.",
+    "enter": "تسجيل",
+    "login": "لديك حساب بالفعل!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "العرض غير موجود",
+    "error_offer_not_available": "العرض غير متوفر",
+    "call": "قم بالترقية لمواصلة استخدام الميزات الاحترافية",
+    "bay": "استمر",
+    "no_offer_available": "لا يوجد عرض متاح حاليًا",
+    "contact_text_call": "إذا كان لديك اشتراك نشط ولا تزال ترى هذا الإشعار، يرجى التحقق مما إذا كنت قد سجلت الدخول إلى الحساب الصحيح أو الاتصال بـ ",
+    "terms": "شروط الاستخدام",
+    "privacy_policy": "سياسة الخصوصية",
+    "actived": "مفعل",
+    "offer_type_info": "يتم التجديد تلقائيًا كل شهر",
+    "bay_for": "فقط ",
+    "offer_type": " / الشهر",
+    "offer_0": "تسجيل الدورات وإعلانها للمجتمع المهني",
+    "offer_1": "الأولوية في نتائج البحث على الموقع",
+    "offer_2": "معرض الصور",
+    "offer_3": "تذكيرات البريد الإلكتروني",
+    "offer_4": "إدارة ملف تعريف المستخدم الأساسية",
+    "offer_5": "جدول شهري قابل للتخصيص",
+    "offer_6": "والمزيد...",
+    "manage_subscription": "إدارة الاشتراك"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "إرسال تذكير بالجدول إلى جميع العملاء المتاحين في ",
+    "send_email_for_all": "إرسال تذكير بالجدول إلى الجميع",
+    "no_time_available": "لا توجد أوقات متاحة",
+    "schedule_not_registered": "لم يتم تسجيل الجدول {text}!",
+    "register_schedule": "سجل!",
+    "telemedicine": "استشارة عبر الإنترنت",
+    "in_local": "استشارة محلية"
+  },
+  "schedule_telemedicine": {
+    "title": "استشارة عبر الإنترنت؟",
+    "not": "لا",
+    "yes": "نعم"
+  },
+  "telemedicine_worn": {
+    "title": "تنبيه هام",
+    "not_show_again": "لا تعرض مرة أخرى",
+    "close": "حسنًا!"
+  },
+  "telemedicine": {
+    "checkbox": "وضع الطب عن بُعد",
+    "is_telemedicine": "سيتم تسجيل الأوقات كاستشارات عبر الإنترنت",
+    "is_not_telemedicine": "سيتم تسجيل الأوقات كاستشارات محلية"
+  },
+  "add_schedule": {
+    "title": "جدولة الاستشارة",
+    "telemedicine_worn": "يرجى تزويد مريضك بتعليمات الوصول إلى غرفة الاستشارة الافتراضية.",
+    "schedule_for": "جدولة ل...",
+    "name": "الاسم الأول والأخير",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "visit_type": "نوع الزيارة",
+    "note": "ملاحظة",
+    "btn_schedule": "جدولة"
+  },
+  "scheduled_customer": {
+    "notified_text": "تم إرسال التذكير!",
+    "delete_schedule": "حذف الموعد لـ: ",
+    "send_email_confirm": "إرسال تذكير بالجدول إلى ",
+    "send_email_is_proccessing": "جارٍ المعالجة...",
+    "send_email_error": "خطأ في الإرسال ;(",
+    "send_email_pendding": "معلق",
+    "title": "موعد",
+    "telemedicine_worn": "يرجى تزويد مريضك بتعليمات الوصول إلى غرفة الاستشارة الافتراضية.",
+    "status_canceled": "ملغي!",
+    "status_scheduled": "مجدول لـ...",
+    "confirmed": "تم التأكيد: ",
+    "send_email": "إرسال تذكير بالجدول",
+    "note": "ملاحظة"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "خطأ في الحفظ",
+    "title": "تعيين الجدول الأسبوعي",
+    "save": "حفظ التفضيلات"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "الجدول الأسبوعي",
+    "preferences_btn_confirm": "تعيين",
+    "preferences_btn_cancel": "لاحقًا",
+    "preferences_btn_content": "لتسهيل إنشاء الجدول الشهري، قم بتعيين الجدول الأسبوعي. سيسمح ذلك بإعداد أوقات المواعيد بسرعة وكفاءة.",
+    "delete_schedule": "حذف جدول {month} {year}؟",
+    "for": "لـ",
+    "save_schedule": "حفظ الجدول",
+    "save": "حفظ"
+  },
+  "schedule": {
+    "title": "الجدول"
+  },
+  "settings_schedule": {
+    "title": "تعيين الجدول"
+  },
+  "common_questions_screen": {
+    "title": "الأسئلة الشائعة",
+    "suport": "الدعم الفني: "
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "worns": "التذكيرات / التحذيرات",
+    "profile_on_site": "ملفي على الموقع",
+    "subcription_status_free": "تجربة مجانية",
+    "subcription_status_pro": "مستخدم محترف",
+    "subcription_status_show": "الاشتراكات",
+    "available_plans": "عرض الخطط المتاحة",
+    "days_left": "تبقى {amount} يومًا",
+    "suport": "الدعم",
+    "manual_modal_title": "دليل النظام - صديق الطبيب",
+    "manual": "دليل النظام",
+    "common_question": "الأسئلة الشائعة",
+    "terms": "شروط الاستخدام",
+    "privacy_policy": "سياسة الخصوصية"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "تذكير / تحذير ({amount})",
+    "title": "التذكيرات / التحذيرات",
+    "help": "أدخل التذكيرات أو التحذيرات للعملاء أثناء عملية الجدولة في هذه المنطقة. مثال: ارتداء القناع إلزامي في المباني.",
+    "save": "حفظ"
+  },
+  "evaluetions_rate": {
+    "title": "التقييم المتوسط: ",
+    "show": "عرض التقييمات ({amount})",
+    "no_evaluetion": "لا توجد تقييمات متاحة"
+  },
+  "response_evaluation": {
+    "title": "الرد على التقييم",
+    "response": "الرد على '{name}'",
+    "save": "حفظ"
+  },
+  "update_about_me": {
+    "title": "عنّي",
+    "label": "أخبرنا قليلاً عن نفسك",
+    "save": "حفظ"
+  },
+  "update_common_questions": {
+    "question": "سؤال ({amount})",
+    "response": "الإجابة ({amount})",
+    "title": "الأسئلة الشائعة",
+    "save": "حفظ"
+  },
+  "update_contact": {
+    "title": "معلومات الاتصال",
+    "phone": "الهاتف 1",
+    "commercial_phone": "الهاتف 2",
+    "crm": "رقم التسجيل",
+    "pix": "PIX",
+    "save": "حفظ"
+  },
+  "update_diseases_treated": {
+    "title": "الأمراض المعالجة",
+    "save": "حفظ"
+  },
+  "update_experience": {
+    "experience": "الخبرة ({amount})",
+    "title": "الخبرة في",
+    "save": "حفظ"
+  },
+  "update_health_insurance": {
+    "plan": "الخطة ({amount})",
+    "title": "خطة التأمين الصحي",
+    "save": "حفظ"
+  },
+  "update_languages": {
+    "language": "اللغة ({amount})",
+    "title": "اللغات",
+    "save": "حفظ"
+  },
+  "update_links": {
+    "title": "معلومات الاتصال",
+    "site": "الموقع الإلكتروني",
+    "facebook": "فيسبوك",
+    "instagram": "إنستغرام",
+    "twitter": "تويتر",
+    "save": "حفظ"
+  },
+  "update_services": {
+    "service": "الخدمة ({amount})",
+    "price": "السعر",
+    "title": "الخدمات",
+    "save": "حفظ"
+  },
+  "update_time_zone": {
+    "title": "تحرير المنطقة الزمنية",
+    "label": "المنطقة الزمنية",
+    "save": "حفظ"
+  },
+  "update_training": {
+    "training": "التدريب ({amount})",
+    "title": "التدريب",
+    "save": "حفظ"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "اختر عنوانًا مقترحًا لضمان البحث الصحيح",
+    "title": "تحرير مدينة العمل",
+    "label": "مدينة العمل",
+    "save": "حفظ"
+  },
+  "delete_account_screen": {
+    "confirm_title": "حذف الحساب؟",
+    "confirm_content": "ستفقد جميع بياناتك",
+    "title": "حذف الحساب",
+    "pass": "كلمة المرور",
+    "delete": "حذف الحساب"
+  },
+  "evaluations_screen": {
+    "title": "التقييمات",
+    "evaluation_hide": "إخفاء التقييم عن الآخرين",
+    "evaluation_show": "عرض التقييم للآخرين",
+    "to_response": "رد"
+  },
+  "update_address_screen": {
+    "title": "تحرير عنوان الخدمة",
+    "zipe_code": "الرمز البريدي",
+    "street": "الشارع",
+    "number": "الرقم",
+    "neighborhood": "الحي",
+    "complement": "المكمل",
+    "city": "المدينة",
+    "state": "الولاية",
+    "country": "الدولة",
+    "save": "حفظ"
+  },
+  "update_images_screen": {
+    "title": "المعرض",
+    "edit_info": "اضغط على الصورة للاختيار والتعديل",
+    "save": "حفظ",
+    "photos": "الصور: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "تم إرسال بريد إلكتروني لتغيير كلمة المرور إلى {email}. تحقق من البريد الإلكتروني للمتابعة مع التغيير",
+    "email_sended_confirm": "حسنًا!",
+    "request_reset_pass_title": "طلب تغيير كلمة المرور؟",
+    "title": "تحرير الملف الشخصي",
+    "name": "الاسم الأول والأخير",
+    "profession": "المهنة",
+    "specialty": "التخصص",
+    "pass": "كلمة المرور الحالية",
+    "save": "حفظ",
+    "update_pass": "تغيير كلمة المرور!",
+    "delete_account": "حذف الحساب!"
+  },
+  "user_screen": {
+    "logout_confirm": "تسجيل الخروج؟",
+    "edit_error": "غير قادر على حفظ البيانات!",
+    "title": "الملف الشخصي",
+    "contact": "الاتصال:",
+    "email": "البريد الإلكتروني:",
+    "phone": "الهاتف 1:",
+    "commercial_phone": "الهاتف 2:",
+    "crm": "رقم التسجيل",
+    "pix": "مفتاح PIX:",
+    "links": "الروابط:",
+    "site": "الموقع:",
+    "facebook": "فيسبوك:",
+    "instagram": "إنستغرام:",
+    "twitter": "تويتر:",
+    "services": "الخدمات:",
+    "experience": "الخبرة في:",
+    "diseases_treated": "الأمراض المعالجة:",
+    "health_insurance": "التأمين الصحي:",
+    "languages": "اللغات:",
+    "about_me": "معلومات عني:",
+    "training": "التدريب:",
+    "time_zone": "المنطقة الزمنية:",
+    "city": "مدينة العمل:",
+    "address": "عنوان الخدمة:",
+    "galery": "المعرض:",
+    "common_questions": "الأسئلة الشائعة:",
+    "verified_profile": "الملف الشخصي الموثق",
+    "no_verified_profile": "تحقق من الملف الشخصي"
+  },
+  "weview": {
+    "on_out": "هل تريد الخروج من التصفح؟",
+    "error_data": "خطأ: {error}",
+    "error_connection": "تحقق من اتصالك وحاول مرة أخرى.",
+    "try_again": "حاول مرة أخرى",
+    "go_back": "العودة"
+  },
+  "schedule_reminder": {
+    "title": "تذكير الموعد لـ {date}"
+  },
+  "home_screen": {
+    "menu_settings": "الإعدادات",
+    "menu_schedule": "الجدول",
+    "menu_profile": "الملف الشخصي",
+    "menu_education": "التعليم الطبي"
+  },
+  "map_screen": {
+    "select": "حدد...",
+    "title": "الخريطة"
+  },
+  "account_state": {
+    "rejected_title": "تم رفض طلب حسابك على \"Doctor Friend\"",
+    "analysis_title": "حسابك قيد المراجعة",
+    "rejection_text": "عزيزي {name}، \n\nنأمل أن تكون بخير. يؤسفنا أن نبلغك أنه بعد مراجعة دقيقة، تم رفض طلب حسابك على \"Doctor Friend\". \n\nنفهم أن هذا قد يكون محبطًا، ونريد أن نؤكد لك أن القرار كان بناءً على معايير محددة. إذا كانت هناك حاجة إلى معلومات إضافية أو إذا كنت تعتقد أنه تم ارتكاب خطأ، فلا تتردد في الاتصال بنا للمناقشة. \n\nنقدر اهتمامك بـ \"Doctor Friend\" ونأمل أن نخدم احتياجاتك في الفرص المستقبلية. \n\nمع أطيب التحيات، \n\nفريق Doctor Friend",
+    "analysis_text": "مرحبًا {name}، \n\nنود أن نبلغك أن حسابك على \"Doctor Friend\" قيد المراجعة حاليًا. يقوم فريقنا بمراجعة معلوماتك لضمان تجربة آمنة وفعالة. \n\nستتلقى إشعارًا بمجرد الانتهاء من المراجعة. نقدر صبرك وفهمك. \n\nإذا كنت بحاجة إلى مساعدة أو لديك أي أسئلة، فلا تتردد في الاتصال بنا. \n\nمع أطيب التحيات، \n\nفريق Doctor Friend"
+  },
+  "education_screen": {
+    "title": "التعليم الطبي",
+    "profession": "اختر مهنة",
+    "amount": "النتائج",
+    "my_courses": "دوراتي"
+  },
+  "education_card": {
+    "go_to_course": "اذهب إلى الدورة",
+    "edit": "تعديل"
+  },
+  "my_courses_screen": {
+    "title": "دوراتي ({amount})",
+    "add_courses": "إضافة دورة"
+  },
+  "course_form_screen": {
+    "title": "تسجيل الدورة",
+    "title_edit": "تعديل الدورة",
+    "description": "حدد المهن المتعلقة بالدورة",
+    "professions": "المهن ذات الصلة",
+    "link_course": "رابط الدورة",
+    "title_course": "عنوان الدورة",
+    "description_course": "وصف الدورة",
+    "thumbnail_course": "رابط الصورة الغلاف",
+    "next_step": "تابع",
+    "save": "احفظ",
+    "notify": "إخطار",
+    "notify_all": "جميع المحترفين",
+    "notify_only_related": "فقط المحترفين ذوي الصلة بالدورة",
+    "onDelete": "إزالة الدورة؟",
+    "placeholder_link_course": "https://example.com/my-course",
+    "placeholder_title_course": "تشريح الإنسان",
+    "placeholder_description_course": "وصف مفصل لدورة تشريح الإنسان",
+    "placeholder_thumbnail_course": "https://example.com/anatomy-image.jpg"
+  },
+  "validators": {
+    "invalidUrl": "يرجى إدخال عنوان URL صالح",
+    "invalidEmail": "يرجى إدخال بريد إلكتروني صالح",
+    "invalidZipCode": "يرجى إدخال رمز ZIP صالح",
+    "invalidPass": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.",
+    "invalidConfirmPass": "كلمات المرور لا تتطابق",
+    "invalid_time_alread_exists": "الوقت موجود مسبقًا ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "تحقق المستخدم",
+    "document_capture": "التقاط الوثيقة",
+    "selfie_capture": "التقاط صورة شخصية",
+    "verify_user": "تحقق من المستخدم",
+    "pick_document_title": "هوية الصورة",
+    "pick_selfie_title": "صورة شخصية"
+  }
+}

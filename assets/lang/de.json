@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "de"
+  },
+  "callback_default": {
+    "title_error": "Ein unerwarteter Fehler ist aufgetreten. \nVersuchen Sie es später erneut.",
+    "title_sucess": "Erfolg",
+    "confirm_text": "JA",
+    "cancel_text": "NEIN"
+  },
+  "input": {
+    "is_empty": "Pflichtfeld."
+  },
+  "loading_error": {
+    "title": "Ein unerwarteter Fehler ist aufgetreten!",
+    "error_message": "Ein unerwarteter Fehler ist aufgetreten."
+  },
+  "location_input": {
+    "error_location_unabled": "Standortdienst ist deaktiviert.",
+    "error_location_denied": "Zugriff auf den Standort wurde verweigert.",
+    "error_location_denied_forever": "Zugriff auf den Standort wurde dauerhaft verweigert. Wir können nicht erneut fragen!",
+    "btn_current_location": "Aktueller Standort",
+    "btn_select_on_map": "Auf der Karte auswählen",
+    "error_unselected_location": "Standort nicht angegeben!"
+  },
+  "notifications": {
+    "title": "Benachrichtigungen"
+  },
+  "today": {
+    "text": "Heute"
+  },
+  "days_of_week": {
+    "list": [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag",
+      "Sonntag"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Willkommen!",
+    "call": "Wie können wir Ihnen heute helfen?",
+    "btn_1": "Fachmann suchen",
+    "btn_2": "Als Fachmann einloggen",
+    "btn_3": "Franchise-Partner werden"
+  },
+  "forgot_pass_screen": {
+    "success": "Wiederherstellungs-E-Mail gesendet an",
+    "confirm_text": "Ok!",
+    "title": "Passwort Wiederherstellen",
+    "email": "E-Mail",
+    "btn": "E-Mail senden"
+  },
+  "login_screen": {
+    "update_account_title": "Ihr Konto ist kein professionelles Konto",
+    "update_account_content": "Zu einem professionellen Profil wechseln?",
+    "title": "Anmeldung",
+    "email": "E-Mail",
+    "pass": "Passwort",
+    "enter": "Einloggen",
+    "forgot_pass": "Passwort vergessen!",
+    "register": "Noch kein Konto!",
+    "google": "Mit Google anmelden",
+    "apple": "Mit Apple anmelden"
+  },
+  "signup_screen": {
+    "title": "Registrieren Sie sich als Fachmann",
+    "no_lat_lng": "Wählen Sie eine vorgeschlagene Adresse, um eine korrekte Suche zu gewährleisten.",
+    "profession": "Beruf",
+    "specialty": "Fachgebiet",
+    "name": "Vorname und Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "city": "Stadt der Tätigkeit",
+    "pass": "Passwort erstellen",
+    "pass_repeat": "Passwort bestätigen",
+    "privacy_policy_text": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und bestätige, dass ich die ",
+    "privacy_policy_text_link": "Datenschutzerklärung gelesen und verstanden habe.*",
+    "contact_text_agree": "Ich erkläre mich mit den beruflichen Normen einverstanden, die eingehalten werden müssen, sowie mit der Notwendigkeit, Berufs- und Fachregistrierungsnummern (falls zutreffend) einzutragen.* Mit der Eingabe Ihrer Daten stimmen Sie zu, dass doctorfriend.com.br Sie kontaktieren darf, um Ihnen seine Dienstleistungen anzubieten. Sie können jederzeit verlangen, dass Ihre Daten gelöscht werden, falls Sie nicht kontaktiert werden möchten. Kontaktieren Sie uns dazu einfach.",
+    "enter": "Registrieren",
+    "login": "Ich habe bereits ein Konto!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Angebot nicht gefunden",
+    "error_offer_not_available": "Angebot nicht verfügbar",
+    "call": "Upgrade durchführen, um Pro-Funktionen weiterhin zu nutzen",
+    "bay": "Weiter",
+    "no_offer_available": "Derzeit keine Angebote verfügbar",
+    "contact_text_call": "Wenn Sie ein aktives Abonnement haben und diese Nachricht weiterhin sehen, überprüfen Sie bitte, ob Sie mit dem richtigen Konto angemeldet sind, oder kontaktieren Sie unseren ",
+    "terms": "Nutzungsbedingungen",
+    "privacy_policy": "Datenschutzerklärung",
+    "actived": "AKTIV",
+    "offer_type_info": "Erneuert sich automatisch jeden Monat",
+    "bay_for": "Nur für ",
+    "offer_type": " / Monat",
+    "offer_0": "Kurse registrieren und in der Fachgemeinschaft bewerben",
+    "offer_1": "Priorität bei der Suche auf der Website",
+    "offer_2": "Fotogalerie",
+    "offer_3": "E-Mail-Erinnerungen",
+    "offer_4": "Grundlegendes Benutzerprofilmanagement",
+    "offer_5": "Anpassbarer Monatskalender",
+    "offer_6": "Und vieles mehr...",
+    "manage_subscription": "Abonnement verwalten"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Termin-Erinnerung an alle verfügbaren Kunden senden um ",
+    "send_email_for_all": "Termin-Erinnerung an alle senden",
+    "no_time_available": "Keine verfügbaren Zeiten",
+    "schedule_not_registered": "Zeitplan für {text} nicht registriert!",
+    "register_schedule": "Registrieren!",
+    "telemedicine": "Online-Konsultation",
+    "in_local": "Lokale Konsultation"
+  },
+  "schedule_telemedicine": {
+    "title": "Online-Beratung?",
+    "not": "Nein",
+    "yes": "Ja"
+  },
+  "telemedicine_worn": {
+    "title": "Wichtiger Hinweis",
+    "not_show_again": "Nicht erneut anzeigen",
+    "close": "Ok!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedizin-Modus",
+    "is_telemedicine": "Die Zeiten werden als Telemedizin registriert",
+    "is_not_telemedicine": "Die Zeiten werden als lokale Konsultationen registriert"
+  },
+  "add_schedule": {
+    "title": "Termin planen",
+    "telemedicine_worn": "Bitte geben Sie Ihrem Patienten die Anweisungen für den Zugang zum virtuellen Besprechungsraum.",
+    "schedule_for": "Planen für...",
+    "name": "Vorname und Nachname",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "visit_type": "Art des Besuchs",
+    "note": "Notiz",
+    "btn_schedule": "Planen"
+  },
+  "scheduled_customer": {
+    "notified_text": "Erinnerung gesendet!",
+    "delete_schedule": "Termin löschen für: ",
+    "send_email_confirm": "Termin-Erinnerung senden an ",
+    "send_email_is_proccessing": "Wird verarbeitet...",
+    "send_email_error": "Fehler beim Senden ;(",
+    "send_email_pendding": "Ausstehend",
+    "title": "Terminplanung",
+    "telemedicine_worn": "Bitte geben Sie Ihrem Patienten die Anweisungen für den Zugang zum virtuellen Besprechungsraum.",
+    "status_canceled": "Abgesagt!",
+    "status_scheduled": "Geplant für...",
+    "confirmed": "Bestätigt: ",
+    "send_email": "Termin-Erinnerung senden",
+    "note": "Notiz"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Fehler beim Speichern",
+    "title": "Wöchentlichen Zeitplan einrichten",
+    "save": "Einstellungen speichern"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Wöchentlicher Zeitplan",
+    "preferences_btn_confirm": "Konfigurieren",
+    "preferences_btn_cancel": "Später",
+    "preferences_btn_content": "Um die monatliche Planung zu erleichtern, richten Sie den wöchentlichen Zeitplan ein. Dies ermöglicht eine schnelle und effiziente Einrichtung der Konsultationszeiten.",
+    "delete_schedule": "Zeitplan für {month} {year} löschen?",
+    "for": "für",
+    "save_schedule": "Zeitplan speichern",
+    "save": "Speichern"
+  },
+  "schedule": {
+    "title": "Zeitplan"
+  },
+  "settings_schedule": {
+    "title": "Zeitplan konfigurieren"
+  },
+  "common_questions_screen": {
+    "title": "Häufig gestellte Fragen",
+    "suport": "Technischer Support: "
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "worns": "Erinnerungen/Hinweise",
+    "profile_on_site": "Mein Profil auf der Website",
+    "subcription_status_free": "Kostenlose Testversion",
+    "subcription_status_pro": "Pro-Nutzer",
+    "subcription_status_show": "Abonnements",
+    "available_plans": "Verfügbare Pläne anzeigen",
+    "days_left": "{amount} verbleibende Tage",
+    "suport": "Support",
+    "manual_modal_title": "Benutzerhandbuch - Doctor Friend",
+    "manual": "Systemhandbuch",
+    "common_question": "Häufig gestellte Fragen",
+    "terms": "Nutzungsbedingungen",
+    "privacy_policy": "Datenschutzerklärung"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Erinnerung/Hinweis ({amount})",
+    "title": "Erinnerungen/Hinweise",
+    "help": "Geben Sie hier Erinnerungen oder Hinweise für Kunden während des Terminprozesses ein. Beispiel: Das Tragen einer Maske ist in unseren Räumlichkeiten obligatorisch.",
+    "save": "Speichern"
+  },
+  "evaluetions_rate": {
+    "title": "Durchschnittliche Bewertung: ",
+    "show": "Bewertungen anzeigen ({amount})",
+    "no_evaluetion": "Keine Bewertungen verfügbar"
+  },
+  "response_evaluation": {
+    "title": "Bewertung beantworten",
+    "response": "Antworten auf '{name}'",
+    "save": "Speichern"
+  },
+  "update_about_me": {
+    "title": "Über mich",
+    "label": "Erzählen Sie etwas über sich",
+    "save": "Speichern"
+  },
+  "update_common_questions": {
+    "question": "Frage ({amount})",
+    "response": "Antwort ({amount})",
+    "title": "Häufig gestellte Fragen",
+    "save": "Speichern"
+  },
+  "update_contact": {
+    "title": "Kontaktinformationen",
+    "phone": "Telefon 1",
+    "commercial_phone": "Telefon 2",
+    "crm": "Registrierungsnummer",
+    "pix": "PIX",
+    "save": "Speichern"
+  },
+  "update_diseases_treated": {
+    "title": "Behandelte Krankheiten",
+    "save": "Speichern"
+  },
+  "update_experience": {
+    "experience": "Erfahrung ({amount})",
+    "title": "Erfahrung in",
+    "save": "Speichern"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Krankenversicherungsplan",
+    "save": "Speichern"
+  },
+  "update_languages": {
+    "language": "Sprache ({amount})",
+    "title": "Sprachen",
+    "save": "Speichern"
+  },
+  "update_links": {
+    "title": "Kontaktinformationen",
+    "site": "Website",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Speichern"
+  },
+  "update_services": {
+    "service": "Dienstleistung ({amount})",
+    "price": "Preis",
+    "title": "Dienstleistungen",
+    "save": "Speichern"
+  },
+  "update_time_zone": {
+    "title": "Zeitzone bearbeiten",
+    "label": "Zeitzone",
+    "save": "Speichern"
+  },
+  "update_training": {
+    "training": "Ausbildung ({amount})",
+    "title": "Ausbildung",
+    "save": "Speichern"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Wählen Sie eine vorgeschlagene Adresse, um eine korrekte Suche zu gewährleisten.",
+    "title": "Stadt der Tätigkeit bearbeiten",
+    "label": "Stadt der Tätigkeit",
+    "save": "Speichern"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Konto löschen?",
+    "confirm_content": "Alle Ihre Daten werden verloren gehen",
+    "title": "Konto löschen",
+    "pass": "Passwort",
+    "delete": "Konto löschen"
+  },
+  "evaluations_screen": {
+    "title": "Bewertungen",
+    "evaluation_hide": "Bewertung vor anderen verbergen",
+    "evaluation_show": "Bewertung für andere sichtbar machen",
+    "to_response": "Antworten"
+  },
+  "update_address_screen": {
+    "title": "Adresse für Konsultationen bearbeiten",
+    "zipe_code": "Postleitzahl",
+    "street": "Straße",
+    "number": "Hausnummer",
+    "neighborhood": "Nachbarschaft",
+    "complement": "Ergänzung",
+    "city": "Stadt",
+    "state": "Bundesland",
+    "country": "Land",
+    "save": "Speichern"
+  },
+  "update_images_screen": {
+    "title": "Galerie",
+    "edit_info": "Halten Sie das Bild gedrückt, um es auszuwählen und zu bearbeiten",
+    "save": "Speichern",
+    "photos": "Fotos: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Passwortänderungs-E-Mail gesendet an {email}. Überprüfen Sie die E-Mail, um fortzufahren.",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Passwortänderung anfordern?",
+    "title": "Profil bearbeiten",
+    "name": "Vorname und Nachname",
+    "profession": "Beruf",
+    "specialty": "Fachgebiet",
+    "pass": "Aktuelles Passwort",
+    "save": "Speichern",
+    "update_pass": "Passwort ändern!",
+    "delete_account": "Konto löschen!"
+  },
+  "user_screen": {
+    "logout_confirm": "Aus dem Konto abmelden?",
+    "edit_error": "Daten konnten nicht gespeichert werden!",
+    "title": "Profil",
+    "contact": "Kontakt:",
+    "email": "E-Mail:",
+    "phone": "Telefon 1:",
+    "commercial_phone": "Telefon 2:",
+    "crm": "Registrierungsnummer",
+    "pix": "PIX-Schlüssel:",
+    "links": "Links:",
+    "site": "Website:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Dienstleistungen:",
+    "experience": "Erfahrung in:",
+    "diseases_treated": "Behandelte Krankheiten:",
+    "health_insurance": "Krankenversicherungspläne:",
+    "languages": "Sprachen:",
+    "about_me": "Über mich:",
+    "training": "Ausbildung:",
+    "time_zone": "Zeitzone:",
+    "city": "Stadt der Tätigkeit:",
+    "address": "Adresse für Konsultationen:",
+    "galery": "Galerie:",
+    "common_questions": "Häufig gestellte Fragen:",
+    "verified_profile": "Verifiziertes Profil",
+    "no_verified_profile": "Profil verifizieren"
+  },
+  "weview": {
+    "on_out": "Navigation verlassen?",
+    "error_data": "FEHLER: {error}",
+    "error_connection": "Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "try_again": "Erneut versuchen",
+    "go_back": "Zurück"
+  },
+  "schedule_reminder": {
+    "title": "Termin-Erinnerung für {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Einstellungen",
+    "menu_schedule": "Zeitplan",
+    "menu_profile": "Profil",
+    "menu_education": "Medizinische Bildung"
+  },
+  "map_screen": {
+    "select": "Auswählen...",
+    "title": "Karte"
+  },
+  "account_state": {
+    "rejected_title": "Ablehnung Ihrer Kontoanfrage bei „Doctor Friend“",
+    "analysis_title": "Ihr Konto wird geprüft",
+    "rejection_text": "Sehr geehrte/r {name}, \n\nWir hoffen, es geht Ihnen gut. Leider müssen wir Ihnen mitteilen, dass Ihre Kontoanfrage bei „Doctor Friend“ nach sorgfältiger Prüfung abgelehnt wurde. \n\nWir verstehen, dass dies enttäuschend sein kann, und möchten Ihnen versichern, dass die Entscheidung auf spezifischen Kriterien basiert. Sollten zusätzliche Informationen erforderlich sein oder falls Sie glauben, dass ein Fehler vorliegt, zögern Sie bitte nicht, uns zu kontaktieren. \n\nVielen Dank für Ihr Interesse an „Doctor Friend“. Wir hoffen, Ihre Bedürfnisse in Zukunft erfüllen zu können. \n\nMit freundlichen Grüßen, \n\nDas Team von Doctor Friend",
+    "analysis_text": "Hallo {name}, \n\nWir möchten Sie darüber informieren, dass Ihr Konto bei „Doctor Friend“ derzeit geprüft wird. Unser Team überprüft Ihre Informationen, um eine sichere und effiziente Erfahrung zu gewährleisten. \n\nSie werden benachrichtigt, sobald die Prüfung abgeschlossen ist. Vielen Dank für Ihre Geduld und Ihr Verständnis. \n\nWenn Sie Hilfe benötigen oder Fragen haben, zögern Sie nicht, uns zu kontaktieren. \n\nMit freundlichen Grüßen, \n\nDas Team von Doctor Friend"
+  },
+  "education_screen": {
+    "title": "Medizinische Bildung",
+    "profession": "Wählen Sie einen Beruf",
+    "amount": "Ergebnisse",
+    "my_courses": "Meine Kurse"
+  },
+  "education_card": {
+    "go_to_course": "Kurs besuchen",
+    "edit": "Bearbeiten"
+  },
+  "my_courses_screen": {
+    "title": "Meine Kurse ({amount})",
+    "add_courses": "Kurs hinzufügen"
+  },
+  "course_form_screen": {
+    "title": "Kurs hinzufügen",
+    "title_edit": "Kurs bearbeiten",
+    "description": "Wählen Sie die Berufe aus, die mit dem Kurs zusammenhängen",
+    "professions": "Zusammenhängende Berufe",
+    "link_course": "Kurslink",
+    "title_course": "Kurstitel",
+    "description_course": "Kursbeschreibung",
+    "thumbnail_course": "Bildlink für das Cover",
+    "next_step": "Weiter",
+    "save": "Speichern",
+    "notify": "Benachrichtigen",
+    "notify_all": "Alle Fachkräfte",
+    "notify_only_related": "Nur Fachkräfte, die mit dem Kurs zusammenhängen",
+    "onDelete": "Kurs löschen?",
+    "placeholder_link_course": "https://example.com/mein-kurs",
+    "placeholder_title_course": "Menschliche Anatomie",
+    "placeholder_description_course": "Detaillierte Beschreibung des Kurses zur menschlichen Anatomie",
+    "placeholder_thumbnail_course": "https://example.com/anatomie-bild.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Bitte geben Sie eine gültige URL ein",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "invalidZipCode": "Bitte geben Sie eine gültige Postleitzahl ein",
+    "invalidPass": "Das Passwort muss mindestens 6 Zeichen enthalten.",
+    "invalidConfirmPass": "Passwörter stimmen nicht überein",
+    "invalid_time_alread_exists": "Zeit existiert bereits ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Benutzerverifizierung",
+    "document_capture": "Dokumentenerfassung",
+    "selfie_capture": "Selfie-Erfassung",
+    "verify_user": "Benutzer verifizieren",
+    "pick_document_title": "Dokument mit Foto",
+    "pick_selfie_title": "Selfie"
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "sw"
+  },
+  "callback_default": {
+    "title_error": "Hitilafu isiyotarajiwa imetokea. \nTafadhali jaribu tena baadaye.",
+    "title_sucess": "Mafanikio",
+    "confirm_text": "NDIO",
+    "cancel_text": "HAPANA"
+  },
+  "input": {
+    "is_empty": "Huu ni uwanja wa lazima."
+  },
+  "loading_error": {
+    "title": "Hitilafu isiyotarajiwa imetokea!",
+    "error_message": "Hitilafu isiyotarajiwa imetokea."
+  },
+  "location_input": {
+    "error_location_unabled": "Huduma ya eneo imezimwa",
+    "error_location_denied": "Ruhusa ya kufikia eneo imetolewa",
+    "error_location_denied_forever": "Ruhusa ya kufikia eneo imetolewa, hatuwezi kuuliza tena!",
+    "btn_current_location": "Eneo la sasa",
+    "btn_select_on_map": "Chagua kwenye ramani",
+    "error_unselected_location": "Eneo halikuchaguliwa!"
+  },
+  "notifications": {
+    "title": "Arifa"
+  },
+  "today": {
+    "text": "Leo"
+  },
+  "days_of_week": {
+    "list": [
+      "Jumatatu",
+      "Jumanne",
+      "Jumatano",
+      "Alhamisi",
+      "Ijumaa",
+      "Jumamosi",
+      "Jumapili"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "Januari",
+      "Februari",
+      "Machi",
+      "Aprili",
+      "Mei",
+      "Juni",
+      "Julai",
+      "Agosti",
+      "Septemba",
+      "Oktoba",
+      "Novemba",
+      "Desemba"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Karibu!",
+    "call": "Tunawezaje kukusaidia leo?",
+    "btn_1": "Tafuta mtaalamu",
+    "btn_2": "Ingia kama mtaalamu",
+    "btn_3": "Kuwa mchuuzi"
+  },
+  "forgot_pass_screen": {
+    "success": "Barua pepe ya kurejesha imetumwa kwa",
+    "confirm_text": "Sawa!",
+    "title": "Rejesha Nenosiri",
+    "email": "Barua pepe",
+    "btn": "Tuma barua pepe"
+  },
+  "login_screen": {
+    "update_account_title": "Akaunti yako si ya kitaalamu",
+    "update_account_content": "Unataka kubadilisha kuwa akaunti ya kitaalamu?",
+    "title": "Ingia",
+    "email": "Barua pepe",
+    "pass": "Nenosiri",
+    "enter": "Ingia",
+    "forgot_pass": "Nenosiri nililosahau!",
+    "register": "Sina akaunti!",
+    "google": "Ingia kwa Google",
+    "apple": "Ingia kwa Apple"
+  },
+  "signup_screen": {
+    "title": "Jisajili Kama Mtaalamu",
+    "no_lat_lng": "Chagua anwani iliyopendekezwa ili kuhakikisha utafutaji sahihi",
+    "profession": "Pokovu",
+    "specialty": "Utaalamu",
+    "name": "Jina na Jina la Kijamii",
+    "email": "Barua pepe",
+    "phone": "Simu",
+    "city": "Mji wa Kazi",
+    "pass": "Tengeneza Nenosiri",
+    "pass_repeat": "Thibitisha Nenosiri",
+    "privacy_policy_text": "Nakubaliana na masharti na hali, na ninathibitisha kuwa nimesoma na kuelewa",
+    "privacy_policy_text_link": "sera ya faragha.*",
+    "contact_text_agree": "Ninatambua kanuni za kitaalamu ambazo ni lazima nifuate na umuhimu wa kujumuisha nambari za usajili wa kitaalamu na utaalamu (ikiwa inafaa).* Kwa kujaza maelezo yako, unakubali kwamba doctorfriend.com.br itakufikia kutoa huduma zake. Unaweza omba kufuta maelezo yako wakati wowote ikiwa hutaki kuwasiliana. Tafadhali wasiliana nasi.",
+    "enter": "Jisajili",
+    "login": "Nina akaunti tayari!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Ofa haikupatikana",
+    "error_offer_not_available": "Ofa haipatikani",
+    "call": "Ingia kwa kuboresha ili kuendelea kutumia vipengele vya Pro",
+    "bay": "Endelea",
+    "no_offer_available": "Hakuna ofa inayopatikana kwa sasa",
+    "contact_text_call": "Ikiwa tayari una usajili wa kazi na bado unaona tangazo hili, tafadhali angalia kama umeingia kwenye akaunti sahihi au wasiliana na wetu",
+    "terms": "Masharti ya Matumizi",
+    "privacy_policy": "Sera ya faragha",
+    "actived": "IMEAMSHWA",
+    "offer_type_info": "Inajirudia kiotomatiki kila mwezi",
+    "bay_for": "Kwa tu ",
+    "offer_type": " / mwezi",
+    "offer_0": "Jisajili masomo na uyatangaze kwa jamii ya kitaalamu",
+    "offer_1": "Kipaumbele katika utafutaji kwenye tovuti",
+    "offer_2": "Galari ya picha",
+    "offer_3": "Mikumbusho kwa barua pepe",
+    "offer_4": "Usimamizi wa msingi wa wasifu wa mtumiaji",
+    "offer_5": "Ratiba ya kila mwezi inayoweza kubadilika",
+    "offer_6": "Na zaidi...",
+    "manage_subscription": "Simamia Usajili"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Tuma ukumbusho wa ratiba kwa wateja wote wanaopatikana kwa ",
+    "send_email_for_all": "Tuma ukumbusho wa ratiba kwa wote",
+    "no_time_available": "Hakuna muda unaopatikana",
+    "schedule_not_registered": "Ratiba ya {text} haijasajiliwa!",
+    "register_schedule": "Jisajili!",
+    "telemedicine": "Ushauri wa mtandao",
+    "in_local": "Ushauri wa kibinafsi"
+  },
+  "schedule_telemedicine": {
+    "title": "Ushauri wa mtandao?",
+    "not": "Hapana",
+    "yes": "Ndiyo"
+  },
+  "telemedicine_worn": {
+    "title": "Tangazo Muhimu",
+    "not_show_again": "Usionyeshe tena",
+    "close": "Sawa!"
+  },
+  "telemedicine": {
+    "checkbox": "Njia ya telemedicine",
+    "is_telemedicine": "Muda utasajiliwa kama ushauri wa mtandao",
+    "is_not_telemedicine": "Muda utasajiliwa kama ushauri wa kibinafsi"
+  },
+  "add_schedule": {
+    "title": "Panga ushauri",
+    "telemedicine_worn": "Tafadhali toa maelekezo ya ufikiaji wa chumba cha ushauri cha mtandao kwa mgonjwa wako.",
+    "schedule_for": "Panga kwa...",
+    "name": "Jina na jina la familia",
+    "phone": "Nambari ya simu",
+    "email": "Barua pepe",
+    "visit_type": "Aina ya ziara",
+    "note": "Maelezo",
+    "btn_schedule": "Panga"
+  },
+  "scheduled_customer": {
+    "notified_text": "Ukumbusho umetumwa!",
+    "delete_schedule": "Futa ratiba kwa: ",
+    "send_email_confirm": "Tuma ukumbusho wa ratiba kwa ",
+    "send_email_is_proccessing": "Inasindika...",
+    "send_email_error": "Hitilafu ilitokea wakati wa kutuma ;(",
+    "send_email_pendding": "Inasubiri",
+    "title": "Ratiba",
+    "telemedicine_worn": "Tafadhali toa maelekezo ya ufikiaji wa chumba cha ushauri cha mtandao kwa mgonjwa wako.",
+    "status_canceled": "Imesitishwa!",
+    "status_scheduled": "Imepangwa kwa...",
+    "confirmed": "Imethibitishwa: ",
+    "send_email": "Tuma Ukumbusho wa Ratiba",
+    "note": "Maelezo"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Hitilafu wakati wa kuokoa",
+    "title": "Sanidi Ratiba ya Wiki",
+    "save": "Hifadhi upendeleo"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Ratiba ya Wiki",
+    "preferences_btn_confirm": "Sanidi",
+    "preferences_btn_cancel": "Baadaye",
+    "preferences_btn_content": "Ili kurahisisha utengenezaji wa ratiba ya mwezi, sanidi ratiba ya wiki. Hii itaruhusu kupanga haraka na kwa ufanisi masaa ya huduma.",
+    "delete_schedule": "Futa ratiba ya {month} {year}?",
+    "for": "kwa",
+    "save_schedule": "Hifadhi Ratiba",
+    "save": "Hifadhi"
+  },
+  "schedule": {
+    "title": "Ratiba"
+  },
+  "settings_schedule": {
+    "title": "Sanidi Ratiba"
+  },
+  "common_questions_screen": {
+    "title": "Maswali ya Mara kwa Mara",
+    "suport": "Msaada wa kiufundi: "
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "worns": "Vidokezo/Arifa",
+    "profile_on_site": "Wasifu wangu kwenye tovuti",
+    "subcription_status_free": "Vipindi vya bure",
+    "subcription_status_pro": "Mtumiaji wa Pro",
+    "subcription_status_show": "Usajili",
+    "available_plans": "Tazama mipango inapatikana",
+    "days_left": "Siku {amount} zilizobaki",
+    "suport": "Msaada",
+    "manual_modal_title": "Mwongozo wa Mfumo - Doctor Friend",
+    "manual": "Mwongozo wa mfumo",
+    "common_question": "Maswali ya mara kwa mara",
+    "terms": "Masharti ya matumizi",
+    "privacy_policy": "Sera ya faragha"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Vidokezo/Arifa ({amount})",
+    "title": "Vidokezo/Arifa",
+    "help": "Weka hapa vidokezo au arifa zinazolengwa kwa wateja wakati wa mchakato wa kupanga. Mfano: Uvaaji wa barakoa ni lazima katika maeneo ya huduma.",
+    "save": "Hifadhi"
+  },
+  "evaluetions_rate": {
+    "title": "Kiwango cha wastani cha tathmini: ",
+    "show": "Onyesha tathmini ({amount})",
+    "no_evaluetion": "Hakuna tathmini zinazopatikana"
+  },
+  "response_evaluation": {
+    "title": "Jibu tathmini",
+    "response": "Jibu '{name}'",
+    "save": "Hifadhi"
+  },
+  "update_about_me": {
+    "title": "Kuhusu mimi",
+    "label": "Jitambulishe kidogo kuhusu wewe mwenyewe",
+    "save": "Hifadhi"
+  },
+  "update_common_questions": {
+    "question": "Swali ({amount})",
+    "response": "Jibu ({amount})",
+    "title": "Maswali ya mara kwa mara",
+    "save": "Hifadhi"
+  },
+  "update_contact": {
+    "title": "Habari za mawasiliano",
+    "phone": "Simu 1",
+    "commercial_phone": "Simu 2",
+    "crm": "Nambari ya Usajili",
+    "pix": "PIX",
+    "save": "Hifadhi"
+  },
+  "update_diseases_treated": {
+    "title": "Magonjwa yaliyotibiwa",
+    "save": "Hifadhi"
+  },
+  "update_experience": {
+    "experience": "Uzoefu ({amount})",
+    "title": "Uzoefu katika",
+    "save": "Hifadhi"
+  },
+  "update_health_insurance": {
+    "plan": "Mpango ({amount})",
+    "title": "Bima ya Afya",
+    "save": "Hifadhi"
+  },
+  "update_languages": {
+    "language": "Lugha ({amount})",
+    "title": "Lugha",
+    "save": "Hifadhi"
+  },
+  "update_links": {
+    "title": "Habari za mawasiliano",
+    "site": "Tovuti",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Hifadhi"
+  },
+  "update_services": {
+    "service": "Huduma ({amount})",
+    "price": "Bei",
+    "title": "Huduma",
+    "save": "Hifadhi"
+  },
+  "update_time_zone": {
+    "title": "Hariri maeneo ya muda",
+    "label": "Eneo la Muda",
+    "save": "Hifadhi"
+  },
+  "update_training": {
+    "training": "Mafunzo ({amount})",
+    "title": "Mafunzo",
+    "save": "Hifadhi"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Chagua anwani inayopendekezwa ili kuhakikisha utafutaji sahihi",
+    "title": "Hariri Jiji la Uendeshaji",
+    "label": "Jiji la Uendeshaji",
+    "save": "Hifadhi"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Futa Akaunti?",
+    "confirm_content": "Data zako zote zitapotea",
+    "title": "Futa Akaunti",
+    "pass": "Neno la siri",
+    "delete": "Futa Akaunti"
+  },
+  "evaluations_screen": {
+    "title": "Tathmini",
+    "evaluation_hide": "Ficha tathmini kwa wengine",
+    "evaluation_show": "Onyesha tathmini kwa wengine",
+    "to_response": "Jibu"
+  },
+  "update_address_screen": {
+    "title": "Hariri Anwani ya Huduma",
+    "zipe_code": "Nambari ya Posta",
+    "street": "Mtaa",
+    "number": "Nambari",
+    "neighborhood": "Kata",
+    "complement": "Nyongeza",
+    "city": "Jiji",
+    "state": "Jimbo",
+    "country": "Nchi",
+    "save": "Hifadhi"
+  },
+  "update_images_screen": {
+    "title": "Galari",
+    "edit_info": "Shikilia picha ili kuchagua na kuhariri",
+    "save": "Hifadhi",
+    "photos": "Picha: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "Barua pepe ya kubadilisha neno la siri imetumwa kwa {email}. Angalia barua pepe ili kuendelea na mabadiliko",
+    "email_sended_confirm": "Sawa!",
+    "request_reset_pass_title": "Omba kubadilisha neno la siri?",
+    "title": "Hariri Wasifu",
+    "name": "Jina na Jina la Familia",
+    "profession": "Kazi",
+    "specialty": "Utaalamu",
+    "pass": "Neno la siri la sasa",
+    "save": "Hifadhi",
+    "update_pass": "Badilisha Neno la Siri!",
+    "delete_account": "Futa akaunti!"
+  },
+  "user_screen": {
+    "logout_confirm": "Unataka kutoka kwenye akaunti?",
+    "edit_error": "Haiwezekani kuhifadhi data!",
+    "title": "Wasifu",
+    "contact": "Mawasiliano:",
+    "email": "Barua pepe:",
+    "phone": "Simu 1:",
+    "commercial_phone": "Simu 2:",
+    "crm": "Nambari ya Usajili",
+    "pix": "Funguo za PIX:",
+    "links": "Viungo:",
+    "site": "Tovuti:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Huduma:",
+    "experience": "Uzoefu katika:",
+    "diseases_treated": "Magonjwa yaliyotibiwa:",
+    "health_insurance": "Bima za afya:",
+    "languages": "Lugha:",
+    "about_me": "Kuhusu mimi:",
+    "training": "Elimu:",
+    "time_zone": "Eneo la Muda:",
+    "city": "Jiji la Kazi:",
+    "address": "Anwani ya Huduma:",
+    "galery": "Galeria:",
+    "common_questions": "Maswali ya mara kwa mara:",
+    "verified_profile": "Profaili Imethibitishwa",
+    "no_verified_profile": "Thibitisha Profaili"
+  },
+  "weview": {
+    "on_out": "Unataka kutoka kwenye urambazaji?",
+    "error_data": "KOSA: {error}",
+    "error_connection": "Angalia muunganisho wako na jaribu tena.",
+    "try_again": "Jaribu tena",
+    "go_back": "Rudi nyuma"
+  },
+  "schedule_reminder": {
+    "title": "Kumbusho la Ratiba kwa {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Mipangilio",
+    "menu_schedule": "Ratiba",
+    "menu_profile": "Profaili",
+    "menu_education": "Elimu ya Matibabu"
+  },
+  "map_screen": {
+    "select": "Chagua...",
+    "title": "Ramani"
+  },
+  "account_state": {
+    "rejected_title": "Ukweli wa Maombi yako ya Akaunti kwa \"Doctor Friend\"",
+    "analysis_title": "Akaunti yako inachunguzwa",
+    "rejection_text": "Mpendwa {name}, \n\nTunatumai uko salama. Pole, tunatakiwa kusema kwamba baada ya uchunguzi wa kina, maombi yako ya akaunti kwa \"Doctor Friend\" yamekataliwa. \n\nTunafahamu kwamba hii inaweza kuwa inasikitisha, na tunataka kuhakikisha kuwa uamuzi umefanywa kwa kuzingatia vigezo maalum. Ikiwa kuna maelezo ya ziada unayohitaji au unadhani kuna makosa, tafadhali wasiliana nasi ili kujadili. \n\nTunashukuru kwa nia yako ya \"Doctor Friend\" na tunatumai tutakuwa na fursa ya kutimiza mahitaji yako siku zijazo. \n\nKwa heshima, \n\nTimu ya Doctor Friend",
+    "analysis_text": "Habari {name}, \n\nTunapenda kukujulisha kuwa akaunti yako ya \"Doctor Friend\" inachunguzwa kwa sasa. Timu yetu inapitia taarifa zako ili kuhakikisha uzoefu salama na mzuri. \n\nUtapokea taarifa pindi uchunguzi utakapokamilika. Tunashukuru kwa uvumilivu wako na kuelewa. \n\nIkiwa unahitaji msaada au una maswali, tafadhali wasiliana nasi. \n\nKwa heshima, \n\nTimu ya Doctor Friend"
+  },
+  "education_screen": {
+    "title": "Elimu ya Matibabu",
+    "profession": "Chagua taaluma",
+    "amount": "Matokeo",
+    "my_courses": "Kozi Zangu"
+  },
+  "education_card": {
+    "go_to_course": "Nenda kwa Kozi",
+    "edit": "Hariri"
+  },
+  "my_courses_screen": {
+    "title": "Kozi Zangu ({amount})",
+    "add_courses": "Ongeza Kozi"
+  },
+  "course_form_screen": {
+    "title": "Jisajili Kozi",
+    "title_edit": "Hariri Kozi",
+    "description": "Chagua taaluma zinazohusiana na kozi",
+    "professions": "Taaluma zinazohusiana",
+    "link_course": "Kiungo cha kozi",
+    "title_course": "Jina la kozi",
+    "description_course": "Maelezo ya kozi",
+    "thumbnail_course": "Kiungo cha picha ya kifuniko",
+    "next_step": "Endelea",
+    "save": "Hifadhi",
+    "notify": "Taarifu",
+    "notify_all": "Wataalamu wote",
+    "notify_only_related": "Wataalamu waliohusiana na kozi pekee",
+    "onDelete": "Ondoa kozi?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Anatomi ya Binadamu",
+    "placeholder_description_course": "Maelezo ya kina kuhusu kozi ya anatomi ya binadamu",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Tafadhali ingiza URL halali",
+    "invalidEmail": "Tafadhali ingiza barua pepe halali",
+    "invalidZipCode": "Tafadhali ingiza nambari halali ya posta",
+    "invalidPass": "Nenosiri lazima liwe na angalau herufi 6.",
+    "invalidConfirmPass": "Nenosiri halilingani",
+    "invalid_time_alread_exists": "Muda tayari umepangwa ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Uthibitishaji wa mtumiaji",
+    "document_capture": "Picha ya hati",
+    "selfie_capture": "Picha ya selfie",
+    "verify_user": "Thibitisha mtumiaji",
+    "pick_document_title": "Hati yenye picha",
+    "pick_selfie_title": "Selfie"
+  }
+}

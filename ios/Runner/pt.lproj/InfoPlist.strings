@@ -1,0 +1,3 @@
+"NSLocationWhenInUseUsageDescription" = "Isso nos permite melhorar sua experiência, facilitando o cadastro e fornecendo serviços baseados em localização. Você pode alterar isso a qualquer momento nas configurações do aplicativo.";
+"NSPhotoLibraryUsageDescription" = "Para personalizar seu perfil e adicionar fotos adicionais, este aplicativo solicita acesso à sua galeria de fotos. Isso permite que você selecione e adicione fotos ao seu perfil.";
+"NSMicrophoneUsageDescription" = "Este aplicativo precisa acessar o microfone para converter áudio para texto";

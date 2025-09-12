@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "nl"
+  },
+  "callback_default": {
+    "title_error": "Er is een onverwachte fout opgetreden. \nProbeer het later opnieuw.",
+    "title_sucess": "Succes",
+    "confirm_text": "JA",
+    "cancel_text": "NEE"
+  },
+  "input": {
+    "is_empty": "Dit veld is verplicht."
+  },
+  "loading_error": {
+    "title": "Er is een onverwachte fout opgetreden!",
+    "error_message": "Er is een onverwachte fout opgetreden."
+  },
+  "location_input": {
+    "error_location_unabled": "Locatieservice uitgeschakeld",
+    "error_location_denied": "Toegang tot locatie is geweigerd",
+    "error_location_denied_forever": "Toegang tot locatie is geweigerd, we kunnen het niet opnieuw aanvragen!",
+    "btn_current_location": "Huidige locatie",
+    "btn_select_on_map": "Selecteer op kaart",
+    "error_unselected_location": "Locatie niet geselecteerd!"
+  },
+  "notifications": {
+    "title": "Meldingen"
+  },
+  "today": {
+    "text": "Vandaag"
+  },
+  "days_of_week": {
+    "list": [
+      "maandag",
+      "dinsdag",
+      "woensdag",
+      "donderdag",
+      "vrijdag",
+      "zaterdag",
+      "zondag"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "januari",
+      "februari",
+      "maart",
+      "april",
+      "mei",
+      "juni",
+      "juli",
+      "augustus",
+      "september",
+      "oktober",
+      "november",
+      "december"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Welkom!",
+    "call": "Hoe kunnen we je vandaag helpen?",
+    "btn_1": "Zoek een professional",
+    "btn_2": "Log in als professional",
+    "btn_3": "Word een franchisenemer"
+  },
+  "forgot_pass_screen": {
+    "success": "Herstel-e-mail verzonden naar",
+    "confirm_text": "Oké!",
+    "title": "Wachtwoord herstellen",
+    "email": "E-mail",
+    "btn": "Verstuur e-mail"
+  },
+  "login_screen": {
+    "update_account_title": "Je account is geen professioneel account",
+    "update_account_content": "Wil je upgraden naar een professioneel profiel?",
+    "title": "Inloggen",
+    "email": "E-mail",
+    "pass": "Wachtwoord",
+    "enter": "Inloggen",
+    "forgot_pass": "Wachtwoord vergeten!",
+    "register": "Heb je geen account?",
+    "google": "Inloggen met Google",
+    "apple": "Inloggen met Apple"
+  },
+  "signup_screen": {
+    "title": "Registreer als professional",
+    "no_lat_lng": "Selecteer een voorgesteld adres om een juiste zoekopdracht te garanderen",
+    "profession": "Beroep",
+    "specialty": "Specialisatie",
+    "name": "Voornaam en Achternaam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "city": "Werkstad",
+    "pass": "Maak wachtwoord",
+    "pass_repeat": "Bevestig wachtwoord",
+    "privacy_policy_text": "Ik accepteer de voorwaarden en bevestig dat ik de",
+    "privacy_policy_text_link": "privacybeleid.*",
+    "contact_text_agree": "Ik verklaar op de hoogte te zijn van de professionele normen die ik moet volgen en de noodzaak om het registratie- en specialisatienummer op te nemen (indien van toepassing).* Door je gegevens in te vullen, ga je ermee akkoord dat doctorfriend.com.br contact met je opneemt om zijn diensten aan te bieden. Je kunt op elk moment vragen om je gegevens te verwijderen als je niet gecontacteerd wilt worden. Neem gewoon contact met ons op.",
+    "enter": "Registreer",
+    "login": "Heb je al een account?"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Aanbieding niet gevonden",
+    "error_offer_not_available": "Aanbieding niet beschikbaar",
+    "call": "Upgrade om door te gaan met het gebruik van Pro-functies",
+    "bay": "Doorgaan",
+    "no_offer_available": "Momenteel geen aanbiedingen beschikbaar",
+    "contact_text_call": "Als je al een actief abonnement hebt en nog steeds deze melding ziet, controleer dan of je bent ingelogd met het juiste account of neem contact op met onze",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy_policy": "Privacybeleid",
+    "actived": "ACTIEF",
+    "offer_type_info": "Automatisch verlengd elke maand",
+    "bay_for": "Slechts ",
+    "offer_type": " / maand",
+    "offer_0": "Registreer cursussen en promoot ze naar de professionele gemeenschap",
+    "offer_1": "Prioriteit in zoekopdrachten op de website",
+    "offer_2": "Fotogalerij",
+    "offer_3": "E-mailherinneringen",
+    "offer_4": "Basisgebruikersprofielbeheer",
+    "offer_5": "Aanpasbare maandagenda",
+    "offer_6": "En nog veel meer...",
+    "manage_subscription": "Beheer abonnement"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Stuur afspraakherinnering naar alle beschikbare klanten op ",
+    "send_email_for_all": "Stuur afspraakherinnering naar iedereen",
+    "no_time_available": "Geen beschikbare tijden",
+    "schedule_not_registered": "Agenda van {text} niet geregistreerd!",
+    "register_schedule": "Registreren!",
+    "telemedicine": "Online consultatie",
+    "in_local": "Lokale consultatie"
+  },
+  "schedule_telemedicine": {
+    "title": "Online consult?",
+    "not": "Nee",
+    "yes": "Ja"
+  },
+  "telemedicine_worn": {
+    "title": "Belangrijke melding",
+    "not_show_again": "Niet opnieuw tonen",
+    "close": "Oké!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedicijnmodus",
+    "is_telemedicine": "Tijden worden als online consultatie geregistreerd",
+    "is_not_telemedicine": "Tijden worden als lokale consultatie geregistreerd"
+  },
+  "add_schedule": {
+    "title": "Afspraak maken",
+    "telemedicine_worn": "Gelieve toegangsinstructies tot de virtuele consultatieruimte aan uw patiënt te geven.",
+    "schedule_for": "Afspraak voor...",
+    "name": "Voor- en achternaam",
+    "phone": "Telefoonnummer",
+    "email": "E-mailadres",
+    "visit_type": "Type bezoek",
+    "note": "Notitie",
+    "btn_schedule": "Afspraak maken"
+  },
+  "scheduled_customer": {
+    "notified_text": "Herinnering verstuurd!",
+    "delete_schedule": "Afspraak verwijderen voor: ",
+    "send_email_confirm": "Afspraakherinnering versturen naar ",
+    "send_email_is_proccessing": "Bezig met verwerken...",
+    "send_email_error": "Fout bij verzenden ;(",
+    "send_email_pendding": "In afwachting",
+    "title": "Afspraak",
+    "telemedicine_worn": "Gelieve toegangsinstructies tot de virtuele consultatieruimte aan uw patiënt te geven.",
+    "status_canceled": "Geannuleerd!",
+    "status_scheduled": "Ingepland op...",
+    "confirmed": "Bevestigd: ",
+    "send_email": "Afspraakherinnering versturen",
+    "note": "Notitie"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Fout bij opslaan",
+    "title": "Wekelijks schema instellen",
+    "save": "Voorkeuren opslaan"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Wekelijks schema",
+    "preferences_btn_confirm": "Instellen",
+    "preferences_btn_cancel": "Later",
+    "preferences_btn_content": "Om het maandelijkse schema makkelijker aan te maken, stel een wekelijks schema in. Dit zorgt voor een snelle en efficiënte planning.",
+    "delete_schedule": "Schema van {month} {year} verwijderen?",
+    "for": "van",
+    "save_schedule": "Schema opslaan",
+    "save": "Opslaan"
+  },
+  "schedule": {
+    "title": "Agenda"
+  },
+  "settings_schedule": {
+    "title": "Agenda instellen"
+  },
+  "common_questions_screen": {
+    "title": "Veelgestelde vragen",
+    "suport": "Technische ondersteuning: "
+  },
+  "settings": {
+    "title": "Instellingen",
+    "worns": "Herinneringen/Waarschuwingen",
+    "profile_on_site": "Mijn profiel op de website",
+    "subcription_status_free": "Gratis proefperiode",
+    "subcription_status_pro": "Pro gebruiker",
+    "subcription_status_show": "Abonnementen",
+    "available_plans": "Bekijk beschikbare plannen",
+    "days_left": "Nog {amount} dagen",
+    "suport": "Ondersteuning",
+    "manual_modal_title": "Systeemhandleiding - Doctor Friend",
+    "manual": "Systeemhandleiding",
+    "common_question": "Veelgestelde vragen",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy_policy": "Privacybeleid"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Herinnering/Waarschuwing ({amount})",
+    "title": "Herinneringen/Waarschuwingen",
+    "help": "Voer hier herinneringen of waarschuwingen in die tijdens het agenderen aan klanten moeten worden getoond. Voorbeeld: Mondmasker verplicht in het gebouw.",
+    "save": "Opslaan"
+  },
+  "evaluetions_rate": {
+    "title": "Gemiddelde beoordeling: ",
+    "show": "Bekijk beoordelingen ({amount})",
+    "no_evaluetion": "Geen beoordelingen beschikbaar"
+  },
+  "response_evaluation": {
+    "title": "Beoordeel reactie",
+    "response": "Beantwoord '{name}'",
+    "save": "Opslaan"
+  },
+  "update_about_me": {
+    "title": "Over mij",
+    "label": "Vertel iets over jezelf",
+    "save": "Opslaan"
+  },
+  "update_common_questions": {
+    "question": "Vraag ({amount})",
+    "response": "Antwoord ({amount})",
+    "title": "Veelgestelde vragen",
+    "save": "Opslaan"
+  },
+  "update_contact": {
+    "title": "Contactinformatie",
+    "phone": "Telefoon 1",
+    "commercial_phone": "Telefoon 2",
+    "crm": "Registratienummer",
+    "pix": "PIX",
+    "save": "Opslaan"
+  },
+  "update_diseases_treated": {
+    "title": "Behandelde ziekten",
+    "save": "Opslaan"
+  },
+  "update_experience": {
+    "experience": "Ervaring ({amount})",
+    "title": "Ervaring in",
+    "save": "Opslaan"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Zorgverzekering",
+    "save": "Opslaan"
+  },
+  "update_languages": {
+    "language": "Taal ({amount})",
+    "title": "Talen",
+    "save": "Opslaan"
+  },
+  "update_links": {
+    "title": "Contactinformatie",
+    "site": "Website",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Opslaan"
+  },
+  "update_services": {
+    "service": "Dienst ({amount})",
+    "price": "Prijs",
+    "title": "Diensten",
+    "save": "Opslaan"
+  },
+  "update_time_zone": {
+    "title": "Bewerk tijdzone",
+    "label": "Tijdzone",
+    "save": "Opslaan"
+  },
+  "update_training": {
+    "training": "Opleiding ({amount})",
+    "title": "Opleiding",
+    "save": "Opslaan"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Selecteer een voorgestelde adres om een correcte zoekopdracht te garanderen",
+    "title": "Bewerk werkstad",
+    "label": "Werkstad",
+    "save": "Opslaan"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Account verwijderen?",
+    "confirm_content": "Al je gegevens gaan verloren",
+    "title": "Account verwijderen",
+    "pass": "Wachtwoord",
+    "delete": "Account verwijderen"
+  },
+  "evaluations_screen": {
+    "title": "Beoordelingen",
+    "evaluation_hide": "Verberg beoordeling voor anderen",
+    "evaluation_show": "Toon beoordeling voor anderen",
+    "to_response": "Beantwoorden"
+  },
+  "update_address_screen": {
+    "title": "Bewerk serviceadres",
+    "zipe_code": "Postcode",
+    "street": "Straat",
+    "number": "Nummer",
+    "neighborhood": "Wijk",
+    "complement": "Aanvulling",
+    "city": "Stad",
+    "state": "Provincie",
+    "country": "Land",
+    "save": "Opslaan"
+  },
+  "update_images_screen": {
+    "title": "Galerij",
+    "edit_info": "Houd de afbeelding ingedrukt om te selecteren en te bewerken",
+    "save": "Opslaan",
+    "photos": "Foto's: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "E-mail voor wachtwoordwijziging is verzonden naar {email}. Controleer je e-mail om door te gaan met de wijziging",
+    "email_sended_confirm": "Oké!",
+    "request_reset_pass_title": "Wachtwoord wijziging aanvragen?",
+    "title": "Bewerk profiel",
+    "name": "Voornaam en Achternaam",
+    "profession": "Beroep",
+    "specialty": "Specialisatie",
+    "pass": "Huidig wachtwoord",
+    "save": "Opslaan",
+    "update_pass": "Wachtwoord wijzigen!",
+    "delete_account": "Account verwijderen!"
+  },
+  "user_screen": {
+    "logout_confirm": "Wil je uitloggen?",
+    "edit_error": "Kan de gegevens niet opslaan!",
+    "title": "Profiel",
+    "contact": "Contact:",
+    "email": "E-mail:",
+    "phone": "Telefoon 1:",
+    "commercial_phone": "Telefoon 2:",
+    "crm": "Registratienummer",
+    "pix": "PIX-sleutel:",
+    "links": "Links:",
+    "site": "Website:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Diensten:",
+    "experience": "Ervaring in:",
+    "diseases_treated": "Behandelde ziekten:",
+    "health_insurance": "Zorgverzekeringen:",
+    "languages": "Talen:",
+    "about_me": "Over mij:",
+    "training": "Opleiding:",
+    "time_zone": "Tijdzone:",
+    "city": "Werkstad:",
+    "address": "Behandeladres:",
+    "galery": "Galerij:",
+    "common_questions": "Veelgestelde vragen:",
+    "verified_profile": "Geverifieerd profiel",
+    "no_verified_profile": "Verifieer profiel"
+  },
+  "weview": {
+    "on_out": "Wil je de navigatie verlaten?",
+    "error_data": "FOUT: {error}",
+    "error_connection": "Controleer je verbinding en probeer het opnieuw.",
+    "try_again": "Probeer opnieuw",
+    "go_back": "Terug"
+  },
+  "schedule_reminder": {
+    "title": "Herinnering voor afspraak op {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Instellingen",
+    "menu_schedule": "Schema",
+    "menu_profile": "Profiel",
+    "menu_education": "Medische opleiding"
+  },
+  "map_screen": {
+    "select": "Selecteer...",
+    "title": "Kaart"
+  },
+  "account_state": {
+    "rejected_title": "Afwijzing van je accountaanvraag bij \"Doctor Friend\"",
+    "analysis_title": "Je account wordt momenteel beoordeeld",
+    "rejection_text": "Beste {name}, \n\nWe hopen dat het goed met je gaat. We moeten je helaas informeren dat na een zorgvuldige beoordeling, je aanvraag voor een account bij \"Doctor Friend\" is afgewezen. \n\nWe begrijpen dat dit teleurstellend kan zijn, en willen je verzekeren dat de beslissing op basis van specifieke criteria is genomen. Als je aanvullende informatie nodig hebt of denkt dat er een vergissing is gemaakt, neem dan gerust contact met ons op om dit te bespreken. \n\nWe danken je voor je interesse in \"Doctor Friend\" en hopen je in de toekomst van dienst te kunnen zijn. \n\nMet vriendelijke groet, \n\nHet Doctor Friend Team",
+    "analysis_text": "Hallo {name}, \n\nWe willen je informeren dat je account bij \"Doctor Friend\" momenteel in beoordeling is. Ons team bekijkt je gegevens om een veilige en efficiënte ervaring te waarborgen. \n\nJe ontvangt een melding zodra de beoordeling is afgerond. We waarderen je geduld en begrip. \n\nAls je hulp nodig hebt of vragen hebt, aarzel dan niet om contact met ons op te nemen. \n\nMet vriendelijke groet, \n\nHet Doctor Friend Team"
+  },
+  "education_screen": {
+    "title": "Medische opleiding",
+    "profession": "Kies een beroep",
+    "amount": "Resultaten",
+    "my_courses": "Mijn cursussen"
+  },
+  "education_card": {
+    "go_to_course": "Ga naar cursus",
+    "edit": "Bewerk"
+  },
+  "my_courses_screen": {
+    "title": "Mijn cursussen ({amount})",
+    "add_courses": "Cursus toevoegen"
+  },
+  "course_form_screen": {
+    "title": "Cursus registreren",
+    "title_edit": "Bewerk cursus",
+    "description": "Selecteer de beroepen die aan de cursus zijn gekoppeld",
+    "professions": "Gekoppelde beroepen",
+    "link_course": "Cursuslink",
+    "title_course": "Cursus titel",
+    "description_course": "Cursusbeschrijving",
+    "thumbnail_course": "Link naar de omslagafbeelding",
+    "next_step": "Doorgaan",
+    "save": "Opslaan",
+    "notify": "Meld",
+    "notify_all": "Alle professionals",
+    "notify_only_related": "Alleen de professionals die aan de cursus zijn gekoppeld",
+    "onDelete": "Cursus verwijderen?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Menselijke anatomie",
+    "placeholder_description_course": "Gedetailleerde beschrijving van de cursus menselijke anatomie",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Voer een geldige URL in",
+    "invalidEmail": "Voer een geldig e-mailadres in",
+    "invalidZipCode": "Voer een geldig postcode in",
+    "invalidPass": "Wachtwoord moet minimaal 6 tekens lang zijn.",
+    "invalidConfirmPass": "Wachtwoorden komen niet overeen",
+    "invalid_time_alread_exists": "Tijd bestaat al ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Gebruikersverificatie",
+    "document_capture": "Documentopname",
+    "selfie_capture": "Selfie opname",
+    "verify_user": "Verifieer gebruiker",
+    "pick_document_title": "Document met foto",
+    "pick_selfie_title": "Selfie"
+  }
+}

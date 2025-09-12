@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "hi"
+  },
+  "callback_default": {
+    "title_error": "एक अप्रत्याशित त्रुटि हुई। \nकृपया बाद में पुनः प्रयास करें।",
+    "title_sucess": "सफलता",
+    "confirm_text": "हां",
+    "cancel_text": "नहीं"
+  },
+  "input": {
+    "is_empty": "यह फ़ील्ड अनिवार्य है।"
+  },
+  "loading_error": {
+    "title": "एक अप्रत्याशित त्रुटि हुई!",
+    "error_message": "एक अप्रत्याशित त्रुटि हुई।"
+  },
+  "location_input": {
+    "error_location_unabled": "स्थान सेवा निष्क्रिय है।",
+    "error_location_denied": "स्थान तक पहुँच अस्वीकृत।",
+    "error_location_denied_forever": "स्थान तक पहुँच स्थायी रूप से अस्वीकृत कर दी गई है। हम फिर से पूछ नहीं सकते!",
+    "btn_current_location": "वर्तमान स्थान",
+    "btn_select_on_map": "नक्शे पर चुनें",
+    "error_unselected_location": "स्थान निर्दिष्ट नहीं किया गया!"
+  },
+  "notifications": {
+    "title": "सूचनाएं"
+  },
+  "today": {
+    "text": "आज"
+  },
+  "days_of_week": {
+    "list": [
+      "सोमवार",
+      "मंगलवार",
+      "बुधवार",
+      "गुरुवार",
+      "शुक्रवार",
+      "शनिवार",
+      "रविवार"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "जनवरी",
+      "फरवरी",
+      "मार्च",
+      "अप्रैल",
+      "मई",
+      "जून",
+      "जुलाई",
+      "अगस्त",
+      "सितंबर",
+      "अक्टूबर",
+      "नवंबर",
+      "दिसंबर"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "स्वागत है!",
+    "call": "आज हम आपकी किस प्रकार मदद कर सकते हैं?",
+    "btn_1": "विशेषज्ञ खोजें",
+    "btn_2": "विशेषज्ञ के रूप में लॉगिन करें",
+    "btn_3": "फ्रेंचाइज़ी बनें"
+  },
+  "forgot_pass_screen": {
+    "success": "पुनर्प्राप्ति ईमेल भेजा गया",
+    "confirm_text": "ठीक है!",
+    "title": "पासवर्ड पुनः प्राप्त करें",
+    "email": "ईमेल",
+    "btn": "ईमेल भेजें"
+  },
+  "login_screen": {
+    "update_account_title": "आपका खाता पेशेवर नहीं है",
+    "update_account_content": "पेशेवर प्रोफ़ाइल में अपडेट करें?",
+    "title": "लॉगिन",
+    "email": "ईमेल",
+    "pass": "पासवर्ड",
+    "enter": "लॉगिन करें",
+    "forgot_pass": "पासवर्ड भूल गए?",
+    "register": "खाता नहीं है!",
+    "google": "Google से साइन इन करें",
+    "apple": "Apple से साइन इन करें"
+  },
+  "signup_screen": {
+    "title": "एक पेशेवर के रूप में पंजीकरण करें",
+    "no_lat_lng": "सही खोज सुनिश्चित करने के लिए प्रस्तावित पता चुनें।",
+    "profession": "पेशा",
+    "specialty": "विशेषता",
+    "name": "नाम और उपनाम",
+    "email": "ईमेल",
+    "phone": "फोन",
+    "city": "कार्यशील शहर",
+    "pass": "पासवर्ड बनाएं",
+    "pass_repeat": "पासवर्ड की पुष्टि करें",
+    "privacy_policy_text": "मैं शर्तों को स्वीकार करता हूं और पुष्टि करता हूं कि मैंने इसे पढ़ा और समझा है ",
+    "privacy_policy_text_link": "गोपनीयता नीति।*",
+    "contact_text_agree": "मैं स्वीकार करता हूं कि पेशेवर मानकों का पालन करना चाहिए और पंजीकरण संख्या और विशेषता (यदि लागू हो) को शामिल करने की आवश्यकता है।* अपने डेटा को भरकर, आप doctorfriend.com.br को अपनी सेवाएं प्रदान करने के लिए आपसे संपर्क करने की अनुमति देते हैं। यदि आप संपर्क नहीं करना चाहते हैं, तो आप किसी भी समय अपने डेटा को हटाने का अनुरोध कर सकते हैं। कृपया हमसे संपर्क करें।",
+    "enter": "पंजीकरण करें",
+    "login": "पहले से ही खाता है!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "ऑफ़र नहीं मिला",
+    "error_offer_not_available": "ऑफ़र उपलब्ध नहीं है",
+    "call": "Pro सुविधाओं का उपयोग जारी रखने के लिए अपग्रेड करें",
+    "bay": "जारी रखें",
+    "no_offer_available": "इस समय कोई प्रस्ताव उपलब्ध नहीं है",
+    "contact_text_call": "यदि आपके पास पहले से ही एक सक्रिय सदस्यता है और फिर भी यह संदेश दिखाई देता है, तो कृपया जांचें कि क्या आपने सही खाते से लॉगिन किया है या हमारी सहायता टीम से संपर्क करें।",
+    "terms": "उपयोग की शर्तें",
+    "privacy_policy": "गोपनीयता नीति",
+    "actived": "सक्रिय",
+    "offer_type_info": "हर महीने स्वचालित रूप से नवीनीकृत होता है",
+    "bay_for": "केवल ",
+    "offer_type": " / माह",
+    "offer_0": "कोर्स पंजीकृत करें और पेशेवर समुदाय में उनका प्रचार करें",
+    "offer_1": "साइट पर प्राथमिकता खोज",
+    "offer_2": "फोटो गैलरी",
+    "offer_3": "ईमेल रिमाइंडर",
+    "offer_4": "उपयोगकर्ता प्रोफ़ाइल का बुनियादी प्रबंधन",
+    "offer_5": "अनुकूलन योग्य मासिक कैलेंडर",
+    "offer_6": "और भी बहुत कुछ...",
+    "manage_subscription": "सदस्यता प्रबंधित करें"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "सभी उपलब्ध ग्राहकों को रिमाइंडर भेजें ",
+    "send_email_for_all": "सभी को रिमाइंडर भेजें",
+    "no_time_available": "कोई उपलब्ध समय नहीं है",
+    "schedule_not_registered": "{text} के लिए शेड्यूल पंजीकृत नहीं है!",
+    "register_schedule": "पंजीकरण करें!",
+    "telemedicine": "ऑनलाइन परामर्श",
+    "in_local": "स्थानीय परामर्श"
+  },
+  "schedule_telemedicine": {
+    "title": "ऑनलाइन परामर्श?",
+    "not": "नहीं",
+    "yes": "हां"
+  },
+  "telemedicine_worn": {
+    "title": "महत्वपूर्ण सूचना",
+    "not_show_again": "फिर से न दिखाएं",
+    "close": "ठीक है!"
+  },
+  "telemedicine": {
+    "checkbox": "टेलीमेडिसिन मोड",
+    "is_telemedicine": "समय को टेलीमेडिसिन के रूप में पंजीकृत किया जाएगा",
+    "is_not_telemedicine": "समय को स्थानीय परामर्श के रूप में पंजीकृत किया जाएगा"
+  },
+  "add_schedule": {
+    "title": "परामर्श निर्धारित करें",
+    "telemedicine_worn": "कृपया अपने मरीज को वर्चुअल कंसल्टेशन रूम में प्रवेश के निर्देश प्रदान करें।",
+    "schedule_for": "के लिए निर्धारित करें...",
+    "name": "नाम और उपनाम",
+    "phone": "फोन",
+    "email": "ईमेल",
+    "visit_type": "भेंट का प्रकार",
+    "note": "नोट",
+    "btn_schedule": "निर्धारित करें"
+  },
+  "scheduled_customer": {
+    "notified_text": "रिमाइंडर भेजा गया!",
+    "delete_schedule": "के लिए निर्धारित समय हटाएं: ",
+    "send_email_confirm": "के लिए अनुस्मारक भेजें ",
+    "send_email_is_proccessing": "प्रक्रिया चल रही है...",
+    "send_email_error": "भेजने में त्रुटि ;(",
+    "send_email_pendding": "अपूर्ण",
+    "title": "शेड्यूल",
+    "telemedicine_worn": "कृपया अपने मरीज को वर्चुअल कंसल्टेशन रूम में प्रवेश के निर्देश प्रदान करें।",
+    "status_canceled": "रद्द कर दिया गया!",
+    "status_scheduled": "के लिए निर्धारित...",
+    "confirmed": "पुष्टि की गई: ",
+    "send_email": "शेड्यूल रिमाइंडर भेजें",
+    "note": "नोट"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "सहेजने में त्रुटि हुई",
+    "title": "साप्ताहिक शेड्यूल सेट करें",
+    "save": "प्राथमिकताएं सहेजें"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "साप्ताहिक शेड्यूल",
+    "preferences_btn_confirm": "कॉन्फ़िगर करें",
+    "preferences_btn_cancel": "बाद में",
+    "preferences_btn_content": "मासिक शेड्यूल बनाना आसान बनाने के लिए, साप्ताहिक शेड्यूल सेट करें। यह परामर्श समय को जल्दी और कुशलतापूर्वक सेट करने की अनुमति देता है।",
+    "delete_schedule": "{month} {year} के लिए शेड्यूल हटाएं?",
+    "for": "के लिए",
+    "save_schedule": "शेड्यूल सहेजें",
+    "save": "सहेजें"
+  },
+  "schedule": {
+    "title": "शेड्यूल"
+  },
+  "settings_schedule": {
+    "title": "शेड्यूल सेट करें"
+  },
+  "common_questions_screen": {
+    "title": "अक्सर पूछे जाने वाले प्रश्न",
+    "suport": "तकनीकी सहायता: "
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "worns": "रिमाइंडर/सूचनाएं",
+    "profile_on_site": "वेबसाइट पर मेरी प्रोफ़ाइल",
+    "subcription_status_free": "निःशुल्क परीक्षण",
+    "subcription_status_pro": "Pro उपयोगकर्ता",
+    "subcription_status_show": "सदस्यता",
+    "available_plans": "उपलब्ध योजनाएं देखें",
+    "days_left": "बचे हुए दिन: {amount}",
+    "suport": "सहायता",
+    "manual_modal_title": "सिस्टम मैनुअल - Doctor Friend",
+    "manual": "सिस्टम मैनुअल",
+    "common_question": "अक्सर पूछे जाने वाले प्रश्न",
+    "terms": "उपयोग की शर्तें",
+    "privacy_policy": "गोपनीयता नीति"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "रिमाइंडर/सूचना ({amount})",
+    "title": "रिमाइंडर/सूचना",
+    "help": "शेड्यूल प्रक्रिया के दौरान ग्राहकों के लिए रिमाइंडर या सूचनाएं यहां दर्ज करें। उदाहरण: हमारे परिसर में मास्क पहनना अनिवार्य है।",
+    "save": "सहेजें"
+  },
+  "evaluetions_rate": {
+    "title": "औसत रेटिंग: ",
+    "show": "रेटिंग देखें ({amount})",
+    "no_evaluetion": "कोई रेटिंग उपलब्ध नहीं है"
+  },
+  "response_evaluation": {
+    "title": "रेटिंग का उत्तर दें",
+    "response": "'{name}' को उत्तर दें",
+    "save": "सहेजें"
+  },
+  "update_about_me": {
+    "title": "मेरे बारे में",
+    "label": "अपने बारे में थोड़ा बताएं",
+    "save": "सहेजें"
+  },
+  "update_common_questions": {
+    "question": "प्रश्न ({amount})",
+    "response": "उत्तर ({amount})",
+    "title": "अक्सर पूछे जाने वाले प्रश्न",
+    "save": "सहेजें"
+  },
+  "update_contact": {
+    "title": "संपर्क जानकारी",
+    "phone": "फोन नंबर 1",
+    "commercial_phone": "फोन नंबर 2",
+    "crm": "पंजीकरण संख्या",
+    "pix": "PIX",
+    "save": "सहेजें"
+  },
+  "update_diseases_treated": {
+    "title": "इलाज की जाने वाली बीमारियां",
+    "save": "सहेजें"
+  },
+  "update_experience": {
+    "experience": "अनुभव ({amount})",
+    "title": "अनुभव",
+    "save": "सहेजें"
+  },
+  "update_health_insurance": {
+    "plan": "प्लान ({amount})",
+    "title": "स्वास्थ्य बीमा योजना",
+    "save": "सहेजें"
+  },
+  "update_languages": {
+    "language": "भाषा ({amount})",
+    "title": "भाषाएं",
+    "save": "सहेजें"
+  },
+  "update_links": {
+    "title": "संपर्क जानकारी",
+    "site": "वेबसाइट",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "सहेजें"
+  },
+  "update_services": {
+    "service": "सेवा ({amount})",
+    "price": "मूल्य",
+    "title": "सेवाएं",
+    "save": "सहेजें"
+  },
+  "update_time_zone": {
+    "title": "समय क्षेत्र संपादित करें",
+    "label": "समय क्षेत्र",
+    "save": "सहेजें"
+  },
+  "update_training": {
+    "training": "प्रशिक्षण ({amount})",
+    "title": "प्रशिक्षण",
+    "save": "सहेजें"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "सही खोज सुनिश्चित करने के लिए प्रस्तावित पता चुनें।",
+    "title": "संचालन का शहर संपादित करें",
+    "label": "संचालन का शहर",
+    "save": "सहेजें"
+  },
+  "delete_account_screen": {
+    "confirm_title": "खाता हटाएं?",
+    "confirm_content": "आपका सारा डेटा नष्ट हो जाएगा।",
+    "title": "खाता हटाएं",
+    "pass": "पासवर्ड",
+    "delete": "खाता हटाएं"
+  },
+  "evaluations_screen": {
+    "title": "मूल्यांकन",
+    "evaluation_hide": "अन्य उपयोगकर्ताओं से मूल्यांकन छिपाएं",
+    "evaluation_show": "अन्य उपयोगकर्ताओं के लिए मूल्यांकन दृश्यमान बनाएं",
+    "to_response": "उत्तर दें"
+  },
+  "update_address_screen": {
+    "title": "परामर्श पता संपादित करें",
+    "zipe_code": "पिन कोड",
+    "street": "सड़क",
+    "number": "संख्या",
+    "neighborhood": "पड़ोस",
+    "complement": "पूरक",
+    "city": "शहर",
+    "state": "राज्य",
+    "country": "देश",
+    "save": "सहेजें"
+  },
+  "update_images_screen": {
+    "title": "गैलरी",
+    "edit_info": "चयन और संपादन के लिए छवि को दबाकर रखें",
+    "save": "सहेजें",
+    "photos": "फोटो: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "{email} पर पासवर्ड परिवर्तन के लिए ईमेल भेजा गया है। कृपया जारी रखने के लिए अपना मेलबॉक्स जांचें।",
+    "email_sended_confirm": "ठीक है!",
+    "request_reset_pass_title": "पासवर्ड परिवर्तन का अनुरोध करें?",
+    "title": "प्रोफ़ाइल संपादित करें",
+    "name": "नाम और उपनाम",
+    "profession": "पेशा",
+    "specialty": "विशेषता",
+    "pass": "वर्तमान पासवर्ड",
+    "save": "सहेजें",
+    "update_pass": "पासवर्ड बदलें!",
+    "delete_account": "खाता हटाएं!"
+  },
+  "user_screen": {
+    "logout_confirm": "खाते से लॉगआउट करें?",
+    "edit_error": "डेटा सहेजा नहीं जा सका!",
+    "title": "प्रोफ़ाइल",
+    "contact": "संपर्क:",
+    "email": "ईमेल:",
+    "phone": "फोन नंबर 1:",
+    "commercial_phone": "फोन नंबर 2:",
+    "crm": "पंजीकरण संख्या:",
+    "pix": "PIX कुंजी:",
+    "links": "लिंक:",
+    "site": "वेबसाइट:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "सेवाएं:",
+    "experience": "अनुभव:",
+    "diseases_treated": "इलाज की जाने वाली बीमारियां:",
+    "health_insurance": "स्वास्थ्य बीमा योजनाएं:",
+    "languages": "भाषाएं:",
+    "about_me": "मेरे बारे में:",
+    "training": "प्रशिक्षण:",
+    "time_zone": "समय क्षेत्र:",
+    "city": "संचालन का शहर:",
+    "address": "परामर्श का पता:",
+    "galery": "गैलरी:",
+    "common_questions": "अक्सर पूछे जाने वाले प्रश्न:",
+    "verified_profile": "सत्यापित प्रोफ़ाइल",
+    "no_verified_profile": "प्रोफ़ाइल सत्यापित करें"
+  },
+  "weview": {
+    "on_out": "नेविगेशन से बाहर निकलें?",
+    "error_data": "त्रुटि: {error}",
+    "error_connection": "कृपया अपने कनेक्शन की जाँच करें और पुनः प्रयास करें।",
+    "try_again": "पुनः प्रयास करें",
+    "go_back": "वापस जाएं"
+  },
+  "schedule_reminder": {
+    "title": "{date} के लिए अनुस्मारक"
+  },
+  "home_screen": {
+    "menu_settings": "सेटिंग्स",
+    "menu_schedule": "शेड्यूल",
+    "menu_profile": "प्रोफ़ाइल",
+    "menu_education": "चिकित्सा शिक्षा"
+  },
+  "map_screen": {
+    "select": "चुनें...",
+    "title": "मानचित्र"
+  },
+  "account_state": {
+    "rejected_title": "\"Doctor Friend\" खाते के लिए आपका अनुरोध अस्वीकृत कर दिया गया है",
+    "analysis_title": "आपका खाता समीक्षा में है",
+    "rejection_text": "{name} जी,\n\nहमें उम्मीद है कि आप ठीक हैं। हमें खेद है कि \"Doctor Friend\" खाते के लिए आपका अनुरोध सावधानीपूर्वक समीक्षा के बाद अस्वीकार कर दिया गया है।\n\nहम समझते हैं कि यह निराशाजनक हो सकता है, और हम आपको विश्वास दिलाना चाहते हैं कि यह निर्णय विशिष्ट मानदंडों के आधार पर लिया गया है। यदि आवश्यक हो तो आप अतिरिक्त जानकारी प्रदान कर सकते हैं या यदि आप मानते हैं कि यह एक त्रुटि है, तो कृपया हमसे संपर्क करें।\n\n\"Doctor Friend\" में आपकी रुचि के लिए धन्यवाद। हमें उम्मीद है कि भविष्य में हम आपकी आवश्यकताओं को पूरा कर सकेंगे।\n\nसादर,\n\nDoctor Friend टीम",
+    "analysis_text": "नमस्ते {name},\n\nहम आपको यह सूचित करना चाहते हैं कि आपका \"Doctor Friend\" खाता वर्तमान में समीक्षा में है। हमारी टीम एक सुरक्षित और कुशल अनुभव सुनिश्चित करने के लिए आपकी जानकारी की समीक्षा कर रही है।\n\nजैसे ही समीक्षा पूरी होगी, आपको एक अधिसूचना प्राप्त होगी। आपकी धैर्य और समझ के लिए धन्यवाद।\n\nअगर आपको सहायता की आवश्यकता है या कोई प्रश्न है, तो कृपया हमसे संपर्क करने में संकोच न करें।\n\nसादर,\n\nDoctor Friend टीम"
+  },
+  "education_screen": {
+    "title": "चिकित्सा शिक्षा",
+    "profession": "पेशा चुनें",
+    "amount": "परिणाम",
+    "my_courses": "मेरे पाठ्यक्रम"
+  },
+  "education_card": {
+    "go_to_course": "पाठ्यक्रम पर जाएं",
+    "edit": "संपादित करें"
+  },
+  "my_courses_screen": {
+    "title": "मेरे पाठ्यक्रम ({amount})",
+    "add_courses": "पाठ्यक्रम जोड़ें"
+  },
+  "course_form_screen": {
+    "title": "पाठ्यक्रम जोड़ें",
+    "title_edit": "पाठ्यक्रम संपादित करें",
+    "description": "पाठ्यक्रम से संबंधित व्यवसायों का चयन करें",
+    "professions": "संबंधित व्यवसाय",
+    "link_course": "पाठ्यक्रम लिंक",
+    "title_course": "पाठ्यक्रम का शीर्षक",
+    "description_course": "पाठ्यक्रम विवरण",
+    "thumbnail_course": "कवर छवि लिंक",
+    "next_step": "अगला",
+    "save": "सहेजें",
+    "notify": "सूचित करें",
+    "notify_all": "सभी विशेषज्ञों को",
+    "notify_only_related": "केवल पाठ्यक्रम से संबंधित विशेषज्ञों को",
+    "onDelete": "क्या आप पाठ्यक्रम हटाना चाहते हैं?",
+    "placeholder_link_course": "https://example.com/मेरा-पाठ्यक्रम",
+    "placeholder_title_course": "मानव शरीर रचना विज्ञान",
+    "placeholder_description_course": "मानव शरीर रचना विज्ञान पर विस्तृत विवरण",
+    "placeholder_thumbnail_course": "https://example.com/शरीर-रचना-छवि.jpg"
+  },
+  "validators": {
+    "invalidUrl": "कृपया एक मान्य URL दर्ज करें",
+    "invalidEmail": "कृपया एक मान्य ईमेल दर्ज करें",
+    "invalidZipCode": "कृपया एक मान्य पिन कोड दर्ज करें",
+    "invalidPass": "पासवर्ड में कम से कम 6 वर्ण होने चाहिए।",
+    "invalidConfirmPass": "पासवर्ड मेल नहीं खाते",
+    "invalid_time_alread_exists": "समय पहले से मौजूद है ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "उपयोगकर्ता सत्यापन",
+    "document_capture": "दस्तावेज़ कैप्चर",
+    "selfie_capture": "सेल्फी कैप्चर",
+    "verify_user": "उपयोगकर्ता को सत्यापित करें",
+    "pick_document_title": "फोटो के साथ दस्तावेज़",
+    "pick_selfie_title": "सेल्फी"
+  }
+}

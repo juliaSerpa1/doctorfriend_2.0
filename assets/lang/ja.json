@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "ja"
+  },
+  "callback_default": {
+    "title_error": "予期しないエラーが発生しました。\n後でもう一度試してください。",
+    "title_sucess": "成功",
+    "confirm_text": "はい",
+    "cancel_text": "いいえ"
+  },
+  "input": {
+    "is_empty": "必須フィールドです。"
+  },
+  "loading_error": {
+    "title": "予期しないエラーが発生しました！",
+    "error_message": "予期しないエラーが発生しました。"
+  },
+  "location_input": {
+    "error_location_unabled": "位置情報サービスが無効になっています。",
+    "error_location_denied": "位置情報へのアクセスが拒否されました。",
+    "error_location_denied_forever": "位置情報へのアクセスが永久に拒否されました。再度リクエストできません！",
+    "btn_current_location": "現在地",
+    "btn_select_on_map": "地図で選択",
+    "error_unselected_location": "位置情報が指定されていません！"
+  },
+  "notifications": {
+    "title": "通知"
+  },
+  "today": {
+    "text": "今日"
+  },
+  "days_of_week": {
+    "list": [
+      "月曜日",
+      "火曜日",
+      "水曜日",
+      "木曜日",
+      "金曜日",
+      "土曜日",
+      "日曜日"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "ようこそ！",
+    "call": "今日はどのようにお手伝いできますか？",
+    "btn_1": "専門家を探す",
+    "btn_2": "専門家としてログイン",
+    "btn_3": "フランチャイズ加盟者になる"
+  },
+  "forgot_pass_screen": {
+    "success": "リカバリー用のメールが送信されました",
+    "confirm_text": "OK！",
+    "title": "パスワードのリセット",
+    "email": "メール",
+    "btn": "メールを送信"
+  },
+  "login_screen": {
+    "update_account_title": "お客様のアカウントはプロフェッショナルではありません",
+    "update_account_content": "プロフェッショナルプロフィールに更新しますか？",
+    "title": "ログイン",
+    "email": "メール",
+    "pass": "パスワード",
+    "enter": "ログイン",
+    "forgot_pass": "パスワードを忘れましたか？",
+    "register": "アカウントをお持ちではありません！",
+    "google": "Googleでログイン",
+    "apple": "Appleでログイン"
+  },
+  "signup_screen": {
+    "title": "専門家として登録する",
+    "no_lat_lng": "正確な検索を保証するために提案された住所を選択してください。",
+    "profession": "職業",
+    "specialty": "専門分野",
+    "name": "氏名",
+    "email": "メール",
+    "phone": "電話番号",
+    "city": "活動都市",
+    "pass": "パスワードを作成",
+    "pass_repeat": "パスワードを確認",
+    "privacy_policy_text": "利用規約を読み、プライバシーポリシーに同意します。",
+    "privacy_policy_text_link": "プライバシーポリシー.*",
+    "contact_text_agree": "専門的な基準を遵守する必要があること、および登録番号や専門分野を記載する必要があることを認識しています.* お客様のデータを入力することで、doctorfriend.com.brがサービスを提供するためにお客様に連絡することに同意するものとします。連絡を希望しない場合は、データの削除を要求できます。お問い合わせください。",
+    "enter": "登録する",
+    "login": "既にアカウントをお持ちの方はこちら！"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "オファーが見つかりません",
+    "error_offer_not_available": "オファーが利用できません",
+    "call": "Pro機能を引き続き使用するにはアップグレードしてください",
+    "bay": "続行",
+    "no_offer_available": "現在利用可能なオファーはありません",
+    "contact_text_call": "既にアクティブなサブスクリプションがあり、この通知が表示される場合は、正しいアカウントでログインしているか確認するか、サポートにお問い合わせください。",
+    "terms": "利用規約",
+    "privacy_policy": "プライバシーポリシー",
+    "actived": "アクティブ",
+    "offer_type_info": "毎月自動更新されます",
+    "bay_for": "月額料金：",
+    "offer_type": " /月",
+    "offer_0": "コースを登録して専門コミュニティに宣伝する",
+    "offer_1": "サイトでの検索優先度",
+    "offer_2": "フォトギャラリー",
+    "offer_3": "メールでのリマインダー",
+    "offer_4": "ユーザープロフィールの基本管理",
+    "offer_5": "カスタマイズ可能な月間カレンダー",
+    "offer_6": "その他多数...",
+    "manage_subscription": "サブスクリプションを管理する"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "全ての利用可能な顧客にリマインダーを送信 ",
+    "send_email_for_all": "全てにリマインダーを送信",
+    "no_time_available": "利用可能な時間がありません",
+    "schedule_not_registered": "{text} のスケジュールが登録されていません！",
+    "register_schedule": "登録する！",
+    "telemedicine": "オンライン診察",
+    "in_local": "現地診察"
+  },
+  "schedule_telemedicine": {
+    "title": "オンライン相談ですか？",
+    "not": "いいえ",
+    "yes": "はい"
+  },
+  "telemedicine_worn": {
+    "title": "重要なお知らせ",
+    "not_show_again": "再表示しない",
+    "close": "OK！"
+  },
+  "telemedicine": {
+    "checkbox": "テレメディシンモード",
+    "is_telemedicine": "スケジュールはテレメディシンとして登録されます",
+    "is_not_telemedicine": "スケジュールは現地診察として登録されます"
+  },
+  "add_schedule": {
+    "title": "診察を予約",
+    "telemedicine_worn": "患者に仮想診察室へのアクセス方法を提供してください。",
+    "schedule_for": "予約対象...",
+    "name": "名前と姓",
+    "phone": "電話番号",
+    "email": "メール",
+    "visit_type": "訪問タイプ",
+    "note": "ノート",
+    "btn_schedule": "予約する"
+  },
+  "scheduled_customer": {
+    "notified_text": "リマインダー送信済み！",
+    "delete_schedule": "以下の予約を削除: ",
+    "send_email_confirm": "以下にリマインダーを送信: ",
+    "send_email_is_proccessing": "処理中...",
+    "send_email_error": "送信エラー ;(",
+    "send_email_pendding": "保留中",
+    "title": "スケジュール",
+    "telemedicine_worn": "患者に仮想診察室へのアクセス方法を提供してください。",
+    "status_canceled": "キャンセル済み！",
+    "status_scheduled": "以下の日程で予約済み...",
+    "confirmed": "確認済み: ",
+    "send_email": "リマインダーを送信",
+    "note": "ノート"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "保存時にエラーが発生しました",
+    "title": "週次スケジュールを設定",
+    "save": "設定を保存"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "週次スケジュール",
+    "preferences_btn_confirm": "設定する",
+    "preferences_btn_cancel": "後で",
+    "preferences_btn_content": "月次スケジュールを簡単に作成するには、週次スケジュールを設定してください。これにより、診察時間を迅速かつ効率的に設定できます。",
+    "delete_schedule": "{month} {year} のスケジュールを削除しますか？",
+    "for": "対象",
+    "save_schedule": "スケジュールを保存",
+    "save": "保存"
+  },
+  "schedule": {
+    "title": "スケジュール"
+  },
+  "settings_schedule": {
+    "title": "スケジュールを設定"
+  },
+  "common_questions_screen": {
+    "title": "よくある質問",
+    "suport": "技術サポート: "
+  },
+  "settings": {
+    "title": "設定",
+    "worns": "リマインダー/通知",
+    "profile_on_site": "ウェブサイト上のプロフィール",
+    "subcription_status_free": "無料試用版",
+    "subcription_status_pro": "Proユーザー",
+    "subcription_status_show": "サブスクリプション",
+    "available_plans": "利用可能なプランを見る",
+    "days_left": "残り日数: {amount}",
+    "suport": "サポート",
+    "manual_modal_title": "システムマニュアル - Doctor Friend",
+    "manual": "システムマニュアル",
+    "common_question": "よくある質問",
+    "terms": "利用規約",
+    "privacy_policy": "プライバシーポリシー"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "リマインダー/通知 ({amount})",
+    "title": "リマインダー/通知",
+    "help": "スケジュール中に顧客に向けたリマインダーや通知をここに入力してください。例: 施設内でのマスク着用は必須です。",
+    "save": "保存"
+  },
+  "evaluetions_rate": {
+    "title": "平均評価: ",
+    "show": "レビューを見る ({amount})",
+    "no_evaluetion": "レビューは利用できません"
+  },
+  "response_evaluation": {
+    "title": "レビューに返信",
+    "response": "'{name}' に返信",
+    "save": "保存"
+  },
+  "update_about_me": {
+    "title": "自己紹介",
+    "label": "少し自己紹介してください",
+    "save": "保存"
+  },
+  "update_common_questions": {
+    "question": "質問 ({amount})",
+    "response": "回答 ({amount})",
+    "title": "よくある質問",
+    "save": "保存"
+  },
+  "update_contact": {
+    "title": "連絡先情報",
+    "phone": "電話番号1",
+    "commercial_phone": "電話番号2",
+    "crm": "登録番号",
+    "pix": "PIX",
+    "save": "保存"
+  },
+  "update_diseases_treated": {
+    "title": "治療可能な疾患",
+    "save": "保存"
+  },
+  "update_experience": {
+    "experience": "経験 ({amount})",
+    "title": "経験分野",
+    "save": "保存"
+  },
+  "update_health_insurance": {
+    "plan": "プラン ({amount})",
+    "title": "医療保険プラン",
+    "save": "保存"
+  },
+  "update_languages": {
+    "language": "言語 ({amount})",
+    "title": "言語",
+    "save": "保存"
+  },
+  "update_links": {
+    "title": "連絡先情報",
+    "site": "ウェブサイト",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "保存"
+  },
+  "update_services": {
+    "service": "サービス ({amount})",
+    "price": "価格",
+    "title": "サービス",
+    "save": "保存"
+  },
+  "update_time_zone": {
+    "title": "タイムゾーンを編集",
+    "label": "タイムゾーン",
+    "save": "保存"
+  },
+  "update_training": {
+    "training": "トレーニング ({amount})",
+    "title": "トレーニング",
+    "save": "保存"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "正しい検索結果を保証するために、提案された住所を選択してください。",
+    "title": "活動都市を編集",
+    "label": "活動都市",
+    "save": "保存"
+  },
+  "delete_account_screen": {
+    "confirm_title": "アカウントを削除しますか？",
+    "confirm_content": "すべてのデータが失われます",
+    "title": "アカウント削除",
+    "pass": "パスワード",
+    "delete": "アカウントを削除"
+  },
+  "evaluations_screen": {
+    "title": "評価",
+    "evaluation_hide": "他のユーザーから評価を隠す",
+    "evaluation_show": "他のユーザーに評価を表示する",
+    "to_response": "返信する"
+  },
+  "update_address_screen": {
+    "title": "診察場所を編集",
+    "zipe_code": "郵便番号",
+    "street": "通り",
+    "number": "番号",
+    "neighborhood": "地区",
+    "complement": "補足情報",
+    "city": "都市",
+    "state": "州",
+    "country": "国",
+    "save": "保存"
+  },
+  "update_images_screen": {
+    "title": "ギャラリー",
+    "edit_info": "画像を長押しして選択・編集",
+    "save": "保存",
+    "photos": "写真: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "{email} にパスワード変更用のメールを送信しました。メールを確認して続行してください。",
+    "email_sended_confirm": "OK！",
+    "request_reset_pass_title": "パスワード変更をリクエストしますか？",
+    "title": "プロフィールを編集",
+    "name": "名前と姓",
+    "profession": "職業",
+    "specialty": "専門分野",
+    "pass": "現在のパスワード",
+    "save": "保存",
+    "update_pass": "パスワードを変更！",
+    "delete_account": "アカウントを削除！"
+  },
+  "user_screen": {
+    "logout_confirm": "アカウントからログアウトしますか？",
+    "edit_error": "データを保存できませんでした！",
+    "title": "プロフィール",
+    "contact": "連絡先:",
+    "email": "メール:",
+    "phone": "電話番号1:",
+    "commercial_phone": "電話番号2:",
+    "crm": "登録番号:",
+    "pix": "PIXキー:",
+    "links": "リンク:",
+    "site": "ウェブサイト:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "サービス:",
+    "experience": "経験分野:",
+    "diseases_treated": "治療可能な疾患:",
+    "health_insurance": "医療保険プラン:",
+    "languages": "言語:",
+    "about_me": "自己紹介:",
+    "training": "トレーニング:",
+    "time_zone": "タイムゾーン:",
+    "city": "活動都市:",
+    "address": "診察場所:",
+    "galery": "ギャラリー:",
+    "common_questions": "よくある質問:",
+    "verified_profile": "検証済みプロフィール",
+    "no_verified_profile": "プロフィールを検証"
+  },
+  "weview": {
+    "on_out": "ナビゲーションを終了しますか？",
+    "error_data": "エラー: {error}",
+    "error_connection": "接続を確認して、再試行してください。",
+    "try_again": "再試行",
+    "go_back": "戻る"
+  },
+  "schedule_reminder": {
+    "title": "{date} の予約リマインダー"
+  },
+  "home_screen": {
+    "menu_settings": "設定",
+    "menu_schedule": "スケジュール",
+    "menu_profile": "プロフィール",
+    "menu_education": "医学教育"
+  },
+  "map_screen": {
+    "select": "選択...",
+    "title": "地図"
+  },
+  "account_state": {
+    "rejected_title": "「Doctor Friend」のアカウント申請が却下されました",
+    "analysis_title": "アカウントが審査中です",
+    "rejection_text": "{name} 様、\n\nお元気でお過ごしでしょうか。慎重な審査の結果、「Doctor Friend」のアカウント申請を却下させていただくことになりました。\n\nこの決定は特定の基準に基づいて行われましたので、何卒ご理解ください。必要な追加情報がある場合や誤りがあったとお考えの場合は、どうぞお気軽にお問い合わせください。\n\n「Doctor Friend」へのご関心に感謝申し上げます。またの機会にお力になれることを願っております。\n\nよろしくお願いいたします。\n\n「Doctor Friend」チーム",
+    "analysis_text": "{name} 様、\n\n現在、あなたのアカウントは「Doctor Friend」による審査中です。私たちのチームは、安全で効率的な利用を確保するために情報を確認しています。\n\n審査が完了次第、通知いたします。お待ちいただき、ありがとうございます。\n\nご質問やお困りのことがありましたら、いつでもお気軽にお問い合わせください。\n\nよろしくお願いいたします。\n\n「Doctor Friend」チーム"
+  },
+  "education_screen": {
+    "title": "医学教育",
+    "profession": "職業を選択",
+    "amount": "結果",
+    "my_courses": "マイコース"
+  },
+  "education_card": {
+    "go_to_course": "コースにアクセス",
+    "edit": "編集"
+  },
+  "my_courses_screen": {
+    "title": "マイコース ({amount})",
+    "add_courses": "コースを追加"
+  },
+  "course_form_screen": {
+    "title": "コースを追加",
+    "title_edit": "コースを編集",
+    "description": "コースに関連する職業を選択してください",
+    "professions": "関連する職業",
+    "link_course": "コースリンク",
+    "title_course": "コースタイトル",
+    "description_course": "コース説明",
+    "thumbnail_course": "カバー画像リンク",
+    "next_step": "次へ",
+    "save": "保存",
+    "notify": "通知",
+    "notify_all": "全ての専門家に",
+    "notify_only_related": "コースに関連する専門家にのみ",
+    "onDelete": "コースを削除しますか？",
+    "placeholder_link_course": "https://example.com/コース",
+    "placeholder_title_course": "人体解剖学",
+    "placeholder_description_course": "人体解剖学に関する詳細な説明",
+    "placeholder_thumbnail_course": "https://example.com/解剖学画像.jpg"
+  },
+  "validators": {
+    "invalidUrl": "有効なURLを入力してください",
+    "invalidEmail": "有効なメールアドレスを入力してください",
+    "invalidZipCode": "有効な郵便番号を入力してください",
+    "invalidPass": "パスワードは6文字以上である必要があります。",
+    "invalidConfirmPass": "パスワードが一致しません",
+    "invalid_time_alread_exists": "すでに登録されている時間です（{hour}:{minute}）"
+  },
+  "user_verification": {
+    "title": "ユーザー確認",
+    "document_capture": "書類のキャプチャ",
+    "selfie_capture": "セルフィーのキャプチャ",
+    "verify_user": "ユーザーを確認",
+    "pick_document_title": "写真付きの書類",
+    "pick_selfie_title": "セルフィー"
+  }
+}

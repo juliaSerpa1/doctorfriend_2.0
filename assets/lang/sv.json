@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "sv"
+  },
+  "callback_default": {
+    "title_error": "Ett oväntat fel inträffade. \nFörsök igen senare.",
+    "title_sucess": "Framgång",
+    "confirm_text": "JA",
+    "cancel_text": "NEJ"
+  },
+  "input": {
+    "is_empty": "Fältet är obligatoriskt."
+  },
+  "loading_error": {
+    "title": "Ett oväntat fel inträffade!",
+    "error_message": "Ett oväntat fel inträffade."
+  },
+  "location_input": {
+    "error_location_unabled": "Plats tjänst är avstängd",
+    "error_location_denied": "Tillgång till plats nekades",
+    "error_location_denied_forever": "Tillgång till plats nekades, vi kan inte be om det igen!",
+    "btn_current_location": "Aktuell plats",
+    "btn_select_on_map": "Välj på kartan",
+    "error_unselected_location": "Ingen plats vald!"
+  },
+  "notifications": {
+    "title": "Aviseringar"
+  },
+  "today": {
+    "text": "Idag"
+  },
+  "days_of_week": {
+    "list": [
+      "måndag",
+      "tisdag",
+      "onsdag",
+      "torsdag",
+      "fredag",
+      "lördag",
+      "söndag"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "januari",
+      "februari",
+      "mars",
+      "april",
+      "maj",
+      "juni",
+      "juli",
+      "augusti",
+      "september",
+      "oktober",
+      "november",
+      "december"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Välkommen!",
+    "call": "Hur kan vi hjälpa dig idag?",
+    "btn_1": "Sök professionell",
+    "btn_2": "Logga in som professionell",
+    "btn_3": "Bli franchisetagare"
+  },
+  "forgot_pass_screen": {
+    "success": "Återställnings-e-post skickad till",
+    "confirm_text": "Ok!",
+    "title": "Återställ lösenord",
+    "email": "E-post",
+    "btn": "Skicka e-post"
+  },
+  "login_screen": {
+    "update_account_title": "Ditt konto är inte professionellt",
+    "update_account_content": "Vill du uppdatera till ett professionellt konto?",
+    "title": "Logga in",
+    "email": "E-post",
+    "pass": "Lösenord",
+    "enter": "Logga in",
+    "forgot_pass": "Glömt lösenord!",
+    "register": "Har du inget konto?",
+    "google": "Logga in med Google",
+    "apple": "Logga in med Apple"
+  },
+  "signup_screen": {
+    "title": "Registrera dig som professionell",
+    "no_lat_lng": "Välj en föreslagen adress för att säkerställa en korrekt sökning",
+    "profession": "Yrke",
+    "specialty": "Specialisering",
+    "name": "Förnamn och efternamn",
+    "email": "E-post",
+    "phone": "Telefon",
+    "city": "Arbetsstad",
+    "pass": "Skapa lösenord",
+    "pass_repeat": "Bekräfta lösenord",
+    "privacy_policy_text": "Jag accepterar villkoren och bekräftar att jag har läst och förstått",
+    "privacy_policy_text_link": "integritetspolicyn.*",
+    "contact_text_agree": "Jag bekräftar att jag är medveten om de professionella normerna jag måste följa och behovet av att inkludera registreringsnummer och specialisering (om tillämpligt).* Genom att fylla i dina uppgifter godkänner du att doctorfriend.com.br kontaktar dig för att erbjuda sina tjänster. Du kan när som helst begära att dina uppgifter raderas om du inte vill bli kontaktad. Kontakta oss gärna.",
+    "enter": "Registrera dig",
+    "login": "Har du redan ett konto?"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Erbjudande hittades inte",
+    "error_offer_not_available": "Erbjudande inte tillgängligt",
+    "call": "Uppgradera för att fortsätta använda Pro-funktionerna",
+    "bay": "Fortsätt",
+    "no_offer_available": "Inget erbjudande tillgängligt just nu",
+    "contact_text_call": "Om du redan har ett aktivt abonnemang och fortfarande ser detta meddelande, vänligen kontrollera om du är inloggad på rätt konto eller kontakta vår",
+    "terms": "Användarvillkor",
+    "privacy_policy": "Integritetspolicy",
+    "actived": "AKTIVERAD",
+    "offer_type_info": "Förnyas automatiskt varje månad",
+    "bay_for": "Endast för ",
+    "offer_type": " / månad",
+    "offer_0": "Registrera kurser och marknadsför dem till den professionella gemenskapen",
+    "offer_1": "Prioritet i sökningar på webbplatsen",
+    "offer_2": "Fotogalleri",
+    "offer_3": "Påminnelser via e-post",
+    "offer_4": "Grundläggande användarprofilhantering",
+    "offer_5": "Anpassningsbar månadskalender",
+    "offer_6": "Och mycket mer...",
+    "manage_subscription": "Hantera prenumeration"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Skicka påminnelse om bokning till alla tillgängliga kunder på ",
+    "send_email_for_all": "Skicka påminnelse om bokning till alla",
+    "no_time_available": "Inga tillgängliga tider",
+    "schedule_not_registered": "Schemat för {text} är inte registrerat!",
+    "register_schedule": "Registrera!",
+    "telemedicine": "Online konsultation",
+    "in_local": "Lokal konsultation"
+  },
+  "schedule_telemedicine": {
+    "title": "Online konsultation?",
+    "not": "Nej",
+    "yes": "Ja"
+  },
+  "telemedicine_worn": {
+    "title": "Viktig meddelande",
+    "not_show_again": "Visa inte igen",
+    "close": "Ok!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedicinläge",
+    "is_telemedicine": "Tiderna kommer att registreras som online konsultation",
+    "is_not_telemedicine": "Tiderna kommer att registreras som lokal konsultation"
+  },
+  "add_schedule": {
+    "title": "Boka konsultation",
+    "telemedicine_worn": "Vänligen ge åtkomstinstruktioner till det virtuella konsultationsrummet till din patient.",
+    "schedule_for": "Boka för...",
+    "name": "Förnamn och efternamn",
+    "phone": "Telefonnummer",
+    "email": "E-postadress",
+    "visit_type": "Typ av besök",
+    "note": "Anteckning",
+    "btn_schedule": "Boka"
+  },
+  "scheduled_customer": {
+    "notified_text": "Påminnelse skickad!",
+    "delete_schedule": "Ta bort bokning för: ",
+    "send_email_confirm": "Skicka bokningspåminnelse till ",
+    "send_email_is_proccessing": "Bearbetar...",
+    "send_email_error": "Fel vid skickande ;(",
+    "send_email_pendding": "Väntande",
+    "title": "Bokning",
+    "telemedicine_worn": "Vänligen ge åtkomstinstruktioner till det virtuella konsultationsrummet till din patient.",
+    "status_canceled": "Avbokad!",
+    "status_scheduled": "Bokad för...",
+    "confirmed": "Bekräftad: ",
+    "send_email": "Skicka bokningspåminnelse",
+    "note": "Anteckning"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Fel vid sparande",
+    "title": "Konfigurera veckoschema",
+    "save": "Spara preferenser"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Veckoschema",
+    "preferences_btn_confirm": "Konfigurera",
+    "preferences_btn_cancel": "Senare",
+    "preferences_btn_content": "För att underlätta skapandet av månadsschemat, konfigurera veckoschemat. Detta gör det möjligt att snabbt och effektivt konfigurera tiderna.",
+    "delete_schedule": "Ta bort schema för {month} {year}?",
+    "for": "från",
+    "save_schedule": "Spara schema",
+    "save": "Spara"
+  },
+  "schedule": {
+    "title": "Schema"
+  },
+  "settings_schedule": {
+    "title": "Konfigurera schema"
+  },
+  "common_questions_screen": {
+    "title": "Vanliga frågor",
+    "suport": "Teknisk support: "
+  },
+  "settings": {
+    "title": "Inställningar",
+    "worns": "Påminnelser/Varningar",
+    "profile_on_site": "Min profil på webbplatsen",
+    "subcription_status_free": "Gratis provperiod",
+    "subcription_status_pro": "Pro-användare",
+    "subcription_status_show": "Prenumerationer",
+    "available_plans": "Visa tillgängliga planer",
+    "days_left": "{amount} dagar kvar",
+    "suport": "Support",
+    "manual_modal_title": "Systemmanual - Doctor Friend",
+    "manual": "Systemmanual",
+    "common_question": "Vanliga frågor",
+    "terms": "Användarvillkor",
+    "privacy_policy": "Integritetspolicy"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Påminnelse/Varning ({amount})",
+    "title": "Påminnelser/Varningar",
+    "help": "Fyll i här påminnelser eller varningar som ska visas för kunder under bokningsprocessen. Exempel: Munskydd krävs i lokalen.",
+    "save": "Spara"
+  },
+  "evaluetions_rate": {
+    "title": "Genomsnittligt betyg: ",
+    "show": "Visa betyg ({amount})",
+    "no_evaluetion": "Inga betyg tillgängliga"
+  },
+  "response_evaluation": {
+    "title": "Svara på betyg",
+    "response": "Svara '{name}'",
+    "save": "Spara"
+  },
+  "update_about_me": {
+    "title": "Om mig",
+    "label": "Berätta lite om dig själv",
+    "save": "Spara"
+  },
+  "update_common_questions": {
+    "question": "Fråga ({amount})",
+    "response": "Svar ({amount})",
+    "title": "Vanliga frågor",
+    "save": "Spara"
+  },
+  "update_contact": {
+    "title": "Kontaktinformation",
+    "phone": "Telefon 1",
+    "commercial_phone": "Telefon 2",
+    "crm": "Registreringsnummer",
+    "pix": "PIX",
+    "save": "Spara"
+  },
+  "update_diseases_treated": {
+    "title": "Behandlade sjukdomar",
+    "save": "Spara"
+  },
+  "update_experience": {
+    "experience": "Erfarenhet ({amount})",
+    "title": "Erfarenhet inom",
+    "save": "Spara"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Hälsovård",
+    "save": "Spara"
+  },
+  "update_languages": {
+    "language": "Språk ({amount})",
+    "title": "Språk",
+    "save": "Spara"
+  },
+  "update_links": {
+    "title": "Kontaktinformation",
+    "site": "Webbplats",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Spara"
+  },
+  "update_services": {
+    "service": "Tjänst ({amount})",
+    "price": "Pris",
+    "title": "Tjänster",
+    "save": "Spara"
+  },
+  "update_time_zone": {
+    "title": "Redigera tidszon",
+    "label": "Tidszon",
+    "save": "Spara"
+  },
+  "update_training": {
+    "training": "Utbildning ({amount})",
+    "title": "Utbildning",
+    "save": "Spara"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Välj en föreslagen adress för att säkerställa korrekt sökning",
+    "title": "Redigera arbetsstad",
+    "label": "Arbetsstad",
+    "save": "Spara"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Ta bort konto?",
+    "confirm_content": "Alla dina data kommer att förloras",
+    "title": "Ta bort konto",
+    "pass": "Lösenord",
+    "delete": "Ta bort konto"
+  },
+  "evaluations_screen": {
+    "title": "Betyg",
+    "evaluation_hide": "Dölj betyg för andra",
+    "evaluation_show": "Visa betyg för andra",
+    "to_response": "Svar"
+  },
+  "update_address_screen": {
+    "title": "Redigera tjänstadress",
+    "zipe_code": "Postnummer",
+    "street": "Gata",
+    "number": "Nummer",
+    "neighborhood": "Grannskap",
+    "complement": "Komplement",
+    "city": "Stad",
+    "state": "Stat",
+    "country": "Land",
+    "save": "Spara"
+  },
+  "update_images_screen": {
+    "title": "Galleri",
+    "edit_info": "Håll ner på bilden för att välja och redigera",
+    "save": "Spara",
+    "photos": "Fotografier: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "E-post för att ändra lösenord skickades till {email}. Kontrollera e-posten för att fortsätta ändringen",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Begär lösenordsändring?",
+    "title": "Redigera profil",
+    "name": "Förnamn och Efternamn",
+    "profession": "Yrke",
+    "specialty": "Specialisering",
+    "pass": "Nuvarande lösenord",
+    "save": "Spara",
+    "update_pass": "Ändra lösenord!",
+    "delete_account": "Ta bort konto!"
+  },
+  "user_screen": {
+    "logout_confirm": "Vill du logga ut från ditt konto?",
+    "edit_error": "Kunde inte spara uppgifterna!",
+    "title": "Profil",
+    "contact": "Kontakt:",
+    "email": "E-post:",
+    "phone": "Telefon 1:",
+    "commercial_phone": "Telefon 2:",
+    "crm": "Registreringsnummer",
+    "pix": "PIX-nyckel:",
+    "links": "Länkar:",
+    "site": "Webbplats:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Tjänster:",
+    "experience": "Erfarenhet inom:",
+    "diseases_treated": "Behandlade sjukdomar:",
+    "health_insurance": "Sjukförsäkringar:",
+    "languages": "Språk:",
+    "about_me": "Om mig:",
+    "training": "Utbildning:",
+    "time_zone": "Tidszon:",
+    "city": "Arbetsstad:",
+    "address": "Behandlingsadress:",
+    "galery": "Galleri:",
+    "common_questions": "Vanliga frågor:",
+    "verified_profile": "Verifierad profil",
+    "no_verified_profile": "Verifiera profil"
+  },
+  "weview": {
+    "on_out": "Vill du lämna navigeringen?",
+    "error_data": "FEL: {error}",
+    "error_connection": "Kontrollera din anslutning och försök igen.",
+    "try_again": "Försök igen",
+    "go_back": "Tillbaka"
+  },
+  "schedule_reminder": {
+    "title": "Påminnelse om bokning för {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Inställningar",
+    "menu_schedule": "Schema",
+    "menu_profile": "Profil",
+    "menu_education": "Medicinsk utbildning"
+  },
+  "map_screen": {
+    "select": "Välj...",
+    "title": "Karta"
+  },
+  "account_state": {
+    "rejected_title": "Avslag på din kontoförfrågan på \"Doctor Friend\"",
+    "analysis_title": "Ditt konto är under granskning",
+    "rejection_text": "Hej {name}, \n\nVi hoppas att du mår bra. Vi är ledsna att informera dig om att efter noggrann granskning har din kontoförfrågan på \"Doctor Friend\" avslagits. \n\nVi förstår att detta kan vara besvikande, och vi vill försäkra dig om att beslutet togs baserat på specifika kriterier. Om du behöver ytterligare information eller om du tror att ett misstag har begåtts, tveka inte att kontakta oss för vidare diskussion. \n\nTack för ditt intresse för \"Doctor Friend\" och vi hoppas att vi kan tillgodose dina behov i framtiden. \n\nVänliga hälsningar, \n\nDoctor Friend-teamet",
+    "analysis_text": "Hej {name}, \n\nVi vill informera dig om att ditt konto på \"Doctor Friend\" för närvarande är under granskning. Vårt team granskar dina uppgifter för att säkerställa en säker och effektiv upplevelse. \n\nDu kommer att få en notifikation när granskningen är klar. Vi uppskattar ditt tålamod och din förståelse. \n\nOm du behöver hjälp eller har några frågor, tveka inte att kontakta oss. \n\nVänliga hälsningar, \n\nDoctor Friend-teamet"
+  },
+  "education_screen": {
+    "title": "Medicinsk utbildning",
+    "profession": "Välj ett yrke",
+    "amount": "Resultat",
+    "my_courses": "Mina kurser"
+  },
+  "education_card": {
+    "go_to_course": "Gå till kurs",
+    "edit": "Redigera"
+  },
+  "my_courses_screen": {
+    "title": "Mina kurser ({amount})",
+    "add_courses": "Lägg till kurs"
+  },
+  "course_form_screen": {
+    "title": "Registrera kurs",
+    "title_edit": "Redigera kurs",
+    "description": "Välj yrken relaterade till kursen",
+    "professions": "Relaterade yrken",
+    "link_course": "Kurslänk",
+    "title_course": "Kurstitel",
+    "description_course": "Kursbeskrivning",
+    "thumbnail_course": "Länk till omslagsbild",
+    "next_step": "Fortsätt",
+    "save": "Spara",
+    "notify": "Meddela",
+    "notify_all": "Alla yrkesverksamma",
+    "notify_only_related": "Endast yrkesverksamma relaterade till kursen",
+    "onDelete": "Ta bort kurs?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Human anatomi",
+    "placeholder_description_course": "Detaljerad beskrivning av kursen om human anatomi",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Ange en giltig URL",
+    "invalidEmail": "Ange en giltig e-postadress",
+    "invalidZipCode": "Ange ett giltigt postnummer",
+    "invalidPass": "Lösenordet måste vara minst 6 tecken långt.",
+    "invalidConfirmPass": "Lösenorden matchar inte",
+    "invalid_time_alread_exists": "Tiden finns redan ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Användarverifiering",
+    "document_capture": "Dokumentuppladdning",
+    "selfie_capture": "Selfie-uppladdning",
+    "verify_user": "Verifiera användare",
+    "pick_document_title": "ID-dokument med foto",
+    "pick_selfie_title": "Selfie"
+  }
+}

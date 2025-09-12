@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "no"
+  },
+  "callback_default": {
+    "title_error": "En uventet feil har oppstått. \nPrøv igjen senere.",
+    "title_sucess": "Suksess",
+    "confirm_text": "JA",
+    "cancel_text": "NEI"
+  },
+  "input": {
+    "is_empty": "Feltet er obligatorisk."
+  },
+  "loading_error": {
+    "title": "En uventet feil har oppstått!",
+    "error_message": "En uventet feil har oppstått."
+  },
+  "location_input": {
+    "error_location_unabled": "Lokasjonstjeneste deaktivert",
+    "error_location_denied": "Tillatelse til å få tilgang til lokasjon ble nektet",
+    "error_location_denied_forever": "Tillatelse til å få tilgang til lokasjon ble nektet, vi kan ikke be om tillatelse igjen!",
+    "btn_current_location": "Nåværende lokasjon",
+    "btn_select_on_map": "Velg på kartet",
+    "error_unselected_location": "Lokasjon ikke valgt!"
+  },
+  "notifications": {
+    "title": "Varsler"
+  },
+  "today": {
+    "text": "I dag"
+  },
+  "days_of_week": {
+    "list": [
+      "mandag",
+      "tirsdag",
+      "onsdag",
+      "torsdag",
+      "fredag",
+      "lørdag",
+      "søndag"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "januar",
+      "februar",
+      "mars",
+      "april",
+      "mai",
+      "juni",
+      "juli",
+      "august",
+      "september",
+      "oktober",
+      "november",
+      "desember"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Velkommen!",
+    "call": "Hvordan kan vi hjelpe deg i dag?",
+    "btn_1": "Søk etter profesjonell",
+    "btn_2": "Logg inn som profesjonell",
+    "btn_3": "Bli franchisetaker"
+  },
+  "forgot_pass_screen": {
+    "success": "Gjenopprettings-e-post sendt til",
+    "confirm_text": "OK!",
+    "title": "Gjenopprett passord",
+    "email": "E-post",
+    "btn": "Send e-post"
+  },
+  "login_screen": {
+    "update_account_title": "Kontoen din er ikke profesjonell",
+    "update_account_content": "Vil du oppdatere til profesjonell profil?",
+    "title": "Logg inn",
+    "email": "E-post",
+    "pass": "Passord",
+    "enter": "Logg inn",
+    "forgot_pass": "Glemt passord!",
+    "register": "Har du ikke en konto?",
+    "google": "Logg inn med Google",
+    "apple": "Logg inn med Apple"
+  },
+  "signup_screen": {
+    "title": "Registrer deg som profesjonell",
+    "no_lat_lng": "Velg en foreslått adresse for å sikre riktig søk",
+    "profession": "Yrke",
+    "specialty": "Spesialisering",
+    "name": "Fornavn og etternavn",
+    "email": "E-post",
+    "phone": "Telefon",
+    "city": "By for arbeid",
+    "pass": "Lag passord",
+    "pass_repeat": "Bekreft passord",
+    "privacy_policy_text": "Jeg godtar vilkårene og betingelsene, og bekrefter at jeg har lest og forstått",
+    "privacy_policy_text_link": "personvernerklæringen.*",
+    "contact_text_agree": "Jeg erklærer at jeg er klar over de profesjonelle normene jeg må følge og behovet for å inkludere registreringsnummer og spesialisering (hvis aktuelt).* Ved å fylle ut informasjonen din, godtar du at doctorfriend.com.br kontakter deg for å tilby tjenestene sine. Du kan når som helst be om å få dataene dine slettet hvis du ikke ønsker å bli kontaktet. Bare kontakt oss.",
+    "enter": "Registrer deg",
+    "login": "Har du allerede en konto?"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Tilbud ikke funnet",
+    "error_offer_not_available": "Tilbud ikke tilgjengelig",
+    "call": "Oppgrader for å fortsette å bruke Pro-funksjonene",
+    "bay": "Fortsett",
+    "no_offer_available": "Ingen tilbud tilgjengelig for øyeblikket",
+    "contact_text_call": "Hvis du allerede har et aktivt abonnement og fortsatt ser denne meldingen, vennligst sjekk om du er logget inn med riktig konto eller kontakt vår",
+    "terms": "Brukervilkår",
+    "privacy_policy": "Personvernerklæring",
+    "actived": "AKTIV",
+    "offer_type_info": "Fornyes automatisk hver måned",
+    "bay_for": "Kun for ",
+    "offer_type": " / måned",
+    "offer_0": "Registrer kurs og markedsfør dem til profesjonsfellesskapet",
+    "offer_1": "Prioritet i søk på nettstedet",
+    "offer_2": "Bildegalleri",
+    "offer_3": "E-postpåminnelser",
+    "offer_4": "Grunnleggende profiladministrasjon",
+    "offer_5": "Tilpassbar månedlig timeplan",
+    "offer_6": "Og mye mer...",
+    "manage_subscription": "Administrer abonnement"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Send møtepåminnelse til alle tilgjengelige kunder på ",
+    "send_email_for_all": "Send møtepåminnelse til alle",
+    "no_time_available": "Ingen tilgjengelige tider",
+    "schedule_not_registered": "Timeplan for {text} er ikke registrert!",
+    "register_schedule": "Registrer!",
+    "telemedicine": "Online-konsultasjon",
+    "in_local": "Konsultasjon på stedet"
+  },
+  "schedule_telemedicine": {
+    "title": "Online-konsultasjon?",
+    "not": "Nei",
+    "yes": "Ja"
+  },
+  "telemedicine_worn": {
+    "title": "Viktig varsel",
+    "not_show_again": "Ikke vis igjen",
+    "close": "Ok!"
+  },
+  "telemedicine": {
+    "checkbox": "Telemedisin-modus",
+    "is_telemedicine": "Tidspunktene vil bli registrert som telemedisin",
+    "is_not_telemedicine": "Tidspunktene vil bli registrert som konsultasjon på stedet"
+  },
+  "add_schedule": {
+    "title": "Planlegg konsultasjon",
+    "telemedicine_worn": "Vennligst gi din pasient instruksjoner for tilgang til det virtuelle konsultasjonsrommet.",
+    "schedule_for": "Planlegg for...",
+    "name": "Fornavn og etternavn",
+    "phone": "Telefon",
+    "email": "E‑post",
+    "visit_type": "Besøkstype",
+    "note": "Merknad",
+    "btn_schedule": "Planlegg"
+  },
+  "scheduled_customer": {
+    "notified_text": "Påminnelse sendt!",
+    "delete_schedule": "Slett timeplan for: ",
+    "send_email_confirm": "Sender møtepåminnelse til ",
+    "send_email_is_proccessing": "Behandler...",
+    "send_email_error": "Feil ved sending ;(",
+    "send_email_pendding": "Venter",
+    "title": "Timeplan",
+    "telemedicine_worn": "Vennligst gi din pasient instruksjoner for tilgang til det virtuelle konsultasjonsrommet.",
+    "status_canceled": "Kansellert!",
+    "status_scheduled": "Planlagt for...",
+    "confirmed": "Bekreftet: ",
+    "send_email": "Send møtepåminnelse",
+    "note": "Merknad"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Feil ved lagring",
+    "title": "Konfigurer ukentlig timeplan",
+    "save": "Lagre preferanser"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Ukentlig timeplan",
+    "preferences_btn_confirm": "Konfigurer",
+    "preferences_btn_cancel": "Senere",
+    "preferences_btn_content": "For å forenkle opprettelsen av månedlig timeplan, konfigurer den ukentlige timeplanen. Dette gir rask og effektiv oppsett av tilgjengelige tider.",
+    "delete_schedule": "Slette timeplan for {month} {year}?",
+    "for": "for",
+    "save_schedule": "Lagre timeplan",
+    "save": "Lagre"
+  },
+  "schedule": {
+    "title": "Timeplan"
+  },
+  "settings_schedule": {
+    "title": "Konfigurer timeplan"
+  },
+  "common_questions_screen": {
+    "title": "Vanlige spørsmål",
+    "suport": "Teknisk støtte: "
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "worns": "Påminnelser/Advarsler",
+    "profile_on_site": "Min profil på nettstedet",
+    "subcription_status_free": "Gratis prøveperiode",
+    "subcription_status_pro": "Pro‑bruker",
+    "subcription_status_show": "Abonnementer",
+    "available_plans": "Se tilgjengelige planer",
+    "days_left": "{amount} dager igjen",
+    "suport": "Support",
+    "manual_modal_title": "Systemmanual – Doctor Friend",
+    "manual": "Systemmanual",
+    "common_question": "Vanlige spørsmål",
+    "terms": "Bruksbetingelser",
+    "privacy_policy": "Personvernerklæring"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Påminnelse/Advarsel ({amount})",
+    "title": "Påminnelser/Advarsler",
+    "help": "Skriv inn påminnelser eller advarsler til kundene her under bestillingsprosessen. Eksempel: Bruk av munnbind er obligatorisk på lokalene.",
+    "save": "Lagre"
+  },
+  "evaluetions_rate": {
+    "title": "Gjennomsnittlig vurdering: ",
+    "show": "Se vurderinger ({amount})",
+    "no_evaluetion": "Ingen vurderinger tilgjengelig"
+  },
+  "response_evaluation": {
+    "title": "Svar på vurdering",
+    "response": "Svar '{name}'",
+    "save": "Lagre"
+  },
+  "update_about_me": {
+    "title": "Om meg",
+    "label": "Fortell litt om deg selv",
+    "save": "Lagre"
+  },
+  "update_common_questions": {
+    "question": "Spørsmål ({amount})",
+    "response": "Svar ({amount})",
+    "title": "Ofte stilte spørsmål",
+    "save": "Lagre"
+  },
+  "update_contact": {
+    "title": "Kontaktinformasjon",
+    "phone": "Telefon 1",
+    "commercial_phone": "Telefon 2",
+    "crm": "Registreringsnummer",
+    "pix": "PIX",
+    "save": "Lagre"
+  },
+  "update_diseases_treated": {
+    "title": "Behandlede sykdommer",
+    "save": "Lagre"
+  },
+  "update_experience": {
+    "experience": "Erfaring ({amount})",
+    "title": "Erfaring innen",
+    "save": "Lagre"
+  },
+  "update_health_insurance": {
+    "plan": "Plan ({amount})",
+    "title": "Helseforsikring",
+    "save": "Lagre"
+  },
+  "update_languages": {
+    "language": "Språk ({amount})",
+    "title": "Språk",
+    "save": "Lagre"
+  },
+  "update_links": {
+    "title": "Kontaktinformasjon",
+    "site": "Nettsted",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Lagre"
+  },
+  "update_services": {
+    "service": "Tjeneste ({amount})",
+    "price": "Pris",
+    "title": "Tjenester",
+    "save": "Lagre"
+  },
+  "update_time_zone": {
+    "title": "Rediger tidssone",
+    "label": "Tidssone",
+    "save": "Lagre"
+  },
+  "update_training": {
+    "training": "Utdanning ({amount})",
+    "title": "Utdanning",
+    "save": "Lagre"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Velg en foreslått adresse for å sikre korrekt søk",
+    "title": "Rediger operasjonsby",
+    "label": "Operasjonsby",
+    "save": "Lagre"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Slette konto?",
+    "confirm_content": "Alle dataene dine vil bli tapt",
+    "title": "Slett konto",
+    "pass": "Passord",
+    "delete": "Slett konto"
+  },
+  "evaluations_screen": {
+    "title": "Vurderinger",
+    "evaluation_hide": "Skjul vurdering for andre",
+    "evaluation_show": "Vis vurdering for andre",
+    "to_response": "Svar"
+  },
+  "update_address_screen": {
+    "title": "Rediger tjenesteadresse",
+    "zipe_code": "Postnummer",
+    "street": "Gate",
+    "number": "Nummer",
+    "neighborhood": "Nabolag",
+    "complement": "Tillegg",
+    "city": "By",
+    "state": "Stat",
+    "country": "Land",
+    "save": "Lagre"
+  },
+  "update_images_screen": {
+    "title": "Galleri",
+    "edit_info": "Hold på bildet for å velge og redigere",
+    "save": "Lagre",
+    "photos": "Bilder: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "E-post for endring av passord sendt til {email}. Sjekk e-posten for å fortsette med endringen",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Be om endring av passord?",
+    "title": "Rediger profil",
+    "name": "Fornavn og Etternavn",
+    "profession": "Yrke",
+    "specialty": "Spesialisering",
+    "pass": "Nåværende passord",
+    "save": "Lagre",
+    "update_pass": "Endre passord!",
+    "delete_account": "Slett konto!"
+  },
+  "user_screen": {
+    "logout_confirm": "Vil du logge ut av kontoen?",
+    "edit_error": "Kunne ikke lagre dataene!",
+    "title": "Profil",
+    "contact": "Kontakt:",
+    "email": "E-post:",
+    "phone": "Telefon 1:",
+    "commercial_phone": "Telefon 2:",
+    "crm": "Registreringsnummer",
+    "pix": "PIX-nøkkel:",
+    "links": "Lenker:",
+    "site": "Nettside:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Tjenester:",
+    "experience": "Erfaring i:",
+    "diseases_treated": "Behandlede sykdommer:",
+    "health_insurance": "Helseforsikringer:",
+    "languages": "Språk:",
+    "about_me": "Om meg:",
+    "training": "Utdanning:",
+    "time_zone": "Tidssone:",
+    "city": "By for arbeid:",
+    "address": "Behandlingsadresse:",
+    "galery": "Galleri:",
+    "common_questions": "Vanlige spørsmål:",
+    "verified_profile": "Verifisert profil",
+    "no_verified_profile": "Verifiser profil"
+  },
+  "weview": {
+    "on_out": "Vil du forlate navigasjonen?",
+    "error_data": "FEIL: {error}",
+    "error_connection": "Sjekk tilkoblingen din og prøv igjen.",
+    "try_again": "Prøv igjen",
+    "go_back": "Gå tilbake"
+  },
+  "schedule_reminder": {
+    "title": "Påminnelse om avtale for {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Innstillinger",
+    "menu_schedule": "Tidsplan",
+    "menu_profile": "Profil",
+    "menu_education": "Medisinsk utdanning"
+  },
+  "map_screen": {
+    "select": "Velg...",
+    "title": "Kart"
+  },
+  "account_state": {
+    "rejected_title": "Avslag på din kontoforespørsel på \"Doctor Friend\"",
+    "analysis_title": "Kontoen din er under behandling",
+    "rejection_text": "Kjære {name}, \n\nVi håper du har det bra. Vi beklager å måtte informere deg om at etter en grundig gjennomgang, ble kontoen din på \"Doctor Friend\" avslått. \n\nVi forstår at dette kan være skuffende, og vi vil forsikre deg om at beslutningen ble tatt basert på spesifikke kriterier. Hvis du trenger ytterligere informasjon eller tror det har vært en feil, er du velkommen til å kontakte oss for videre diskusjon. \n\nTakk for din interesse i \"Doctor Friend\" og vi håper å kunne oppfylle dine behov i fremtiden. \n\nVennlig hilsen, \n\nDoctor Friend Team",
+    "analysis_text": "Hei {name}, \n\nVi vil informere deg om at kontoen din på \"Doctor Friend\" er under behandling. Teamet vårt gjennomgår informasjonen din for å sikre en trygg og effektiv opplevelse. \n\nDu vil motta en melding når behandlingen er ferdig. Vi takker for din tålmodighet og forståelse. \n\nHvis du trenger hjelp eller har spørsmål, ikke nøl med å kontakte oss. \n\nVennlig hilsen, \n\nDoctor Friend Team"
+  },
+  "education_screen": {
+    "title": "Medisinsk utdanning",
+    "profession": "Velg et yrke",
+    "amount": "Resultater",
+    "my_courses": "Mine kurs"
+  },
+  "education_card": {
+    "go_to_course": "Gå til kurs",
+    "edit": "Rediger"
+  },
+  "my_courses_screen": {
+    "title": "Mine kurs ({amount})",
+    "add_courses": "Legg til kurs"
+  },
+  "course_form_screen": {
+    "title": "Registrer kurs",
+    "title_edit": "Rediger kurs",
+    "description": "Velg profesjoner relatert til kurset",
+    "professions": "Relaterte profesjoner",
+    "link_course": "Kurslenke",
+    "title_course": "Kurstitel",
+    "description_course": "Kursbeskrivelse",
+    "thumbnail_course": "Lenke til omslagsbilde",
+    "next_step": "Fortsett",
+    "save": "Lagre",
+    "notify": "Varsle",
+    "notify_all": "Alle fagfolk",
+    "notify_only_related": "Kun fagfolk relatert til kurset",
+    "onDelete": "Fjerne kurs?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Human Anatomi",
+    "placeholder_description_course": "Detaljert beskrivelse av kurs om human anatomi",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Vennligst skriv inn en gyldig URL",
+    "invalidEmail": "Vennligst skriv inn en gyldig e-postadresse",
+    "invalidZipCode": "Vennligst skriv inn et gyldig postnummer",
+    "invalidPass": "Passordet må være minst 6 tegn langt.",
+    "invalidConfirmPass": "Passordene samsvarer ikke",
+    "invalid_time_alread_exists": "Tidspunktet finnes allerede ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Brukerbekreftelse",
+    "document_capture": "Dokumentopptak",
+    "selfie_capture": "Selfie-opptak",
+    "verify_user": "Bekreft bruker",
+    "pick_document_title": "Dokument med bilde",
+    "pick_selfie_title": "Selfie"
+  }
+}

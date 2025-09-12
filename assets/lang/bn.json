@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "bn"
+  },
+  "callback_default": {
+    "title_error": "একটি অপ্রত্যাশিত ত্রুটি ঘটেছে। \nপুনরায় চেষ্টা করুন।",
+    "title_sucess": "সাফল্য",
+    "confirm_text": "হ্যাঁ",
+    "cancel_text": "না"
+  },
+  "input": {
+    "is_empty": "ফিল্ডটি আবশ্যক।"
+  },
+  "loading_error": {
+    "title": "একটি অপ্রত্যাশিত ত্রুটি ঘটেছে!",
+    "error_message": "একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।"
+  },
+  "location_input": {
+    "error_location_unabled": "লোকেশন সার্ভিস অক্ষম",
+    "error_location_denied": "লোকেশন অ্যাক্সেসের অনুমতি অস্বীকৃত",
+    "error_location_denied_forever": "লোকেশন অ্যাক্সেসের অনুমতি অস্বীকৃত, আমরা পুনরায় অনুরোধ করতে পারি না!",
+    "btn_current_location": "বর্তমান লোকেশন",
+    "btn_select_on_map": "মানচিত্রে নির্বাচন করুন",
+    "error_unselected_location": "লোকেশন নির্বাচন করা হয়নি!"
+  },
+  "notifications": {
+    "title": "বিজ্ঞপ্তি"
+  },
+  "today": {
+    "text": "আজ"
+  },
+  "days_of_week": {
+    "list": [
+      "সোমবার",
+      "মঙ্গলবার",
+      "বুধবার",
+      "বৃহস্পতিবার",
+      "শুক্রবার",
+      "শনিবার",
+      "রোববার"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "জানুয়ারি",
+      "ফেব্রুয়ারি",
+      "মার্চ",
+      "এপ্রিল",
+      "মে",
+      "জুন",
+      "জুলাই",
+      "আগস্ট",
+      "সেপ্টেম্বর",
+      "অক্টোবর",
+      "নভেম্বর",
+      "ডিসেম্বর"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "স্বাগতম!",
+    "call": "আমরা কীভাবে সাহায্য করতে পারি আজ?",
+    "btn_1": "পেশাদার খুঁজুন",
+    "btn_2": "পেশাদার হিসেবে প্রবেশ করুন",
+    "btn_3": "ফ্র্যাঞ্চাইজি হন"
+  },
+  "forgot_pass_screen": {
+    "success": "পাসওয়ার্ড পুনরুদ্ধারের ইমেইল পাঠানো হয়েছে",
+    "confirm_text": "ঠিক আছে!",
+    "title": "পাসওয়ার্ড পুনরুদ্ধার করুন",
+    "email": "ইমেইল",
+    "btn": "ইমেইল পাঠান"
+  },
+  "login_screen": {
+    "update_account_title": "আপনার অ্যাকাউন্ট পেশাদার নয়",
+    "update_account_content": "পেশাদার প্রোফাইলে আপডেট করবেন?",
+    "title": "লগইন",
+    "email": "ইমেইল",
+    "pass": "পাসওয়ার্ড",
+    "enter": "প্রবেশ করুন",
+    "forgot_pass": "পাসওয়ার্ড ভুলে গেছি!",
+    "register": "অ্যাকাউন্ট নেই!",
+    "google": "Google দিয়ে সাইন ইন করুন",
+    "apple": "Apple দিয়ে সাইন ইন করুন"
+  },
+  "signup_screen": {
+    "title": "পেশাদার হিসেবে নিবন্ধন করুন",
+    "no_lat_lng": "সঠিক অনুসন্ধান নিশ্চিত করতে একটি প্রস্তাবিত ঠিকানা নির্বাচন করুন",
+    "profession": "পেশা",
+    "specialty": "বিশেষজ্ঞ ক্ষেত্র",
+    "name": "নাম এবং উপনাম",
+    "email": "ইমেইল",
+    "phone": "ফোন",
+    "city": "নিবন্ধন শহর",
+    "pass": "পাসওয়ার্ড তৈরি করুন",
+    "pass_repeat": "পাসওয়ার্ড নিশ্চিত করুন",
+    "privacy_policy_text": "আমি শর্তাবলী এবং নীতিমালা গ্রহণ করি এবং আমি পড়েছি এবং বুঝেছি",
+    "privacy_policy_text_link": "গোপনীয়তা নীতি।*",
+    "contact_text_agree": "আমি পেশাদার নিয়মগুলির সাথে পরিচিত এবং আমি বুঝি যে পেশাগত নিবন্ধন এবং বিশেষজ্ঞ নম্বর অন্তর্ভুক্ত করা প্রয়োজন (যখন প্রযোজ্য)।* আপনার তথ্য পূরণ করার মাধ্যমে আপনি সম্মত হন যে doctorfriend.com.br আপনাকে তাদের সেবা প্রসারিত করবে। আপনি যে কোনও সময় আপনার তথ্য মুছে ফেলতে অনুরোধ করতে পারেন যদি আপনি যোগাযোগে থাকতে না চান। কেবল আমাদের সাথে যোগাযোগ করুন।",
+    "enter": "নিবন্ধন করুন",
+    "login": "ইতিমধ্যেই অ্যাকাউন্ট আছে!"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "অফার পাওয়া যায়নি",
+    "error_offer_not_available": "অফার উপলব্ধ নয়",
+    "call": "পেশাদার বৈশিষ্ট্যগুলি ব্যবহার চালিয়ে যেতে আপগ্রেড করুন",
+    "bay": "এগিয়ে যান",
+    "no_offer_available": "এই মুহূর্তে কোনো অফার উপলব্ধ নেই",
+    "contact_text_call": "যদি আপনার একটি সক্রিয় সাবস্ক্রিপশন থাকে এবং এখনও এই বিজ্ঞপ্তি দেখছেন, অনুগ্রহ করে নিশ্চিত করুন যে আপনি সঠিক অ্যাকাউন্টে লগ ইন করেছেন বা আমাদের সাথে যোগাযোগ করুন",
+    "terms": "ব্যবহার শর্তাবলী",
+    "privacy_policy": "গোপনীয়তা নীতি",
+    "actived": "সক্রিয়",
+    "offer_type_info": "প্রতি মাসে স্বয়ংক্রিয়ভাবে নবীকৃত",
+    "bay_for": "শুধুমাত্র ",
+    "offer_type": " / মাস",
+    "offer_0": "কোর্স রেজিস্টার করুন এবং পেশাদার সম্প্রদায়ে প্রচার করুন",
+    "offer_1": "ওয়েবসাইট অনুসন্ধানে অগ্রাধিকার",
+    "offer_2": "ফটো গ্যালারি",
+    "offer_3": "ইমেইল রিমাইন্ডার",
+    "offer_4": "প্রোফাইল ব্যবস্থাপনা",
+    "offer_5": "কাস্টমাইজযোগ্য মাসিক সময়সূচী",
+    "offer_6": "এবং আরও অনেক কিছু...",
+    "manage_subscription": "সাবস্ক্রিপশন পরিচালনা করুন"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "সকল উপলব্ধ গ্রাহককে একটি রিমাইন্ডার পাঠান ",
+    "send_email_for_all": "সকলের জন্য রিমাইন্ডার পাঠান",
+    "no_time_available": "কোনো সময় উপলব্ধ নেই",
+    "schedule_not_registered": "{text} এর সময়সূচী নিবন্ধিত নয়!",
+    "register_schedule": "নিবন্ধন করুন!",
+    "telemedicine": "অনলাইন পরামর্শ",
+    "in_local": "স্থানীয় পরামর্শ"
+  },
+  "schedule_telemedicine": {
+    "title": "অনলাইন পরামর্শ?",
+    "not": "না",
+    "yes": "হ্যাঁ"
+  },
+  "telemedicine_worn": {
+    "title": "গুরুত্বপূর্ণ সতর্কতা",
+    "not_show_again": "আবার দেখানো হবে না",
+    "close": "ঠিক আছে!"
+  },
+  "telemedicine": {
+    "checkbox": "টেলিমেডিসিন মোড",
+    "is_telemedicine": "সময়সূচী টেলিমেডিসিন হিসেবে নিবন্ধিত হবে",
+    "is_not_telemedicine": "সময়সূচী স্থানীয় পরামর্শ হিসেবে নিবন্ধিত হবে"
+  },
+  "add_schedule": {
+    "title": "পরামর্শ নির্ধারণ করুন",
+    "telemedicine_worn": "দয়া করে আপনার রোগীকে ভার্চুয়াল পরামর্শ কক্ষে প্রবেশের নির্দেশাবলী দিন।",
+    "schedule_for": "নির্ধারণ করুন...",
+    "name": "নাম এবং পদবি",
+    "phone": "ফোন নম্বর",
+    "email": "ইমেইল",
+    "visit_type": "ভিজিট প্রকার",
+    "note": "টিপ্পনি",
+    "btn_schedule": "নির্ধারণ করুন"
+  },
+  "scheduled_customer": {
+    "notified_text": "রিমাইন্ডার পাঠানো হয়েছে!",
+    "delete_schedule": "এই সময়সূচী মুছে ফেলুন: ",
+    "send_email_confirm": "রিমাইন্ডার পাঠানো হচ্ছে ",
+    "send_email_is_proccessing": "প্রক্রিয়াকরণ হচ্ছে...",
+    "send_email_error": "রিমাইন্ডার পাঠাতে ত্রুটি হয়েছে ;(",
+    "send_email_pendding": "মুলতুবি",
+    "title": "সময়সূচী",
+    "telemedicine_worn": "দয়া করে আপনার রোগীকে ভার্চুয়াল পরামর্শ কক্ষে প্রবেশের নির্দেশাবলী দিন।",
+    "status_canceled": "বাতিল!",
+    "status_scheduled": "নির্ধারিত সময়...",
+    "confirmed": "নিশ্চিত: ",
+    "send_email": "রিমাইন্ডার পাঠান",
+    "note": "টিপ্পনি"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "সংরক্ষণে ত্রুটি",
+    "title": "সাপ্তাহিক সময়সূচী কনফিগার করুন",
+    "save": "প্রথমিকরণ সংরক্ষণ করুন"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "সাপ্তাহিক সময়সূচী",
+    "preferences_btn_confirm": "কনফিগার করুন",
+    "preferences_btn_cancel": "পরে",
+    "preferences_btn_content": "মাসিক সময়সূচী তৈরি করার জন্য সাপ্তাহিক সময়সূচী কনফিগার করুন। এটি দ্রুত এবং কার্যকর সময়সূচী কনফিগার করতে সাহায্য করবে।",
+    "delete_schedule": "{month} {year} এর সময়সূচী মুছে ফেলতে চান?",
+    "for": "এর জন্য",
+    "save_schedule": "সময়সূচী সংরক্ষণ করুন",
+    "save": "সংরক্ষণ করুন"
+  },
+  "schedule": {
+    "title": "সময়সূচী"
+  },
+  "settings_schedule": {
+    "title": "সময়সূচী কনফিগার করুন"
+  },
+  "common_questions_screen": {
+    "title": "সাধারণ প্রশ্ন",
+    "suport": "প্রযুক্তিগত সহায়তা: "
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "worns": "রিমাইন্ডার/সতর্কতা",
+    "profile_on_site": "আমার প্রোফাইল সাইটে",
+    "subcription_status_free": "ফ্রি মূল্যায়ন",
+    "subcription_status_pro": "প্রো ইউজার",
+    "subcription_status_show": "সাবস্ক্রিপশন",
+    "available_plans": "উপলব্ধ পরিকল্পনা দেখুন",
+    "days_left": "{amount} দিন বাকি",
+    "suport": "সহায়তা",
+    "manual_modal_title": "সিস্টেম ম্যানুয়াল - ডাক্তার ফ্রেন্ড",
+    "manual": "সিস্টেম ম্যানুয়াল",
+    "common_question": "সাধারণ প্রশ্ন",
+    "terms": "ব্যবহারের শর্তাবলী",
+    "privacy_policy": "গোপনীয়তা নীতি"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "রিমাইন্ডার/সতর্কতা ({amount})",
+    "title": "রিমাইন্ডার/সতর্কতা",
+    "help": "এই এলাকায় ক্লায়েন্টদের জন্য সময়সূচী প্রক্রিয়ার সময় রিমাইন্ডার বা সতর্কতা প্রবেশ করান। উদাহরণ: সাইটে মাস্ক পরা বাধ্যতামূলক।",
+    "save": "সংরক্ষণ করুন"
+  },
+  "evaluetions_rate": {
+    "title": "গড় রেটিং: ",
+    "show": "মুল্যায়ন দেখুন ({amount})",
+    "no_evaluetion": "কোনও মুল্যায়ন নেই"
+  },
+  "response_evaluation": {
+    "title": "মুল্যায়নে উত্তর দিন",
+    "response": "'{name}'-এ উত্তর দিন",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_about_me": {
+    "title": "আমার সম্পর্কে",
+    "label": "আপনার সম্পর্কে কিছু বলুন",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_common_questions": {
+    "question": "প্রশ্ন ({amount})",
+    "response": "উত্তর ({amount})",
+    "title": "সাধারণ প্রশ্ন",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_contact": {
+    "title": "যোগাযোগের তথ্য",
+    "phone": "ফোন ১",
+    "commercial_phone": "ফোন ২",
+    "crm": "নথিভুক্তির সংখ্যা",
+    "pix": "PIX",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_diseases_treated": {
+    "title": "চিকিৎসিত রোগ",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_experience": {
+    "experience": "অভিজ্ঞতা ({amount})",
+    "title": "অভিজ্ঞতা",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_health_insurance": {
+    "plan": "প্ল্যান ({amount})",
+    "title": "স্বাস্থ্য বীমা",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_languages": {
+    "language": "ভাষা ({amount})",
+    "title": "ভাষাসমূহ",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_links": {
+    "title": "যোগাযোগের তথ্য",
+    "site": "ওয়েবসাইট",
+    "facebook": "ফেসবুক",
+    "instagram": "ইনস্টাগ্রাম",
+    "twitter": "টুইটার",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_services": {
+    "service": "সেবা ({amount})",
+    "price": "মূল্য",
+    "title": "সেবাসমূহ",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_time_zone": {
+    "title": "টাইমজোন এডিট করুন",
+    "label": "টাইমজোন",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_training": {
+    "training": "প্রশিক্ষণ ({amount})",
+    "title": "প্রশিক্ষণ",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "সঠিক অনুসন্ধান নিশ্চিত করতে একটি প্রস্তাবিত ঠিকানা নির্বাচন করুন",
+    "title": "অপারেশনের শহর সম্পাদনা করুন",
+    "label": "অপারেশনের শহর",
+    "save": "সংরক্ষণ করুন"
+  },
+  "delete_account_screen": {
+    "confirm_title": "অ্যাকাউন্ট মুছতে চান?",
+    "confirm_content": "আপনার সমস্ত ডেটা হারিয়ে যাবে",
+    "title": "অ্যাকাউন্ট মুছুন",
+    "pass": "পাসওয়ার্ড",
+    "delete": "অ্যাকাউন্ট মুছুন"
+  },
+  "evaluations_screen": {
+    "title": "মুল্যায়ন",
+    "evaluation_hide": "অন্যান্যদের জন্য মুল্যায়ন লুকান",
+    "evaluation_show": "অন্যান্যদের জন্য মুল্যায়ন দৃশ্যমান রাখুন",
+    "to_response": "উত্তর দিন"
+  },
+  "update_address_screen": {
+    "title": "সেবার ঠিকানা সম্পাদনা করুন",
+    "zipe_code": "পিনকোড",
+    "street": "রাস্তা",
+    "number": "নম্বর",
+    "neighborhood": "পাড়া",
+    "complement": "পরিপূরক",
+    "city": "শহর",
+    "state": "রাজ্য",
+    "country": "দেশ",
+    "save": "সংরক্ষণ করুন"
+  },
+  "update_images_screen": {
+    "title": "গ্যালারি",
+    "edit_info": "সম্পাদনা করতে ছবিতে চাপ দিন",
+    "save": "সংরক্ষণ করুন",
+    "photos": "ছবিগুলি: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "{email} এ পাসওয়ার্ড পরিবর্তন সংক্রান্ত ইমেল পাঠানো হয়েছে। পরিবর্তন করার জন্য ইমেল চেক করুন",
+    "email_sended_confirm": "ঠিক আছে!",
+    "request_reset_pass_title": "পাসওয়ার্ড পরিবর্তন অনুরোধ করবেন?",
+    "title": "প্রোফাইল সম্পাদনা করুন",
+    "name": "নাম ও উপনাম",
+    "profession": "পেশা",
+    "specialty": "বিশেষত্ব",
+    "pass": "বর্তমান পাসওয়ার্ড",
+    "save": "সংরক্ষণ করুন",
+    "update_pass": "পাসওয়ার্ড পরিবর্তন করুন!",
+    "delete_account": "অ্যাকাউন্ট মুছুন!"
+  },
+  "user_screen": {
+    "logout_confirm": "অ্যাকাউন্ট থেকে লগ আউট করবেন?",
+    "edit_error": "ডেটা সেভ করা যায়নি!",
+    "title": "প্রোফাইল",
+    "contact": "যোগাযোগ:",
+    "email": "ইমেইল:",
+    "phone": "ফোন ১:",
+    "commercial_phone": "ফোন ২:",
+    "crm": "রেজিস্ট্রেশন নম্বর",
+    "pix": "PIX কী:",
+    "links": "লিঙ্ক:",
+    "site": "সাইট:",
+    "facebook": "ফেসবুক:",
+    "instagram": "ইনস্টাগ্রাম:",
+    "twitter": "এক্স:",
+    "services": "সেবা:",
+    "experience": "অভিজ্ঞতা:",
+    "diseases_treated": "চিকিৎসিত রোগগুলি:",
+    "health_insurance": "স্বাস্থ্য বীমা:",
+    "languages": "ভাষা:",
+    "about_me": "আমার সম্পর্কে:",
+    "training": "শিক্ষা:",
+    "time_zone": "টাইম জোন:",
+    "city": "কর্মস্থল শহর:",
+    "address": "সেবা প্রদান ঠিকানা:",
+    "galery": "গ্যালারি:",
+    "common_questions": "সাধারণ প্রশ্নাবলী:",
+    "verified_profile": "ভেরিফাইড প্রোফাইল",
+    "no_verified_profile": "প্রোফাইল যাচাই করুন"
+  },
+  "weview": {
+    "on_out": "নেভিগেশন থেকে বের হতে চান?",
+    "error_data": "ত্রুটি: {error}",
+    "error_connection": "আপনার সংযোগ পরীক্ষা করুন এবং পুনরায় চেষ্টা করুন।",
+    "try_again": "পুনরায় চেষ্টা করুন",
+    "go_back": "ফিরে যান"
+  },
+  "schedule_reminder": {
+    "title": "{date} এর জন্য অ্যাপয়েন্টমেন্ট রিমাইন্ডার"
+  },
+  "home_screen": {
+    "menu_settings": "সেটিংস",
+    "menu_schedule": "এজেন্ডা",
+    "menu_profile": "প্রোফাইল",
+    "menu_education": "মেডিক্যাল শিক্ষা"
+  },
+  "map_screen": {
+    "select": "বাছাই করুন...",
+    "title": "মানচিত্র"
+  },
+  "account_state": {
+    "rejected_title": "\"Doctor Friend\" এ আপনার অ্যাকাউন্ট অনুরোধ প্রত্যাখ্যাত",
+    "analysis_title": "আপনার অ্যাকাউন্ট পর্যালোচনাধীন",
+    "rejection_text": "প্রিয় {name}, \n\nআশা করি আপনি ভাল আছেন। আমরা দুঃখিত যে আপনাকে জানাতে হচ্ছে যে, আপনার \"Doctor Friend\" অ্যাকাউন্ট অনুরোধ একটি গভীর পর্যালোচনার পর প্রত্যাখ্যাত হয়েছে। \n\nআমরা বুঝতে পারি যে এটি হতাশাজনক হতে পারে, এবং আমরা নিশ্চিত করতে চাই যে এই সিদ্ধান্ত নির্দিষ্ট মানদণ্ডের উপর ভিত্তি করে নেওয়া হয়েছে। যদি আরও তথ্য প্রয়োজন হয় বা আপনি মনে করেন কোনো ভুল হয়েছে, আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না। \n\n\"Doctor Friend\" এর প্রতি আপনার আগ্রহের জন্য ধন্যবাদ এবং আমরা ভবিষ্যতে আপনার প্রয়োজনীয়তা পূরণ করার জন্য অপেক্ষা করছি। \n\nশুভেচ্ছান্তে, \n\nDoctor Friend টিম",
+    "analysis_text": "হ্যালো {name}, \n\nআমরা আপনাকে জানাতে চাই যে আপনার \"Doctor Friend\" অ্যাকাউন্ট বর্তমানে পর্যালোচনাধীন। আমাদের টিম আপনার তথ্য পর্যালোচনা করছে যাতে একটি নিরাপদ এবং কার্যকর অভিজ্ঞতা নিশ্চিত করা যায়। \n\nআপনি যখন পর্যালোচনা সম্পন্ন হবে তখন একটি নোটিফিকেশন পাবেন। আমরা আপনার ধৈর্য এবং বোঝার জন্য কৃতজ্ঞ। \n\nযদি আপনি সহায়তা প্রয়োজন বা কোনো প্রশ্ন থাকে, আমাদের সাথে যোগাযোগ করতে বিনা দ্বিধায় থাকুন। \n\nশুভেচ্ছান্তে, \n\nDoctor Friend টিম"
+  },
+  "education_screen": {
+    "title": "মেডিক্যাল শিক্ষা",
+    "profession": "একটি পেশা বাছাই করুন",
+    "amount": "ফলাফল",
+    "my_courses": "আমার কোর্স"
+  },
+  "education_card": {
+    "go_to_course": "কোর্সে যান",
+    "edit": "সম্পাদনা"
+  },
+  "my_courses_screen": {
+    "title": "আমার কোর্স ({amount})",
+    "add_courses": "কোর্স যুক্ত করুন"
+  },
+  "course_form_screen": {
+    "title": "কোর্স নিবন্ধন",
+    "title_edit": "কোর্স সম্পাদনা",
+    "description": "কোর্সের সাথে সম্পর্কিত পেশাগুলি বাছাই করুন",
+    "professions": "সম্পর্কিত পেশাগুলি",
+    "link_course": "কোর্সের লিঙ্ক",
+    "title_course": "কোর্সের শিরোনাম",
+    "description_course": "কোর্সের বর্ণনা",
+    "thumbnail_course": "কভার ইমেজ লিঙ্ক",
+    "next_step": "এগিয়ে যান",
+    "save": "সংরক্ষণ করুন",
+    "notify": "নোটিফাই করুন",
+    "notify_all": "সকল পেশাজীবী",
+    "notify_only_related": "শুধুমাত্র সম্পর্কিত পেশাজীবী",
+    "onDelete": "কোর্স মুছে ফেলবেন?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "মানব অ্যানাটমি",
+    "placeholder_description_course": "মানব অ্যানাটমি কোর্সের বিস্তারিত বর্ণনা",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "অনুগ্রহ করে একটি সঠিক URL লিখুন",
+    "invalidEmail": "অনুগ্রহ করে একটি সঠিক ইমেইল লিখুন",
+    "invalidZipCode": "অনুগ্রহ করে একটি সঠিক ZIP কোড লিখুন",
+    "invalidPass": "পাসওয়ার্ডে কমপক্ষে ৬টি অক্ষর থাকতে হবে।",
+    "invalidConfirmPass": "পাসওয়ার্ড মিলছে না",
+    "invalid_time_alread_exists": "এই সময়টি ইতোমধ্যে রয়েছে ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "ব্যবহারকারী যাচাই",
+    "document_capture": "ডকুমেন্ট ক্যাপচার",
+    "selfie_capture": "সেলফি ক্যাপচার",
+    "verify_user": "ব্যবহারকারী যাচাই করুন",
+    "pick_document_title": "ছবি সহ ডকুমেন্ট",
+    "pick_selfie_title": "সেলফি"
+  }
+}

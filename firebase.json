@@ -1,0 +1,25 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "doctor-friend-74a87",
+          "appId": "1:795953190428:android:452578079a3a0baa9131d9",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "doctor-friend-74a87",
+          "configurations": {
+            "android": "1:795953190428:android:452578079a3a0baa9131d9",
+            "ios": "1:795953190428:ios:fdcfe8963aaaed519131d9",
+            "macos": "1:795953190428:ios:24a355aecbe9ef8f9131d9",
+            "web": "1:795953190428:web:7807602c5fe0b7059131d9",
+            "windows": "1:795953190428:web:c6a315b7747b66af9131d9"
+          }
+        }
+      }
+    }
+  }
+}

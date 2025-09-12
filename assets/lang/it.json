@@ -1,0 +1,449 @@
+{
+  "lang": {
+    "name": "it"
+  },
+  "callback_default": {
+    "title_error": "Si è verificato un errore imprevisto. \nRiprova più tardi.",
+    "title_sucess": "Successo",
+    "confirm_text": "SÌ",
+    "cancel_text": "NO"
+  },
+  "input": {
+    "is_empty": "Campo obbligatorio."
+  },
+  "loading_error": {
+    "title": "Si è verificato un errore imprevisto!",
+    "error_message": "Si è verificato un errore imprevisto."
+  },
+  "location_input": {
+    "error_location_unabled": "Servizio di localizzazione disattivato",
+    "error_location_denied": "Permesso per accedere alla posizione negato",
+    "error_location_denied_forever": "Permesso per accedere alla posizione negato, non possiamo richiederlo di nuovo!",
+    "btn_current_location": "Posizione attuale",
+    "btn_select_on_map": "Seleziona sulla mappa",
+    "error_unselected_location": "Posizione non selezionata!"
+  },
+  "notifications": {
+    "title": "Notifiche"
+  },
+  "today": {
+    "text": "Oggi"
+  },
+  "days_of_week": {
+    "list": [
+      "lunedì",
+      "martedì",
+      "mercoledì",
+      "giovedì",
+      "venerdì",
+      "sabato",
+      "domenica"
+    ]
+  },
+  "months_of_year": {
+    "list": [
+      "gennaio",
+      "febbraio",
+      "marzo",
+      "aprile",
+      "maggio",
+      "giugno",
+      "luglio",
+      "agosto",
+      "settembre",
+      "ottobre",
+      "novembre",
+      "dicembre"
+    ]
+  },
+  "auth_type_screen": {
+    "title": "Benvenuto!",
+    "call": "Come possiamo aiutarti oggi?",
+    "btn_1": "Cerca professionista",
+    "btn_2": "Accedi come professionista",
+    "btn_3": "Diventa un franchising"
+  },
+  "forgot_pass_screen": {
+    "success": "Email di recupero inviata a",
+    "confirm_text": "Ok!",
+    "title": "Recupera la password",
+    "email": "Email",
+    "btn": "Invia email"
+  },
+  "login_screen": {
+    "update_account_title": "Il tuo account non è professionale",
+    "update_account_content": "Aggiorna a profilo professionale?",
+    "title": "Accedi",
+    "email": "Email",
+    "pass": "Password",
+    "enter": "Accedi",
+    "forgot_pass": "Password dimenticata!",
+    "register": "Non hai un account?",
+    "google": "Accedi con Google",
+    "apple": "Accedi con Apple"
+  },
+  "signup_screen": {
+    "title": "Registrati come professionista",
+    "no_lat_lng": "Seleziona un indirizzo suggerito per garantire una ricerca corretta",
+    "profession": "Professione",
+    "specialty": "Specializzazione",
+    "name": "Nome e Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "city": "Città di lavoro",
+    "pass": "Crea password",
+    "pass_repeat": "Conferma password",
+    "privacy_policy_text": "Accetto i termini e condizioni, e confermo di aver letto e compreso la",
+    "privacy_policy_text_link": "politica sulla privacy.*",
+    "contact_text_agree": "Dichiaro di essere a conoscenza delle norme professionali da seguire e della necessità di includere il numero di registrazione professionale e specializzazione (se applicabile).* Compilando i tuoi dati, accetti che doctorfriend.com.br ti contatti per offrirti i suoi servizi. Puoi richiedere in qualsiasi momento la cancellazione dei tuoi dati se non desideri essere contattato. Basta contattarci.",
+    "enter": "Registrati",
+    "login": "Hai già un account?"
+  },
+  "premium_screen": {
+    "error_offer_not_found": "Offerta non trovata",
+    "error_offer_not_available": "Offerta non disponibile",
+    "call": "Fai l'upgrade per continuare a usare le funzionalità Pro",
+    "bay": "Continua",
+    "no_offer_available": "Nessuna offerta disponibile al momento",
+    "contact_text_call": "Se hai già un abbonamento attivo e continui a vedere questo avviso, verifica se sei loggato con l'account giusto o contatta il nostro",
+    "terms": "Termini di utilizzo",
+    "privacy_policy": "Politica sulla privacy",
+    "actived": "ATTIVO",
+    "offer_type_info": "Si rinnova automaticamente ogni mese",
+    "bay_for": "Solo per ",
+    "offer_type": " / mese",
+    "offer_0": "Registra corsi e promuovili alla comunità professionale",
+    "offer_1": "Priorità nelle ricerche sul sito",
+    "offer_2": "Galleria foto",
+    "offer_3": "Promemoria via email",
+    "offer_4": "Gestione di base del profilo utente",
+    "offer_5": "Calendario mensile personalizzabile",
+    "offer_6": "E molto altro...",
+    "manage_subscription": "Gestisci abbonamento"
+  },
+  "schedule_day_card": {
+    "confirm_send_email": "Invia promemoria di appuntamento a tutti i clienti disponibili il ",
+    "send_email_for_all": "Invia promemoria a tutti",
+    "no_time_available": "Nessun orario disponibile",
+    "schedule_not_registered": "Agenda di {text} non registrata!",
+    "register_schedule": "Registrati!",
+    "telemedicine": "Consulenza online",
+    "in_local": "Consulenza in presenza"
+  },
+  "schedule_telemedicine": {
+    "title": "Consulenza online?",
+    "not": "No",
+    "yes": "Sì"
+  },
+  "telemedicine_worn": {
+    "title": "Avviso importante",
+    "not_show_again": "Non mostrare più",
+    "close": "Ok!"
+  },
+  "telemedicine": {
+    "checkbox": "Modalità telemedicina",
+    "is_telemedicine": "Gli orari verranno registrati come telemedicina",
+    "is_not_telemedicine": "Gli orari verranno registrati come consulenza in presenza"
+  },
+  "add_schedule": {
+    "title": "Pianifica una consulenza",
+    "telemedicine_worn": "Fornisci al tuo paziente le istruzioni per accedere alla sala virtuale.",
+    "schedule_for": "Pianifica per...",
+    "name": "Nome e cognome",
+    "phone": "Numero di telefono",
+    "email": "Email",
+    "visit_type": "Tipo di visita",
+    "note": "Nota",
+    "btn_schedule": "Pianifica"
+  },
+  "scheduled_customer": {
+    "notified_text": "Promemoria inviato!",
+    "delete_schedule": "Elimina appuntamento per: ",
+    "send_email_confirm": "Invia promemoria per ",
+    "send_email_is_proccessing": "Elaborazione in corso...",
+    "send_email_error": "Errore nell'invio ;(",
+    "send_email_pendding": "In attesa",
+    "title": "Appuntamento",
+    "telemedicine_worn": "Fornisci al tuo paziente le istruzioni per accedere alla sala virtuale.",
+    "status_canceled": "Cancellato!",
+    "status_scheduled": "Pianificato per...",
+    "confirmed": "Confermato: ",
+    "send_email": "Invia promemoria appuntamento",
+    "note": "Nota"
+  },
+  "schedule_edit_days": {
+    "error_on_save": "Errore durante il salvataggio",
+    "title": "Configura agenda settimanale",
+    "save": "Salva preferenze"
+  },
+  "schedule_edit_month": {
+    "preferences_title": "Agenda settimanale",
+    "preferences_btn_confirm": "Configura",
+    "preferences_btn_cancel": "Più tardi",
+    "preferences_btn_content": "Per facilitare la creazione dell'agenda mensile, configura l'agenda settimanale. Questo permetterà una configurazione rapida ed efficiente degli orari di lavoro.",
+    "delete_schedule": "Eliminare l'agenda di {month} {year}?",
+    "for": "di",
+    "save_schedule": "Salva agenda",
+    "save": "Salva"
+  },
+  "schedule": {
+    "title": "Agenda"
+  },
+  "settings_schedule": {
+    "title": "Configura agenda"
+  },
+  "common_questions_screen": {
+    "title": "Domande frequenti",
+    "suport": "Supporto tecnico: "
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "worns": "Promemoria/Avvisi",
+    "profile_on_site": "Il mio profilo sul sito",
+    "subcription_status_free": "Prova gratuita",
+    "subcription_status_pro": "Utente Pro",
+    "subcription_status_show": "Abbonamenti",
+    "available_plans": "Vedi piani disponibili",
+    "days_left": "{amount} giorni rimanenti",
+    "suport": "Supporto",
+    "manual_modal_title": "Manuale del sistema - Doctor Friend",
+    "manual": "Manuale del sistema",
+    "common_question": "Domande frequenti",
+    "terms": "Termini di utilizzo",
+    "privacy_policy": "Politica sulla privacy"
+  },
+  "sticky_notes_screen": {
+    "sticky_note_number": "Promemoria/Avviso ({amount})",
+    "title": "Promemoria/Avvisi",
+    "help": "Inserisci in quest’area promemoria o avvisi per i clienti durante la fase di prenotazione. Esempio: È obbligatorio indossare la mascherina all’interno della struttura.",
+    "save": "Salva"
+  },
+  "evaluetions_rate": {
+    "title": "Valutazione media: ",
+    "show": "Vedi le valutazioni ({amount})",
+    "no_evaluetion": "Nessuna valutazione disponibile"
+  },
+  "response_evaluation": {
+    "title": "Rispondi alla valutazione",
+    "response": "Rispondi a '{name}'",
+    "save": "Salva"
+  },
+  "update_about_me": {
+    "title": "Su di me",
+    "label": "Parlami un po' di te",
+    "save": "Salva"
+  },
+  "update_common_questions": {
+    "question": "Domanda ({amount})",
+    "response": "Risposta ({amount})",
+    "title": "Domande frequenti",
+    "save": "Salva"
+  },
+  "update_contact": {
+    "title": "Informazioni di contatto",
+    "phone": "Telefono 1",
+    "commercial_phone": "Telefono 2",
+    "crm": "Numero di registrazione",
+    "pix": "PIX",
+    "save": "Salva"
+  },
+  "update_diseases_treated": {
+    "title": "Malattie trattate",
+    "save": "Salva"
+  },
+  "update_experience": {
+    "experience": "Esperienza ({amount})",
+    "title": "Esperienza in",
+    "save": "Salva"
+  },
+  "update_health_insurance": {
+    "plan": "Piano ({amount})",
+    "title": "Assicurazione sanitaria",
+    "save": "Salva"
+  },
+  "update_languages": {
+    "language": "Lingua ({amount})",
+    "title": "Lingue",
+    "save": "Salva"
+  },
+  "update_links": {
+    "title": "Informazioni di contatto",
+    "site": "Sito web",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "X",
+    "save": "Salva"
+  },
+  "update_services": {
+    "service": "Servizio ({amount})",
+    "price": "Prezzo",
+    "title": "Servizi",
+    "save": "Salva"
+  },
+  "update_time_zone": {
+    "title": "Modifica fuso orario",
+    "label": "Fuso orario",
+    "save": "Salva"
+  },
+  "update_training": {
+    "training": "Formazione ({amount})",
+    "title": "Formazione",
+    "save": "Salva"
+  },
+  "update_city_of_operation": {
+    "no_lat_lng": "Seleziona un indirizzo suggerito per garantire una ricerca corretta",
+    "title": "Modifica città di operazione",
+    "label": "Città di operazione",
+    "save": "Salva"
+  },
+  "delete_account_screen": {
+    "confirm_title": "Eliminare il conto?",
+    "confirm_content": "Tutti i tuoi dati saranno persi",
+    "title": "Elimina il conto",
+    "pass": "Password",
+    "delete": "Elimina il conto"
+  },
+  "evaluations_screen": {
+    "title": "Valutazioni",
+    "evaluation_hide": "Nascondi valutazione per gli altri",
+    "evaluation_show": "Mostra valutazione per gli altri",
+    "to_response": "Rispondi"
+  },
+  "update_address_screen": {
+    "title": "Modifica indirizzo di servizio",
+    "zipe_code": "CAP",
+    "street": "Via",
+    "number": "Numero",
+    "neighborhood": "Quartiere",
+    "complement": "Complemento",
+    "city": "Città",
+    "state": "Stato",
+    "country": "Paese",
+    "save": "Salva"
+  },
+  "update_images_screen": {
+    "title": "Galleria",
+    "edit_info": "Tieni premuto sull'immagine per selezionare e modificare",
+    "save": "Salva",
+    "photos": "Foto: {amount}"
+  },
+  "update_user_screen": {
+    "email_sended": "E-mail per il cambio della password inviato a {email}. Controlla l'e-mail per continuare con il cambio",
+    "email_sended_confirm": "Ok!",
+    "request_reset_pass_title": "Richiedi cambio password?",
+    "title": "Modifica profilo",
+    "name": "Nome e Cognome",
+    "profession": "Professione",
+    "specialty": "Specializzazione",
+    "pass": "Password attuale",
+    "save": "Salva",
+    "update_pass": "Cambia password!",
+    "delete_account": "Elimina account!"
+  },
+  "user_screen": {
+    "logout_confirm": "Vuoi uscire dal tuo account?",
+    "edit_error": "Impossibile salvare i dati!",
+    "title": "Profilo",
+    "contact": "Contatto:",
+    "email": "E-mail:",
+    "phone": "Telefono 1:",
+    "commercial_phone": "Telefono 2:",
+    "crm": "Numero di registrazione",
+    "pix": "Chiave PIX:",
+    "links": "Link:",
+    "site": "Sito web:",
+    "facebook": "Facebook:",
+    "instagram": "Instagram:",
+    "twitter": "X:",
+    "services": "Servizi:",
+    "experience": "Esperienza in:",
+    "diseases_treated": "Malattie trattate:",
+    "health_insurance": "Assicurazioni sanitarie:",
+    "languages": "Lingue:",
+    "about_me": "Chi sono:",
+    "training": "Formazione:",
+    "time_zone": "Fuso orario:",
+    "city": "Città di lavoro:",
+    "address": "Indirizzo di servizio:",
+    "galery": "Galleria:",
+    "common_questions": "Domande frequenti:",
+    "verified_profile": "Profilo verificato",
+    "no_verified_profile": "Verifica il profilo"
+  },
+  "weview": {
+    "on_out": "Vuoi uscire dalla navigazione?",
+    "error_data": "ERRORE: {error}",
+    "error_connection": "Verifica la tua connessione e riprova.",
+    "try_again": "Riprova",
+    "go_back": "Indietro"
+  },
+  "schedule_reminder": {
+    "title": "Promemoria appuntamento per {date}"
+  },
+  "home_screen": {
+    "menu_settings": "Impostazioni",
+    "menu_schedule": "Programma",
+    "menu_profile": "Profilo",
+    "menu_education": "Educazione medica"
+  },
+  "map_screen": {
+    "select": "Seleziona...",
+    "title": "Mappa"
+  },
+  "account_state": {
+    "rejected_title": "Rifiuto della tua richiesta di account su \"Doctor Friend\"",
+    "analysis_title": "Il tuo account è in fase di analisi",
+    "rejection_text": "Caro/a {name}, \n\nSperiamo tu stia bene. Siamo spiacenti di informarti che, dopo un'accurata analisi, la tua richiesta di account su \"Doctor Friend\" è stata rifiutata. \n\nComprendiamo che ciò possa essere deludente, e vogliamo rassicurarti che la decisione è stata presa sulla base di criteri specifici. Se hai bisogno di ulteriori informazioni o pensi che ci sia stato un errore, sentiti libero di contattarci per discuterne. \n\nTi ringraziamo per il tuo interesse in \"Doctor Friend\" e speriamo di poter soddisfare le tue esigenze in future opportunità. \n\nCordiali saluti, \n\nIl team di Doctor Friend",
+    "analysis_text": "Ciao {name}, \n\nVorremmo informarti che il tuo account su \"Doctor Friend\" è attualmente in fase di analisi. Il nostro team sta esaminando le tue informazioni per garantire un'esperienza sicura ed efficiente. \n\nRiceverai una notifica non appena l'analisi sarà completata. Ti ringraziamo per la pazienza e la comprensione. \n\nSe hai bisogno di assistenza o hai domande, non esitare a contattarci. \n\nCordiali saluti, \n\nIl team di Doctor Friend"
+  },
+  "education_screen": {
+    "title": "Educazione medica",
+    "profession": "Scegli una professione",
+    "amount": "Risultati",
+    "my_courses": "I miei corsi"
+  },
+  "education_card": {
+    "go_to_course": "Accedi al corso",
+    "edit": "Modifica"
+  },
+  "my_courses_screen": {
+    "title": "I miei corsi ({amount})",
+    "add_courses": "Aggiungi corso"
+  },
+  "course_form_screen": {
+    "title": "Registrare corso",
+    "title_edit": "Modifica corso",
+    "description": "Seleziona le professioni correlate al corso",
+    "professions": "Professioni correlate",
+    "link_course": "Link del corso",
+    "title_course": "Titolo del corso",
+    "description_course": "Descrizione del corso",
+    "thumbnail_course": "Link immagine di copertura",
+    "next_step": "Continua",
+    "save": "Salva",
+    "notify": "Notifica",
+    "notify_all": "Tutti i professionisti",
+    "notify_only_related": "Solo i professionisti correlati al corso",
+    "onDelete": "Rimuovere corso?",
+    "placeholder_link_course": "https://example.com/meu-curso",
+    "placeholder_title_course": "Anatomia umana",
+    "placeholder_description_course": "Descrizione dettagliata del corso di anatomia umana",
+    "placeholder_thumbnail_course": "https://example.com/imagem-anatomia.jpg"
+  },
+  "validators": {
+    "invalidUrl": "Inserisci un URL valido",
+    "invalidEmail": "Inserisci una e-mail valida",
+    "invalidZipCode": "Inserisci un CAP valido",
+    "invalidPass": "La password deve contenere almeno 6 caratteri.",
+    "invalidConfirmPass": "Le password non corrispondono",
+    "invalid_time_alread_exists": "L'orario esiste già ({hour}:{minute})"
+  },
+  "user_verification": {
+    "title": "Verifica utente",
+    "document_capture": "Acquisizione documento",
+    "selfie_capture": "Acquisizione selfie",
+    "verify_user": "Verifica utente",
+    "pick_document_title": "Documento con foto",
+    "pick_selfie_title": "Selfie"
+  }
+}
