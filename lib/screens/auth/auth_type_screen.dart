@@ -1,4 +1,5 @@
 import 'package:doctorfriend/components/callback.dart';
+import 'package:doctorfriend/data/constants.dart';
 import 'package:doctorfriend/models/app_data.dart';
 import 'package:doctorfriend/screens/auth/components/logo.dart';
 import 'package:doctorfriend/services/appData/suggestions_service.dart';
@@ -42,6 +43,13 @@ class _AuthTypeScreenState extends State<AuthTypeScreen> {
       urlString: "https://wa.me/${FormaterUtil.toPhoneNumber(
         _appData?.appContact.franchiseeNumber ?? "",
       )}?text=${_appData?.franchiseeText ?? ""}",
+    );
+  }
+
+  void _goToSite() {
+    ToolsUtil.launchURL(
+      context,
+      urlString: site,
     );
   }
 
@@ -133,7 +141,8 @@ class _AuthTypeScreenState extends State<AuthTypeScreen> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: colorScheme.primary,
                 ),
-                onPressed: () => context.push(AppRoutesUtil.webview),
+                onPressed:
+                    _goToSite, // () => context.push(AppRoutesUtil.webview),
                 child: Text(
                   traslation["btn_1"],
                   style: TextStyle(
