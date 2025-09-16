@@ -48,6 +48,7 @@ class AuthGoogleService implements AuthService {
     // AuthService().logout();
     await for (final user in authChanges) {
       _authUser = user;
+
       gasStationsListSubscription?.cancel();
       gasStationsListSubscription = null;
       if (user != null) {
@@ -320,7 +321,7 @@ class AuthGoogleService implements AuthService {
     } on FirestoreException catch (e) {
       throw FirestoreException(e.message, _lang);
     } on HandleException catch (_) {
-      logout();
+      await logout();
       rethrow;
     } catch (e) {
       throw HandleException("unexpected_error", _lang);
@@ -396,6 +397,7 @@ class AuthGoogleService implements AuthService {
             AppleIDAuthorizationScopes.email,
             AppleIDAuthorizationScopes.fullName,
           ],
+
           // Obrigatório no Android e Web
           webAuthenticationOptions: Platform.isAndroid
               ? WebAuthenticationOptions(
