@@ -11,7 +11,7 @@ class FirebaseTablesUtil {
 
   static String customers = "customers";
   static String professions = "professions";
-  static String fieldsOfPractice = "fieldsOfPractice";
+  static String specialties = "specialties";
   static String notifications = "notifications";
   static String evaluations = "evaluations";
   static String courses = "courses";

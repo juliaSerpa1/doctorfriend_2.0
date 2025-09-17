@@ -11,7 +11,7 @@ import 'package:doctorfriend/utils/firebase/firebase_firestore_util.dart';
 import 'package:doctorfriend/utils/firebase/firebase_tables_util.dart';
 
 final String professionsTable = FirebaseTablesUtil.professions;
-final String fieldsOfPracticeTable = FirebaseTablesUtil.fieldsOfPractice;
+final String specialtiesTable = FirebaseTablesUtil.specialties;
 final store = FirebaseFirestoreUtil.store;
 
 class AppDataFirebaseService implements AppDataService {
@@ -23,15 +23,14 @@ class AppDataFirebaseService implements AppDataService {
     final professionsList =
         professionsData.docs.map((doc) => doc.data()).toList();
 
-    final fieldsOfPracticeData =
-        await _getFieldsOfPracticeByTable(fieldsOfPracticeTable);
-    final fieldsOfPracticeDataList =
-        fieldsOfPracticeData.docs.map((doc) => doc.data()).toList();
+    final specialtiesData = await _getSpecialtiesByTable(specialtiesTable);
+    final specialtiesDataList =
+        specialtiesData.docs.map((doc) => doc.data()).toList();
     for (final profession in professionsList) {
-      final list = [...fieldsOfPracticeDataList];
+      final list = [...specialtiesDataList];
       list.removeWhere((val) => val.professionId != profession.id);
       list.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
-      profession.fieldsOfPractice.addAll([...list]);
+      profession.specialties.addAll([...list]);
     }
 
     professionsList
@@ -50,13 +49,13 @@ class AppDataFirebaseService implements AppDataService {
         .get();
   }
 
-  Future<QuerySnapshot<FieldsOfPractice>> _getFieldsOfPracticeByTable(
+  Future<QuerySnapshot<Specialties>> _getSpecialtiesByTable(
       String table) async {
     return await store
         .collection(table)
         .withConverter(
-          fromFirestore: _fromFirestoreFieldsOfPractice,
-          toFirestore: _toFirestoreFieldsOfPractice,
+          fromFirestore: _fromFirestoreSpecialties,
+          toFirestore: _toFirestoreSpecialties,
         )
         .get();
   }
@@ -114,7 +113,7 @@ class AppDataFirebaseService implements AppDataService {
     final map = {
       'classOrder': profession.classOrder,
       "name_$_lang": profession.name,
-      "fieldsOfPractice": profession.fieldsOfPractice,
+      "specialties": profession.specialties,
       "isMedic": profession.isMedic,
     };
 
@@ -132,31 +131,31 @@ class AppDataFirebaseService implements AppDataService {
       classOrder: data["classOrder"] ?? "",
       name: data["name_$_lang"] ?? "",
       isMedic: data["isMedic"] ?? false,
-      fieldsOfPractice: [],
+      specialties: [],
     );
   }
 
   // Product => Map<String, dynamic>
-  Map<String, dynamic> _toFirestoreFieldsOfPractice(
-    FieldsOfPractice fieldsOfPractice,
+  Map<String, dynamic> _toFirestoreSpecialties(
+    Specialties specialties,
     SetOptions? options, [
     register = false,
   ]) {
     final map = {
-      'professionId': fieldsOfPractice.professionId,
-      "name_$_lang": fieldsOfPractice.name,
+      'professionId': specialties.professionId,
+      "name_$_lang": specialties.name,
     };
 
     return map;
   }
 
   // Map<String, dynamic> => Product
-  FieldsOfPractice _fromFirestoreFieldsOfPractice(
+  Specialties _fromFirestoreSpecialties(
     DocumentSnapshot<Map<String, dynamic>> doc,
     SnapshotOptions? options,
   ) {
     Map<String, dynamic> data = doc.data()!;
-    return FieldsOfPractice(
+    return Specialties(
       id: doc.id,
       professionId: data["professionId"] ?? "",
       name: data["name_$_lang"] ?? "",

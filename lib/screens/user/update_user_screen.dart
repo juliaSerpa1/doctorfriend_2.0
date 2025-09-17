@@ -29,11 +29,11 @@ class _UpdateUserScreenState extends State<UpdateUserScreen> {
   bool _loading = false;
   late AuthService _authService;
   AppUser? _user;
-  bool _loadFieldsOfPractice = false;
+  bool _loadSpecialties = false;
 
   Profession? _profisionSelected;
 
-  final List<FieldsOfPractice> _fieldsOfPractice = [];
+  final List<Specialties> _specialties = [];
 
   File? _selectedImage;
   final List<Profession> _suggestionsprofessions = [];
@@ -53,9 +53,9 @@ class _UpdateUserScreenState extends State<UpdateUserScreen> {
             val.name.toLowerCase() ==
             _controllerprofession.text.toLowerCase().trimRight());
       } catch (_) {}
-      FieldsOfPractice? specialty;
+      Specialties? specialty;
       try {
-        specialty = _fieldsOfPractice.firstWhere((val) =>
+        specialty = _specialties.firstWhere((val) =>
             val.name.toLowerCase() ==
             _controllerspecialty.text.toLowerCase().trimRight());
       } catch (_) {}
@@ -153,12 +153,12 @@ class _UpdateUserScreenState extends State<UpdateUserScreen> {
         _profisionSelected = profision;
       }
     }
-    _loadFieldsOfPractice = true;
+    _loadSpecialties = true;
     setState(() {});
     await Future.delayed(const Duration(milliseconds: 200));
-    _fieldsOfPractice.clear();
-    _fieldsOfPractice.addAll([..._profisionSelected?.fieldsOfPractice ?? []]);
-    _loadFieldsOfPractice = false;
+    _specialties.clear();
+    _specialties.addAll([..._profisionSelected?.specialties ?? []]);
+    _loadSpecialties = false;
     setState(() {});
   }
 
@@ -171,8 +171,8 @@ class _UpdateUserScreenState extends State<UpdateUserScreen> {
       _controllerName.text = _user!.name;
       final profession = _user!.getProfession?.name ?? "";
       final specialty = _user!.getProfession != null &&
-              _user!.getProfession!.fieldsOfPractice.isNotEmpty
-          ? _user!.getProfession!.fieldsOfPractice.first.name
+              _user!.getProfession!.specialties.isNotEmpty
+          ? _user!.getProfession!.specialties.first.name
           : "";
       _controllerprofession.text = profession;
       _controllerspecialty.text = specialty;
@@ -226,11 +226,11 @@ class _UpdateUserScreenState extends State<UpdateUserScreen> {
                 requiredField: true,
                 onChanged: _onProfissionChange,
               ),
-              if (!_loadFieldsOfPractice)
+              if (!_loadSpecialties)
                 CustomInputSugest(
                   label: _traslation["specialty"],
                   controller: _controllerspecialty,
-                  suggestions: _fieldsOfPractice.map((el) => el.name).toList(),
+                  suggestions: _specialties.map((el) => el.name).toList(),
                   requiredField: true,
                   done: true,
                 ),

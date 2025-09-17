@@ -136,7 +136,7 @@ class UserScreen extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  "${user.getProfession?.name ?? ""} - ${user.getProfession != null && user.getProfession!.fieldsOfPractice.isNotEmpty ? user.getProfession?.fieldsOfPractice.first.name : ""}",
+                                  "${user.getProfession?.name ?? ""} - ${user.getProfession != null && user.getProfession!.specialties.isNotEmpty ? user.getProfession?.specialties.first.name : ""}",
                                   style: theme.textTheme.bodySmall?.copyWith(
                                     color: theme.colorScheme.onPrimary,
                                   ),

@@ -39,14 +39,14 @@ class _SignupScreenState extends State<SignupScreen> {
   bool _agreeContact = false;
   bool _isComplete = false;
   bool _updateUser = false;
-  bool _loadFieldsOfPractice = false;
+  bool _loadSpecialties = false;
   double? _lat;
   double? _lng;
   String? _local;
 
   Profession? _profisionSelected;
 
-  final List<FieldsOfPractice> _fieldsOfPractice = [];
+  final List<Specialties> _specialties = [];
 
   final List<Profession> _suggestionsprofessions = [];
 
@@ -83,9 +83,9 @@ class _SignupScreenState extends State<SignupScreen> {
             val.name.toLowerCase() ==
             _controllerprofession.text.toLowerCase().trimRight());
       } catch (_) {}
-      FieldsOfPractice? specialty;
+      Specialties? specialty;
       try {
-        specialty = _fieldsOfPractice.firstWhere((val) =>
+        specialty = _specialties.firstWhere((val) =>
             val.name.toLowerCase() ==
             _controllerspecialty.text.toLowerCase().trimRight());
       } catch (_) {}
@@ -190,12 +190,12 @@ class _SignupScreenState extends State<SignupScreen> {
         _profisionSelected = profision;
       }
     }
-    _loadFieldsOfPractice = true;
+    _loadSpecialties = true;
     setState(() {});
     await Future.delayed(const Duration(milliseconds: 200));
-    _fieldsOfPractice.clear();
-    _fieldsOfPractice.addAll([..._profisionSelected?.fieldsOfPractice ?? []]);
-    _loadFieldsOfPractice = false;
+    _specialties.clear();
+    _specialties.addAll([..._profisionSelected?.specialties ?? []]);
+    _loadSpecialties = false;
     setState(() {});
   }
 
@@ -276,11 +276,11 @@ class _SignupScreenState extends State<SignupScreen> {
               onChanged: _onProfissionChange,
               done: true,
             ),
-            if (!_loadFieldsOfPractice)
+            if (!_loadSpecialties)
               CustomInputSugest(
                 label: _traslation["specialty"],
                 controller: _controllerspecialty,
-                suggestions: _fieldsOfPractice.map((el) => el.name).toList(),
+                suggestions: _specialties.map((el) => el.name).toList(),
                 requiredField: true,
                 done: true,
               ),

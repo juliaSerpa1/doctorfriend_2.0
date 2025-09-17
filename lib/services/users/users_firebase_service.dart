@@ -606,8 +606,9 @@ class UserFirebaseService implements UsersService {
       'shopping': user.shopping.map((e) => e.toMap).toList(),
       "localeName": user.localeName.toLowerCase(),
       "timeZone": user.timeZone,
-      "freeTrialExpirationDate":
-          Timestamp.fromDate(user.freeTrialExpirationDate),
+      "freeTrialExpirationDate": user.freeTrialExpirationDate != null
+          ? Timestamp.fromDate(user.freeTrialExpirationDate!)
+          : null,
       'updatedDate': Timestamp.fromDate(user.updatedDate),
       "norms": Timestamp.fromDate(user.norms),
       "terms": Timestamp.fromDate(user.terms),

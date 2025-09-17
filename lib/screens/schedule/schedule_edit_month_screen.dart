@@ -163,7 +163,7 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
     _scheduleMonth = widget.scheduleMonth;
 
     _isSaved = _scheduleMonth.scheduleDays.isNotEmpty;
-    print(_scheduleMonth.id);
+
     _scrollController = ScrollController();
     _scrollToCurrentDay();
     if (!_isSaved) _getSavedPrefernces();
