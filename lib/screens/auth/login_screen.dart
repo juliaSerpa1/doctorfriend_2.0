@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
       if (!AuthService().toSignup || authUser == null) return;
 
       final use = await UsersService().getUser(authUser.uid);
-      if (use == null) {
+      if (use == null || use.specialty.isEmpty) {
         final userWeb = await UsersService().getUserCustomer(authUser.uid);
         if (userWeb == null) {
           _updateAccount();

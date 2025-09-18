@@ -60,7 +60,7 @@ class AppUser {
   final DateTime createdDate;
   final DateTime terms;
   final DateTime norms;
-  final DateTime freeTrialExpirationDate;
+  final DateTime? freeTrialExpirationDate;
   final DateTime? freeTrialEducationExpirationDate;
   Profession? _profession;
 
@@ -181,6 +181,7 @@ class AppUser {
   }
 
   bool get isFreePlan {
+    if (freeTrialExpirationDate == null) return true;
     return isFreePlanLesftDays >= 0;
   }
 
@@ -189,7 +190,8 @@ class AppUser {
   }
 
   int get isFreePlanLesftDays {
-    final date = freeTrialExpirationDate;
+    if (freeTrialExpirationDate == null) return 0;
+    final date = freeTrialExpirationDate!;
     return date.difference(ToolsUtil.startDay()).inDays;
   }
 
@@ -197,8 +199,7 @@ class AppUser {
     try {
       final data = await AppDataFirebaseService().getProfessions();
       _profession = data.firstWhere((val) => val.id == profession[0]);
-      _profession?.fieldsOfPractice
-          .removeWhere((val) => val.id != specialty[0]);
+      _profession?.specialties.removeWhere((val) => val.id != specialty[0]);
     } catch (_) {}
   }
 

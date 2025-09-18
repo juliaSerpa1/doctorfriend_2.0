@@ -133,7 +133,7 @@ class EducationFirebaseService implements EducationService {
               name: "",
               isMedic: false,
               classOrder: "",
-              fieldsOfPractice: [],
+              specialties: [],
             ),
           )
           .toList()

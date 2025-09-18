@@ -39,14 +39,14 @@ class _SignupScreenState extends State<SignupScreen> {
   bool _agreeContact = false;
   bool _isComplete = false;
   bool _updateUser = false;
-  bool _loadFieldsOfPractice = false;
+  bool _loadSpecialties = false;
   double? _lat;
   double? _lng;
   String? _local;
 
   Profession? _profisionSelected;
 
-  final List<FieldsOfPractice> _fieldsOfPractice = [];
+  final List<Specialties> _specialties = [];
 
   final List<Profession> _suggestionsprofessions = [];
 
@@ -66,7 +66,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
   late Map<String, dynamic> _traslation;
   AppData? _appData;
-
+  bool _isFromApple = false;
   Future<void> _loadData() async {
     setState(() => _loading = true);
     _appData = await AppDataService().getAppData();
@@ -83,9 +83,9 @@ class _SignupScreenState extends State<SignupScreen> {
             val.name.toLowerCase() ==
             _controllerprofession.text.toLowerCase().trimRight());
       } catch (_) {}
-      FieldsOfPractice? specialty;
+      Specialties? specialty;
       try {
-        specialty = _fieldsOfPractice.firstWhere((val) =>
+        specialty = _specialties.firstWhere((val) =>
             val.name.toLowerCase() ==
             _controllerspecialty.text.toLowerCase().trimRight());
       } catch (_) {}
@@ -97,7 +97,7 @@ class _SignupScreenState extends State<SignupScreen> {
         throw HandleException("select_specialty", lang);
       }
       await _authService.signup(
-        name: _controllerName.text,
+        name: _isFromApple ? null : _controllerName.text,
         phone: _controllerPhone.text,
         local: _controllerLocation.text,
         latitude: _lat!,
@@ -144,7 +144,6 @@ class _SignupScreenState extends State<SignupScreen> {
     if (_controllerPhone.text.trim() != "" &&
         _controllerLocation.text.trim() != "" &&
         _controllerprofession.text.trim() != "" &&
-        _controllerName.text.trim() != "" &&
         _agreeTerms &&
         _agreeContact) {
       res = true;
@@ -190,12 +189,12 @@ class _SignupScreenState extends State<SignupScreen> {
         _profisionSelected = profision;
       }
     }
-    _loadFieldsOfPractice = true;
+    _loadSpecialties = true;
     setState(() {});
     await Future.delayed(const Duration(milliseconds: 200));
-    _fieldsOfPractice.clear();
-    _fieldsOfPractice.addAll([..._profisionSelected?.fieldsOfPractice ?? []]);
-    _loadFieldsOfPractice = false;
+    _specialties.clear();
+    _specialties.addAll([..._profisionSelected?.specialties ?? []]);
+    _loadSpecialties = false;
     setState(() {});
   }
 
@@ -212,6 +211,11 @@ class _SignupScreenState extends State<SignupScreen> {
     final authUser = AuthService().authUser;
     if (authUser == null) return;
     _updateUser = widget.updateUser;
+    if (authUser.providerData.isNotEmpty) {
+      if (authUser.providerData[0].providerId == "apple.com") {
+        _isFromApple = true;
+      }
+    }
     _controllerName.text = authUser.displayName ?? "";
     _controllerPhone.text = authUser.phoneNumber ?? _controllerPhone.text;
     if (_updateUser) {
@@ -276,11 +280,11 @@ class _SignupScreenState extends State<SignupScreen> {
               onChanged: _onProfissionChange,
               done: true,
             ),
-            if (!_loadFieldsOfPractice)
+            if (!_loadSpecialties)
               CustomInputSugest(
                 label: _traslation["specialty"],
                 controller: _controllerspecialty,
-                suggestions: _fieldsOfPractice.map((el) => el.name).toList(),
+                suggestions: _specialties.map((el) => el.name).toList(),
                 requiredField: true,
                 done: true,
               ),
@@ -292,12 +296,13 @@ class _SignupScreenState extends State<SignupScreen> {
                 keyboardType: TextInputType.number,
                 onChanged: isComplete,
               ),
-            CustomInput(
-              label: _traslation["name"],
-              controller: _controllerName,
-              requiredField: true,
-              onChanged: isComplete,
-            ),
+            if (!_isFromApple)
+              CustomInput(
+                label: _traslation["name"],
+                controller: _controllerName,
+                requiredField: true,
+                onChanged: isComplete,
+              ),
             // CustomInput(
             //   label: _traslation["email"],
             //   controller: _controllerEmail,

@@ -21,7 +21,7 @@ abstract class AuthService {
   Future<void> loadAddresses();
 
   Future<void> signup({
-    required String name,
+    required String? name,
     required String phone,
     required String local,
     required double longitude,

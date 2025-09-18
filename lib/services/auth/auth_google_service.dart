@@ -32,6 +32,7 @@ class AuthGoogleService implements AuthService {
   bool isInitialize = false;
   static AppUser? _currentUser;
   static User? _authUser;
+  static String _authUserName = "";
   static Subscription? _currentSubscription;
   static WebUser? _webUser;
   static bool _toSignup = false;
@@ -54,7 +55,8 @@ class AuthGoogleService implements AuthService {
       if (user != null) {
         gasStationsListSubscription =
             UsersService().user(user.uid).listen((doc) async {
-          if (doc != null) {
+          _authUserName = doc?.name ?? "";
+          if (doc != null && doc.specialty.isNotEmpty) {
             _toSignup = false;
             _currentUser = doc;
             await _currentUser?.loadAddresses();
@@ -142,7 +144,7 @@ class AuthGoogleService implements AuthService {
 
   @override
   Future<void> signup({
-    required String name,
+    required String? name,
     required String phone,
     required String local,
     required double longitude,
@@ -182,7 +184,7 @@ class AuthGoogleService implements AuthService {
 
         final currentUser = await userToCreate(
           id: user.uid,
-          name: name,
+          name: name ?? _authUserName,
           email: user.email!,
           phone: phone,
           profession: profession,
@@ -261,6 +263,7 @@ class AuthGoogleService implements AuthService {
   @override
   Future<void> logout() async {
     _currentUser = null;
+    _authUser = null;
     await FirebaseAuth.instance.signOut();
     await _googleSignIn.signOut();
     await _auth.signOut();
@@ -386,10 +389,74 @@ class AuthGoogleService implements AuthService {
     }
   }
 
-  // Sign in with Google
+  // // Sign in with Google
+  // @override
+  // Future<UserCredential?> signInWithApple() async {
+  //   try {
+  //     if (Platform.isIOS) {
+  //       // iOS: fluxo nativo
+  //       final appleCredential = await SignInWithApple.getAppleIDCredential(
+  //         scopes: [
+  //           AppleIDAuthorizationScopes.email,
+  //           AppleIDAuthorizationScopes.fullName,
+  //         ],
+
+  //         // Obrigatório no Android e Web
+  //         webAuthenticationOptions: Platform.isAndroid
+  //             ? WebAuthenticationOptions(
+  //                 clientId:
+  //                     "br.com.doctorfriend.siwa", // Service ID criado na Apple
+  //                 redirectUri: Uri.parse(
+  //                   "https://doctor-friend-74a87.firebaseapp.com/__/auth/handler",
+  //                 ),
+  //               )
+  //             : null,
+  //       );
+  //       // print("appleCredential");
+  //       // print(appleCredential);
+  //       // print(appleCredential.familyName);
+  //       // print(appleCredential.givenName);
+  //       final oauthCredential = OAuthProvider("apple.com").credential(
+  //         idToken: appleCredential.identityToken,
+  //         accessToken: appleCredential.authorizationCode,
+  //       );
+
+  //       print(oauthCredential.appleFullPersonName);
+  //       print(appleCredential.givenName);
+  //       print(appleCredential.familyName);
+  //       return await FirebaseAuth.instance
+  //           .signInWithCredential(oauthCredential);
+  //     } else if (Platform.isAndroid) {
+  //       // Android: usa Firebase OAuth (evita missing initial state)
+  //       final appleCredential = await FirebaseAuth.instance.signInWithProvider(
+  //           OAuthProvider("apple.com").setScopes(["email", "name"]));
+
+  //       return appleCredential;
+  //       // return await FirebaseAuthOAuth().openSignInFlow(
+  //       //   "apple.com",
+  //       //   ["email", "name"],
+  //       //   {},
+  //       // );
+  //     } else {
+  //       throw UnimplementedError("Plataforma não suportada");
+  //     }
+  //   } on SignInWithAppleAuthorizationException catch (e) {
+  //     // print(e.message);
+  //     throw FirebaseAuthHandleException(e.code.name, _lang);
+  //   } on FirebaseAuthHandleException catch (_) {
+  //     rethrow;
+  //   } catch (e) {
+  //     rethrow;
+  //   }
+  // }
+
   @override
-  Future<UserCredential?> signInWithApple() async {
+  Future<User?> signInWithApple() async {
     try {
+      OAuthCredential? oauthCredential;
+      String? fullName;
+      String? email;
+      User? user;
       if (Platform.isIOS) {
         // iOS: fluxo nativo
         final appleCredential = await SignInWithApple.getAppleIDCredential(
@@ -397,43 +464,56 @@ class AuthGoogleService implements AuthService {
             AppleIDAuthorizationScopes.email,
             AppleIDAuthorizationScopes.fullName,
           ],
-
-          // Obrigatório no Android e Web
-          webAuthenticationOptions: Platform.isAndroid
-              ? WebAuthenticationOptions(
-                  clientId:
-                      "br.com.doctorfriend.siwa", // Service ID criado na Apple
-                  redirectUri: Uri.parse(
-                    "https://doctor-friend-74a87.firebaseapp.com/__/auth/handler",
-                  ),
-                )
-              : null,
         );
-        // print("appleCredential");
-        // print(appleCredential);
-        // print(appleCredential.familyName);
-        // print(appleCredential.givenName);
-        final oauthCredential = OAuthProvider("apple.com").credential(
+
+        fullName = (appleCredential.givenName != null ||
+                appleCredential.familyName != null)
+            ? '${appleCredential.givenName ?? ''} ${appleCredential.familyName ?? ''}'
+                .trim()
+            : null;
+        email = appleCredential.email;
+
+        oauthCredential = OAuthProvider("apple.com").credential(
           idToken: appleCredential.identityToken,
           accessToken: appleCredential.authorizationCode,
         );
-
-        return await FirebaseAuth.instance
-            .signInWithCredential(oauthCredential);
       } else if (Platform.isAndroid) {
-        // Android: usa Firebase OAuth (evita missing initial state)
+        // Android: usa Firebase OAuth
         final appleCredential = await FirebaseAuth.instance.signInWithProvider(
-            OAuthProvider("apple.com").setScopes(["email", "name"]));
+          OAuthProvider("apple.com").setScopes(["email", "name"]),
+        );
 
-        return appleCredential;
-        // return await FirebaseAuthOAuth().openSignInFlow(
-        //   "apple.com",
-        //   ["email", "name"],
-        //   {},
-        // );
+        user = appleCredential.user;
+        fullName = null; // No Android, a Apple não retorna nome
+        email = null;
       } else {
         throw UnimplementedError("Plataforma não suportada");
       }
+
+      if (oauthCredential != null) {
+        final userCredential =
+            await _auth.signInWithCredential(oauthCredential);
+        user = userCredential.user;
+      }
+
+      if (user != null) {
+        final store = FirebaseFirestoreUtil.store;
+        final userDoc =
+            store.collection(FirebaseTablesUtil.users).doc(user.uid);
+        final snapshot = await userDoc.get();
+
+        if (!snapshot.exists) {
+          // Primeiro login: salva name e email
+          await userDoc.set({
+            'name': fullName ?? '', // fallback se não vier nome
+            'email': email ?? user.email,
+            "userState": UserState.activated.index,
+            "userType": UserType.approved.index,
+          });
+        }
+      }
+
+      return user;
     } on SignInWithAppleAuthorizationException catch (e) {
       // print(e.message);
       throw FirebaseAuthHandleException(e.code.name, _lang);
@@ -547,7 +627,7 @@ Future<AppUser> userToCreate({
     deviceType: getDeviceType(),
     imageUrl: imageUrl,
     userState: UserState.activated,
-    userType: UserType.underAnalysis,
+    userType: UserType.approved,
     updatedDate: DateTime.now(),
     createdDate: DateTime.now(),
   );

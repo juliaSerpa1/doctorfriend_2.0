@@ -606,8 +606,9 @@ class UserFirebaseService implements UsersService {
       'shopping': user.shopping.map((e) => e.toMap).toList(),
       "localeName": user.localeName.toLowerCase(),
       "timeZone": user.timeZone,
-      "freeTrialExpirationDate":
-          Timestamp.fromDate(user.freeTrialExpirationDate),
+      "freeTrialExpirationDate": user.freeTrialExpirationDate != null
+          ? Timestamp.fromDate(user.freeTrialExpirationDate!)
+          : null,
       'updatedDate': Timestamp.fromDate(user.updatedDate),
       "norms": Timestamp.fromDate(user.norms),
       "terms": Timestamp.fromDate(user.terms),
@@ -627,27 +628,29 @@ class UserFirebaseService implements UsersService {
   ) {
     Map<String, dynamic> data = doc.data()!;
     List<UserService> services = data['services']
-        .map(
-          (val) => UserService(
-            service: val["service"],
-            price: val["price"]?.toString(),
-            priceFixed: val["priceFixed"] ?? true,
-          ),
-        )
-        .toList()
-        .cast<UserService>();
+            ?.map(
+              (val) => UserService(
+                service: val["service"],
+                price: val["price"]?.toString(),
+                priceFixed: val["priceFixed"] ?? true,
+              ),
+            )
+            .toList()
+            .cast<UserService>() ??
+        [];
     services
         .add(const UserService(price: null, service: "", priceFixed: false));
 
     List<CommonQuestion> commonQuestion = data['commonQuestion']
-        .map(
-          (val) => CommonQuestion(
-            question: val["question"],
-            response: val["response"],
-          ),
-        )
-        .toList()
-        .cast<CommonQuestion>();
+            ?.map(
+              (val) => CommonQuestion(
+                question: val["question"],
+                response: val["response"],
+              ),
+            )
+            .toList()
+            .cast<CommonQuestion>() ??
+        [];
 
     final List<Shopping> shopping = data['shopping']
             ?.map(
@@ -700,19 +703,19 @@ class UserFirebaseService implements UsersService {
       registerClassOrder: data['registerClassOrder'],
       pix: data['pix'],
       services: services,
-      experiences: data['experiences'].cast<String>(),
+      experiences: data['experiences']?.cast<String>() ?? [],
       diseasesTreated: data['diseasesTreated']?.cast<String>() ?? [],
       healthInsurance: data['healthInsurance']?.cast<String>() ?? [],
-      languages: data['languages'].cast<String>(),
-      trainings: data['trainings'].cast<String>(),
+      languages: data['languages']?.cast<String>() ?? [],
+      trainings: data['trainings']?.cast<String>() ?? [],
       commonQuestion: commonQuestion,
-      galery: data['galery'].cast<String>(),
+      galery: data['galery']?.cast<String>() ?? [],
       aboutMe: data['aboutMe'],
       links: Links(
-        facebook: data['links']['facebook'],
-        site: data['links']['site'],
-        instagram: data['links']['instagram'],
-        twitter: data['links']['twitter'],
+        facebook: data['links']?['facebook'],
+        site: data['links']?['site'],
+        instagram: data['links']?['instagram'],
+        twitter: data['links']?['twitter'],
       ),
       freeTrialExpirationDate: data['freeTrialExpirationDate']?.toDate(),
       freeTrialEducationExpirationDate:
@@ -722,12 +725,12 @@ class UserFirebaseService implements UsersService {
       firebaseMessagingToken: data['firebaseMessagingToken'],
       deviceType: data['deviceType'],
       imageUrl: data['imageUrl'] ?? 'assets/images/avatar.png',
-      userState: UserState.values[data['userState']],
-      userType: UserType.values[data['userType']],
-      updatedDate: data['updatedDate'].toDate(),
-      createdDate: data['createdDate'].toDate(),
-      terms: data['terms'].toDate(),
-      norms: data['norms'].toDate(),
+      userState: UserState.values[data['userState'] ?? 0],
+      userType: UserType.values[data['userType'] ?? 0],
+      updatedDate: data['updatedDate']?.toDate() ?? DateTime.now(),
+      createdDate: data['createdDate']?.toDate() ?? DateTime.now(),
+      terms: data['terms']?.toDate() ?? DateTime.now(),
+      norms: data['norms']?.toDate() ?? DateTime.now(),
     );
   }
 
