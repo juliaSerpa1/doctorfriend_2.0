@@ -100,7 +100,7 @@ class MonthsScheduleCard extends StatelessWidget {
                           isCreated ? Icons.check : Icons.close_sharp,
                           color: isCreated
                               ? Theme.of(context).colorScheme.secondaryContainer
-                              : Theme.of(context).colorScheme.error,
+                              : Theme.of(context).colorScheme.tertiary,
                         ),
                       ),
                     ]),
