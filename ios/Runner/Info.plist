@@ -22,10 +22,23 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.795953190428-0n3ql57enck1ud74gpdiju483p2a0p5v</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<string>NO</string>
+	<key>GIDClientID</key>
+	<string>795953190428-0n3ql57enck1ud74gpdiju483p2a0p5v.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>sms</string>
@@ -40,8 +53,12 @@
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We need camera access to detect faces.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This allows us to improve your experience by facilitating registration and providing location-based services. You can change this at any time in the app settings.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to your microphone to convert audio to text.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To customize your profile and add additional photos, this app requests access to your photo gallery. This allows you to select and add photos to your profile.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
@@ -51,27 +68,6 @@
 		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
-
-	<key>GIDClientID</key>
-	<!-- TODO Replace this value: -->
-	<!-- Copied from GoogleService-Info.plist key CLIENT_ID -->
-	<string>795953190428-0n3ql57enck1ud74gpdiju483p2a0p5v.apps.googleusercontent.com</string>
-	<!-- Put me in the [my_project]/ios/Runner/Info.plist file -->
-	<!-- Google Sign-in Section -->
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<!-- TODO Replace this value: -->
-				<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
-				<string>com.googleusercontent.apps.795953190428-0n3ql57enck1ud74gpdiju483p2a0p5v</string>
-			</array>
-		</dict>
-	</array>
-	<!-- End of the Google Sign-in Section -->
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -86,11 +82,5 @@
 	</array>
 	<key>io.flutter.embedded_views_preview</key>
 	<string>YES</string>
-
-	<key>NSCameraUsageDescription</key>
-	<string>We need camera access to detect faces.</string>
-
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs access to your microphone to convert audio to text.</string>
 </dict>
 </plist>
