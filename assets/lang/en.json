@@ -186,6 +186,7 @@
     "delete_schedule": "Delete {month} {year} schedule?",
     "for": "for",
     "save_schedule": "Save Schedule",
+    "duplicate": "Duplicate",
     "save": "Save"
   },
   "schedule": {

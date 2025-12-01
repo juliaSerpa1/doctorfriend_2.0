@@ -62,7 +62,7 @@ class TimeOfDayBox extends StatelessWidget {
           padding: const EdgeInsets.all(6.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: Theme.of(context).colorScheme.primary.withOpacity(.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: .1),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

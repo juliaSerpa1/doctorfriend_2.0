@@ -184,6 +184,7 @@
     "delete_schedule": "Удалить расписание за {month} {year}?",
     "for": "для",
     "save_schedule": "Сохранить расписание",
+    "duplicate": "Дублировать",
     "save": "Сохранить"
   },
   "schedule": {

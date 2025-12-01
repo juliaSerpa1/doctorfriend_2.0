@@ -47,7 +47,7 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
     }
   }
 
-  void _addOne(int day, TimeOfDay timeOfDay) {
+  void _addOne(int day, TimeOfDay timeOfDay, [showExistsError = true]) {
     try {
       _scheduleMonth.add(
         DateTime(
@@ -62,7 +62,9 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
       );
       setState(() {});
     } on HandleException catch (error) {
-      Callback.snackBar(context, title: error.message);
+      if (showExistsError) {
+        Callback.snackBar(context, title: error.message);
+      }
     } catch (error) {
       Callback.snackBar(context);
     }
@@ -141,6 +143,25 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
     setState(() => _loading = false);
   }
 
+  void _duplicate(List<ScheduletimeOfDay> timesOfDay, int day) {
+    if (timesOfDay.isEmpty) return;
+
+    // Encontra o próximo dia
+    int nextDay = day + 1;
+    if (nextDay > _scheduleMonth.daysInMonth()) return;
+
+    // Copia os horários para o próximo dia
+    for (var schedule in timesOfDay) {
+      _addOne(
+          nextDay - 1,
+          TimeOfDay(
+            hour: schedule.timeOfDay.hour,
+            minute: schedule.timeOfDay.minute,
+          ),
+          false);
+    }
+  }
+
   void _scrollToCurrentDay() {
     final now = DateTime.now();
     int currentDay = now.day;
@@ -215,10 +236,10 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
               itemBuilder: (ctx, index) {
                 int day = index + 1;
                 int dayOfWeek = DateTime(year, month, day).weekday;
-                List<ScheduletimeOfDay> scheduletimesOfDayFiltered = [
+                List<ScheduletimeOfDay> timesOfDay = [
                   ..._scheduleMonth.scheduleDays
                 ];
-                scheduletimesOfDayFiltered.removeWhere((element) =>
+                timesOfDay.removeWhere((element) =>
                     element.timeOfDay.day != day ||
                     element.timeOfDay.month != month);
                 return Padding(
@@ -227,15 +248,26 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
                     children: [
                       Text(
                           "${FormaterUtil.capitalize(_daysOfWeek[dayOfWeek - 1].substring(0, 3))} - ${FormaterUtil.addZero(day)}"),
+                      if (timesOfDay.isNotEmpty)
+                        TextButton.icon(
+                          label: Text(
+                            _traslation["duplicate"],
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w600),
+                          ),
+                          icon: const Icon(Icons.copy, size: 20),
+                          onPressed: () => _duplicate(timesOfDay, day),
+                          // tooltip: 'Copiar para próximo dia',
+                        ),
                       SizedBox(
                         width: 120,
-                        height: height - 45,
+                        height: height - 91,
                         child: TimeOfDayBox(
                           addOne: (TimeOfDay timeOfDay) =>
                               _addOne(index, timeOfDay),
                           deleteOne: (DateTime timeOfDay) =>
                               _deleteOne(index, timeOfDay),
-                          timesOfDay: scheduletimesOfDayFiltered,
+                          timesOfDay: timesOfDay,
                           date: DateTime(year, month, day),
                         ),
                       ),

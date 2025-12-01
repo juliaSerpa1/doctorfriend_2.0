@@ -2,6 +2,7 @@ import 'package:doctorfriend/components/callback.dart';
 import 'package:doctorfriend/data/store.dart';
 import 'package:doctorfriend/exeption/handle_exception.dart';
 import 'package:doctorfriend/models/app_user.dart';
+import 'package:doctorfriend/models/schedule_time_of_day.dart';
 import 'package:doctorfriend/models/schedule_week.dart';
 import 'package:doctorfriend/screens/schedule/components/telemedicine.dart';
 import 'package:doctorfriend/screens/schedule/components/time_of_day_box.dart';
@@ -25,6 +26,7 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
   bool _isTelemedicine = false;
   final lang = Translations.currentLocale.languageCode;
   late Map<String, dynamic> _traslation;
+  late Map<String, dynamic> _traslationMonth;
   late List<String> _daysOfWeek;
   final DateTime now = DateTime.now();
   AppUser user = AuthService().currentUser!;
@@ -39,7 +41,7 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
     }
   }
 
-  void _addOne(int day, TimeOfDay timeOfDay) {
+  void _addOne(int day, TimeOfDay timeOfDay, [showExistsError = true]) {
     try {
       _scheduleWeek.add(
         day: day,
@@ -51,7 +53,9 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
       );
       setState(() {});
     } on HandleException catch (error) {
-      Callback.snackBar(context, title: error.message);
+      if (showExistsError) {
+        Callback.snackBar(context, title: error.message);
+      }
     } catch (error) {
       Callback.snackBar(context);
     }
@@ -140,6 +144,25 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
     setState(() {});
   }
 
+  void _duplicate(List<ScheduletimeOfDay> timesOfDay, int day) {
+    if (timesOfDay.isEmpty) return;
+
+    // Encontra o próximo dia
+    int nextDay = day + 1;
+    if (nextDay > _daysOfWeek.length) return;
+
+    // Copia os horários para o próximo dia
+    for (var schedule in timesOfDay) {
+      _addOne(
+          nextDay - 1,
+          TimeOfDay(
+            hour: schedule.timeOfDay.hour,
+            minute: schedule.timeOfDay.minute,
+          ),
+          false);
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -152,6 +175,7 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
     super.didChangeDependencies();
     final traslationContext = Translations.of(context);
     _traslation = traslationContext.translate('schedule_edit_days');
+    _traslationMonth = traslationContext.translate('schedule_edit_month');
     _daysOfWeek =
         traslationContext.translate('days_of_week')["list"].cast<String>();
   }
@@ -178,20 +202,36 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
               scrollDirection: Axis.horizontal,
               itemCount: _scheduleWeek.scheduleWeekList.length,
               itemBuilder: (ctx, index) {
+                int day = index + 1;
+
+                List<ScheduletimeOfDay> timesOfDay = [
+                  ..._scheduleWeek.scheduleWeekList[index]
+                ];
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12.0),
                   child: Column(
                     children: [
                       Text(FormaterUtil.capitalize(_daysOfWeek[index])),
+                      if (timesOfDay.isNotEmpty)
+                        TextButton.icon(
+                          label: Text(
+                            _traslationMonth["duplicate"],
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w600),
+                          ),
+                          icon: const Icon(Icons.copy, size: 20),
+                          onPressed: () => _duplicate(timesOfDay, day),
+                          // tooltip: 'Copiar para próximo dia',
+                        ),
                       SizedBox(
                         width: 120,
-                        height: height - 45,
+                        height: height - 91,
                         child: TimeOfDayBox(
                           addOne: (TimeOfDay timeOfDay) =>
                               _addOne(index, timeOfDay),
                           deleteOne: (DateTime timeOfDay) =>
                               _deleteOne(index, timeOfDay),
-                          timesOfDay: _scheduleWeek.scheduleWeekList[index],
+                          timesOfDay: timesOfDay,
                           date: DateTime.now(),
                         ),
                       ),

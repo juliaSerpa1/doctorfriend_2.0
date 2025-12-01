@@ -184,6 +184,7 @@
     "delete_schedule": "{month} {year} के लिए शेड्यूल हटाएं?",
     "for": "के लिए",
     "save_schedule": "शेड्यूल सहेजें",
+    "duplicate": "डुप्लिकेट",
     "save": "सहेजें"
   },
   "schedule": {

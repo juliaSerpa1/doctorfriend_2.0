@@ -184,6 +184,7 @@
     "delete_schedule": "Schema van {month} {year} verwijderen?",
     "for": "van",
     "save_schedule": "Schema opslaan",
+    "duplicate": "Dupliceer",
     "save": "Opslaan"
   },
   "schedule": {

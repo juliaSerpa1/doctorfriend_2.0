@@ -184,6 +184,7 @@
     "delete_schedule": "{month} {year} এর সময়সূচী মুছে ফেলতে চান?",
     "for": "এর জন্য",
     "save_schedule": "সময়সূচী সংরক্ষণ করুন",
+    "duplicate": "ডুপ্লিকেট",
     "save": "সংরক্ষণ করুন"
   },
   "schedule": {

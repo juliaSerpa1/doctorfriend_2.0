@@ -184,6 +184,7 @@
     "delete_schedule": "Futa ratiba ya {month} {year}?",
     "for": "kwa",
     "save_schedule": "Hifadhi Ratiba",
+    "duplicate": "Nakili",
     "save": "Hifadhi"
   },
   "schedule": {

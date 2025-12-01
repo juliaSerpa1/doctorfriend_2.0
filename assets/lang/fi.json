@@ -184,6 +184,7 @@
     "delete_schedule": "Haluatko poistaa aikataulun {month} {year}?",
     "for": "kohteelle",
     "save_schedule": "Tallenna aikataulu",
+    "duplicate": "Duplikoi",
     "save": "Tallenna"
   },
   "schedule": {

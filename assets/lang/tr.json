@@ -184,6 +184,7 @@
     "delete_schedule": "{month} {year} takvimi silinsin mi?",
     "for": "için",
     "save_schedule": "Takvimi kaydet",
+    "duplicate": "Kopyala",
     "save": "Kaydet"
   },
   "schedule": {

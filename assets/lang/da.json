@@ -184,6 +184,7 @@
     "delete_schedule": "Slet tidsplan for {month} {year}?",
     "for": "for",
     "save_schedule": "Gem tidsplan",
+    "duplicate": "Dupliker",
     "save": "Gem"
   },
   "schedule": {

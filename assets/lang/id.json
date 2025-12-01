@@ -176,6 +176,7 @@
     "delete_schedule": "Hapus jadwal bulan {month} {year}?",
     "for": "untuk",
     "save_schedule": "Simpan Jadwal",
+    "duplicate": "Gandakan",
     "save": "Simpan"
   },
   "schedule": {

@@ -184,6 +184,7 @@
     "delete_schedule": "Ta bort schema för {month} {year}?",
     "for": "från",
     "save_schedule": "Spara schema",
+    "duplicate": "Duplicera",
     "save": "Spara"
   },
   "schedule": {

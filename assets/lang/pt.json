@@ -184,6 +184,7 @@
     "delete_schedule": "Deletar agenda de {month} de {year}?",
     "for": "de",
     "save_schedule": "Salvar Agenda",
+    "duplicate": "Duplicar",
     "save": "Salvar"
   },
   "schedule": {

@@ -186,6 +186,7 @@
     "delete_schedule": "حذف جدول {month} {year}؟",
     "for": "لـ",
     "save_schedule": "حفظ الجدول",
+    "duplicate": "تكرار",
     "save": "حفظ"
   },
   "schedule": {

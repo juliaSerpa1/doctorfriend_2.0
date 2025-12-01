@@ -184,6 +184,7 @@
     "delete_schedule": "{month} {year} のスケジュールを削除しますか？",
     "for": "対象",
     "save_schedule": "スケジュールを保存",
+    "duplicate": "複製",
     "save": "保存"
   },
   "schedule": {

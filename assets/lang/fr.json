@@ -186,6 +186,7 @@
     "delete_schedule": "Supprimer l'horaire de {month} {year}?",
     "for": "pour",
     "save_schedule": "Enregistrer l'horaire",
+    "duplicate": "Dupliquer",
     "save": "Enregistrer"
   },
   "schedule": {
