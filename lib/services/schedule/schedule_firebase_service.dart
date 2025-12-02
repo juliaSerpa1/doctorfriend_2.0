@@ -43,6 +43,9 @@ class ScheduleFirebaseService implements ScheduleService {
 
       for (final doc in snapshot.docs) {
         final data = doc.data();
+        if (data.timeOfDay.year != year) {
+          continue;
+        }
         scheduleMonthsInYear.putIfAbsent(data.timeOfDay.month, () => []);
         scheduleMonthsInYear[data.timeOfDay.month]?.add(data);
       }
@@ -99,6 +102,7 @@ class ScheduleFirebaseService implements ScheduleService {
             .doc(scheduleDay.userId)
             .collection(subTable)
             .doc(scheduleDay.id);
+
         batch.set(docRef, scheduleDay.toMap);
       }
 
