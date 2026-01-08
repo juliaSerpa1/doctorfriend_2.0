@@ -19,6 +19,13 @@ import 'package:doctorfriend/exeption/firebase_auth_handle_exception.dart';
 import 'package:doctorfriend/services/auth/auth_service.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/gestures.dart';
+import 'package:doctorfriend/services/crm/crm_service.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
+import 'dart:convert';
+import 'package:flutter/services.dart';
+import 'package:doctorfriend/utils/validator_util.dart';
+import 'package:doctorfriend/screens/auth/components/view_pass_icon.dart';
+import 'package:doctorfriend/data/cities.dart';  // Aponte para o local correto onde o arquivo cities.dart está localizado
 
 class SignupScreen extends StatefulWidget {
   final bool updateUser;
@@ -29,6 +36,15 @@ class SignupScreen extends StatefulWidget {
 
   @override
   State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class CityStateData {
+  List<Map<String, dynamic>> states = [];
+
+  // Função para carregar os estados e cidades do cities.dart
+  void loadStatesAndCities() {
+    states = List<Map<String, dynamic>>.from(citiesData['estados']);
+  }
 }
 
 class _SignupScreenState extends State<SignupScreen> {
@@ -57,73 +73,115 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _controllerprofession = TextEditingController();
   final TextEditingController _controllerspecialty = TextEditingController();
   final TextEditingController _controllerName = TextEditingController();
-  // final TextEditingController _controllerEmail = TextEditingController();
-  // final TextEditingController _controllerPassword = TextEditingController();
-  // final TextEditingController _controllerConfirmPassword =
-  //     TextEditingController();
+  final TextEditingController _controllerEmail = TextEditingController();
+  final TextEditingController _controllerPassword = TextEditingController();
+  final TextEditingController _controllerConfirmPassword =
+      TextEditingController();
   final TextEditingController _controllerRegisterNumber =
       TextEditingController();
 
   late Map<String, dynamic> _traslation;
   AppData? _appData;
   bool _isFromApple = false;
+
+
+  late List<Map<String, dynamic>> _states;
+  late List<String> _cities;
+  final CityStateData _cityStateData = CityStateData();
+
+  final TextEditingController _controllerState = TextEditingController();
+  bool _obscureText = true;
+
   Future<void> _loadData() async {
     setState(() => _loading = true);
     _appData = await AppDataService().getAppData();
     setState(() => _loading = false);
   }
 
-  Future<void> _handleSignup() async {
-    setState(() => _loading = true);
-    try {
-      final String lang = Translations.currentLocale.languageCode;
-      Profession? profession;
-      try {
-        profession = _suggestionsprofessions.firstWhere((val) =>
-            val.name.toLowerCase() ==
-            _controllerprofession.text.toLowerCase().trimRight());
-      } catch (_) {}
-      Specialties? specialty;
-      try {
-        specialty = _specialties.firstWhere((val) =>
-            val.name.toLowerCase() ==
-            _controllerspecialty.text.toLowerCase().trimRight());
-      } catch (_) {}
+  Future<void> _loadStatesAndCities() async {
+    _cityStateData.loadStatesAndCities();
+    setState(() {
+      _states = _cityStateData.states;
+      _cities = _states.isNotEmpty ? List<String>.from(_states[0]['cidades']) : [];
+    });
+  }
 
-      if (profession == null) {
-        throw HandleException("select_profession", lang);
-      }
-      if (specialty == null) {
-        throw HandleException("select_specialty", lang);
-      }
-      await _authService.signup(
-        name: _isFromApple ? null : _controllerName.text,
-        phone: _controllerPhone.text,
-        local: _controllerLocation.text,
-        latitude: _lat!,
-        longitude: _lng!,
-        profession: profession.id,
-        specialty: specialty.id,
-        registerClassOrder: _profisionSelected?.classOrder,
-        registerNumber: _controllerRegisterNumber.text,
-        terms: _agreeTerms,
-        norms: _agreeContact,
-        isHealthInsurance: false,
+  Future<void> _handleSignup() async {
+  setState(() => _loading = true);
+  try {
+
+
+    final String lang = Translations.currentLocale.languageCode;
+
+    final crmService = CrmService();
+
+    final crmResult = await crmService.isCrmAtivoBrasil(
+      _controllerRegisterNumber.text.trim(),
+    );
+
+    if (!crmResult.isValido) {
+      Callback.snackBar(
+        context,
+        title: crmResult.mensagem,
       );
-    } on FirebaseAuthHandleException catch (error) {
-      Callback.snackBar(context, title: error.message);
-    } on FirestoreException catch (error) {
-      Callback.snackBar(context, title: error.message);
-    } on HandleException catch (error) {
-      Callback.snackBar(context, title: error.message);
-    } catch (error) {
-      Callback.snackBar(context);
-    } finally {
-      if (mounted) {
-        setState(() => _loading = false);
-      }
+      setState(() => _loading = false);
+      return;
+    }
+
+    Profession? profession;
+    try {
+      profession = _suggestionsprofessions.firstWhere((val) =>
+          val.name.toLowerCase() ==
+          _controllerprofession.text.toLowerCase().trimRight());
+    } catch (_) {}
+
+    Specialties? specialty;
+    try {
+      specialty = _specialties.firstWhere((val) =>
+          val.name.toLowerCase() ==
+          _controllerspecialty.text.toLowerCase().trimRight());
+    } catch (_) {}
+
+    if (profession == null) {
+      throw HandleException("select_profession", lang);
+    }
+    if (specialty == null) {
+      throw HandleException("select_specialty", lang);
+    }
+
+    // Aqui você utiliza o método de signup com e-mail e senha
+    await _authService.signupWithEmailAndPassword(
+      email: _controllerEmail.text.trim(),
+      password: _controllerPassword.text,
+      name: _isFromApple ? "" : _controllerName.text,
+      phone: _controllerPhone.text,
+      local: _controllerLocation.text,
+      latitude: _lat!,
+      longitude: _lng!,
+      profession: profession.id,
+      specialty: specialty.id,
+      registerClassOrder: _profisionSelected?.classOrder,
+      registerNumber: _controllerRegisterNumber.text,
+      terms: _agreeTerms,
+      norms: _agreeContact,
+      isHealthInsurance: false,
+    );
+
+  } on FirebaseAuthHandleException catch (error) {
+    Callback.snackBar(context, title: error.message);
+  } on FirestoreException catch (error) {
+    Callback.snackBar(context, title: error.message);
+  } on HandleException catch (error) {
+    Callback.snackBar(context, title: error.message);
+  } catch (error) {
+    Callback.snackBar(context);
+  } finally {
+    if (mounted) {
+      setState(() => _loading = false);
     }
   }
+}
+
 
   void _submitForm() async {
     final isValid = _formKey.currentState?.validate() ?? false;
@@ -208,6 +266,8 @@ class _SignupScreenState extends State<SignupScreen> {
     super.initState();
     _loadSuggestions();
     _loadData();
+    _loadStatesAndCities();
+
     final authUser = AuthService().authUser;
     if (authUser == null) return;
     _updateUser = widget.updateUser;
@@ -253,13 +313,13 @@ class _SignupScreenState extends State<SignupScreen> {
     // final specialty = ["Sirurgiao", "Implantes"];
 
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
         leading: IconButton(
           onPressed: logout,
           icon: Icon(Icons.close),
         ),
-        title: Text(_traslation["title"]),
-        shape: const ContinuousRectangleBorder(),
+        title: _traslation["title"],
+        // shape: const ContinuousRectangleBorder(),
       ),
       body: Form(
         key: _formKey,
@@ -303,14 +363,14 @@ class _SignupScreenState extends State<SignupScreen> {
                 requiredField: true,
                 onChanged: isComplete,
               ),
-            // CustomInput(
-            //   label: _traslation["email"],
-            //   controller: _controllerEmail,
-            //   validator: ValidatorUtil.validateEmail,
-            //   requiredField: true,
-            //   onChanged: isComplete,
-            //   textCapitalization: TextCapitalization.none,
-            // ),
+            CustomInput(
+              label: _traslation["email"],
+              controller: _controllerEmail,
+              validator: ValidatorUtil.validateEmail,
+              requiredField: true,
+              onChanged: isComplete,
+              textCapitalization: TextCapitalization.none,
+            ),
             CustomInput(
               label: _traslation["phone"],
               controller: _controllerPhone,
@@ -347,38 +407,38 @@ class _SignupScreenState extends State<SignupScreen> {
             //     ),
             //   ],
             // ),
-            // if (!_updateUser)
-            //   CustomInput(
-            //     label: _traslation["pass"],
-            //     obscureText: _obscureText,
-            //     controller: _controllerPassword,
-            //     validator: ValidatorUtil.validatePassoword,
-            //     requiredField: true,
-            //     onFieldSubmitted: (_) => _submitForm(),
-            //     textCapitalization: TextCapitalization.none,
-            //     onChanged: isComplete,
-            //     suffixIcon: ViewPassIcon(
-            //       obscureText: _obscureText,
-            //       onPressed: () => setState(() => _obscureText = !_obscureText),
-            //     ),
-            //   ),
+            if (!_updateUser)
+              CustomInput(
+                label: _traslation["pass"],
+                obscureText: _obscureText,
+                controller: _controllerPassword,
+                validator: ValidatorUtil.validatePassoword,
+                requiredField: true,
+                onFieldSubmitted: (_) => _submitForm(),
+                textCapitalization: TextCapitalization.none,
+                onChanged: isComplete,
+                suffixIcon: ViewPassIcon(
+                  obscureText: _obscureText,
+                  onPressed: () => setState(() => _obscureText = !_obscureText),
+                ),
+              ),
 
-            // if (!_updateUser)
-            //   CustomInput(
-            //     label: _traslation["pass_repeat"],
-            //     obscureText: _obscureText,
-            //     controller: _controllerConfirmPassword,
-            //     validator: (value) => ValidatorUtil.validateConfirmPassword(
-            //         _controllerPassword.text, value),
-            //     requiredField: true,
-            //     onFieldSubmitted: (_) => _submitForm(),
-            //     textCapitalization: TextCapitalization.none,
-            //     onChanged: isComplete,
-            //     suffixIcon: ViewPassIcon(
-            //       obscureText: _obscureText,
-            //       onPressed: () => setState(() => _obscureText = !_obscureText),
-            //     ),
-            //   ),
+            if (!_updateUser)
+              CustomInput(
+                label: _traslation["pass_repeat"],
+                obscureText: _obscureText,
+                controller: _controllerConfirmPassword,
+                validator: (value) => ValidatorUtil.validateConfirmPassword(
+                    _controllerPassword.text, value),
+                requiredField: true,
+                onFieldSubmitted: (_) => _submitForm(),
+                textCapitalization: TextCapitalization.none,
+                onChanged: isComplete,
+                suffixIcon: ViewPassIcon(
+                  obscureText: _obscureText,
+                  onPressed: () => setState(() => _obscureText = !_obscureText),
+                ),
+              ),
             CustomCheckbox(
               label: RichText(
                 text: TextSpan(

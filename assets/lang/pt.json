@@ -80,7 +80,8 @@
     "forgot_pass": "Esqueci a Senha!",
     "register": "Não Tenho Conta!",
     "google": "Entrar com o Google",
-    "apple": "Entrar com a Apple"
+    "apple": "Entrar com a Apple",
+    "signup": "Cadastre-se"
   },
   "signup_screen": {
     "title": "Registre-se Como Profissional",
@@ -91,6 +92,7 @@
     "email": "E-mail",
     "phone": "Telefone",
     "city": "Cidade de Atuação",
+    "state": "Estado",
     "pass": "Criar Senha",
     "pass_repeat": "Confirmar Senha",
     "privacy_policy_text": "Eu aceito os termos e condições, e confirmo que li e entendi a ",
@@ -356,7 +358,7 @@
     "facebook": "Facebook:",
     "instagram": "Instagram:",
     "twitter": "X:",
-    "services": "Serviços:",
+    "services": "Serviços e Valores:",
     "experience": "Experiência em:",
     "diseases_treated": "Doenças tratadas:",
     "health_insurance": "Planos de saúde:",

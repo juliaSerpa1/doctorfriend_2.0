@@ -18,6 +18,7 @@ import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:doctorfriend/utils/tools_util.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class ScheduleCustomer extends StatefulWidget {
   final ScheduletimeOfDay scheduletimeOfDay;
@@ -174,7 +175,7 @@ class _ScheduleCustomerState extends State<ScheduleCustomer> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(_traslation["title"])),
+      appBar: GradientAppBar(title: _traslation["title"]),
       body: LoadingIndicator(
         loading: _loading,
         child: ListView(
@@ -346,6 +347,24 @@ class _ScheduleCustomerState extends State<ScheduleCustomer> {
               subtitle: Text(_scheduletimeOfDay.customerNote ?? ""),
               title: Text(_traslation["note"]),
             ),
+
+            if (!widget.canceled)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+              child: ElevatedButton.icon(
+                onPressed: _loading ? null : _handleDelete,
+                icon: const Icon(Icons.cancel_outlined),
+                label: Text(
+                  _traslation["delete_schedule"], // ou texto customizado
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.error,
+                  foregroundColor: Theme.of(context).colorScheme.onError,
+                  minimumSize: const Size.fromHeight(48),
+                ),
+              ),
+            ),
+
           ],
         ),
       ),

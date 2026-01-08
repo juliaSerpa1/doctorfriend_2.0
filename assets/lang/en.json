@@ -80,7 +80,8 @@
     "forgot_pass": "Forgot Password!",
     "register": "Don't Have an Account!",
     "google": "Sign in with Google",
-    "apple": "Sign in with Apple"
+    "apple": "Sign in with Apple",
+    "signup": "Sign Up"
   },
   "signup_screen": {
     "title": "Register as a Professional",
@@ -358,7 +359,7 @@
     "facebook": "Facebook:",
     "instagram": "Instagram:",
     "twitter": "X:",
-    "services": "Services:",
+    "services": "Services and values:",
     "experience": "Experience in:",
     "diseases_treated": "Diseases treated:",
     "health_insurance": "Health insurance:",

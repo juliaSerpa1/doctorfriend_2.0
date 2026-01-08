@@ -11,6 +11,7 @@ import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/app_routes_util.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class EducationsScreen extends StatefulWidget {
   const EducationsScreen({super.key});
@@ -84,8 +85,8 @@ class _EducationsScreenState extends State<EducationsScreen> {
     final profession = _suggestionsprofessions.map((val) => val.name).toList();
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_traslation["title"]),
+      appBar: GradientAppBar(
+        title: _traslation["title"],
         leading: const Center(),
       ),
       body: ListView.builder(

@@ -12,6 +12,7 @@ import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:doctorfriend/utils/tools_util.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -55,9 +56,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final traslation = Translations.of(context).translate('settings');
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        title: traslation["title"], // "Configurações"
         leading: const SizedBox(),
-        title: Text(traslation["title"]),
       ),
       body: LoadingIndicator(
         loading: _loading,
@@ -204,38 +205,72 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Modal buildModal(BuildContext context, String title) {
-    final theme = Theme.of(context);
-    return Modal(
-      context,
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-          child: Column(
-            children: [
-              Container(
-                alignment: Alignment.topRight,
-                padding: const EdgeInsets.only(bottom: 10.0),
-                child: IconButton(
-                  onPressed: () => context.pop(),
-                  icon: Icon(
-                    Icons.close,
-                    size: 36,
-                    color: theme.colorScheme.error,
+ Modal buildModal(BuildContext context, String title) {
+  final theme = Theme.of(context);
+
+  return Modal(
+    context,
+    child: SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // 🔹 HEADER COM GRADIENTE
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 20, 15, 15),
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [
+                  Color.fromRGBO(18, 59, 102, 1),
+                  Color.fromRGBO(0, 0, 0, 1),
+                  Color.fromRGBO(14, 87, 43, 1),
+                ],
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: IconButton(
+                    onPressed: () => context.pop(),
+                    icon: const Icon(
+                      Icons.close,
+                      size: 30,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
-              ),
-              Text(
-                title,
-                style: theme.textTheme.titleLarge,
-              ),
-              const SizedBox(height: 20),
-              Text(_appData?.manual.replaceAll('\\n', '\n') ?? ""),
-              const SizedBox(height: 50),
-            ],
+                Text(
+                  title,
+                  style: theme.textTheme.titleLarge?.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
+
+          // 🔹 CONTEÚDO DO MANUAL
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Column(
+              children: [
+                const SizedBox(height: 10),
+                Text(
+                  _appData?.manual.replaceAll('\\n', '\n') ?? "",
+                  style: theme.textTheme.bodyMedium,
+                ),
+                const SizedBox(height: 50),
+              ],
+            ),
+          ),
+        ],
       ),
-    );
-  }
+    ),
+  );
+}
+
 }

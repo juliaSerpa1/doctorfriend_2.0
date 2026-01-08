@@ -38,6 +38,22 @@
           }
         },
         {
+          "client_id": "795953190428-e6mcctqisko61esnepvbgm1i5nkm8bak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.doctorfriend.profissional",
+            "certificate_hash": "f1fb28563af45b6cae874d3c916eb454659bce09"
+          }
+        },
+        {
+          "client_id": "795953190428-ohlkb978pqdd1s07ikbge62nd72qgqvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.doctorfriend.profissional",
+            "certificate_hash": "70b1728e6bd34b476f6d5c591f456c482a024fd8"
+          }
+        },
+        {
           "client_id": "795953190428-gbcbv3iv77su42dmi0ji01r0gdt31kro.apps.googleusercontent.com",
           "client_type": 3
         }

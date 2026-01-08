@@ -29,6 +29,7 @@ final String tableImages = FirebaseTablesUtil.userImages;
 class AuthGoogleService implements AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
+  
   bool isInitialize = false;
   static AppUser? _currentUser;
   static User? _authUser;
@@ -259,6 +260,87 @@ class AuthGoogleService implements AuthService {
   // Future<void> signInWithGoogle() async {
   //   await GoogleSignIn.instance.authenticate();
   // }
+
+
+  // Adicionar novos métodos para e-mail e senha
+  @override
+  Future<void> signupWithEmailAndPassword({
+    required String email,
+    required String password,
+    required String name,
+    required String phone,
+    required String local,
+    required double longitude,
+    required double latitude,
+    required String profession,
+    required String specialty,
+    required String? registerNumber,
+    required String? registerClassOrder,
+    required bool isHealthInsurance,
+    required bool terms,
+    required bool norms,
+  }) async {
+    try {
+      // Criação de usuário com e-mail e senha
+      UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+
+      // Aqui você pode criar o usuário no Firestore, caso necessário.
+      User user = userCredential.user!;
+      final address = AddressData(
+        id: "",
+        userId: user.uid,
+        street: null,
+        number: null,
+        complement: null,
+        zipCode: null,
+        neighborhood: null,
+        lat: latitude,
+        lng: longitude,
+        coordinates: null,
+        local: local,
+      );
+
+      final currentUser = await userToCreate(
+        id: user.uid,
+        name: name,
+        email: email,
+        phone: phone,
+        profession: profession,
+        specialty: specialty,
+        addresses: [address],
+        fcmToken: await FirebaseMessaging.instance.getToken(),
+        imageUrl: user.photoURL,
+        registerClassOrder: registerClassOrder,
+        registerNumber: registerNumber,
+        isHealthInsurance: isHealthInsurance,
+        currentSubscription: _currentSubscription,
+      );
+
+      // Salvar o usuário no Firestore
+      await UsersService().addUser(currentUser);
+      await UsersService().addAddress(address);
+    } on FirebaseAuthException catch (e) {
+      throw FirebaseAuthHandleException(e.code, _lang);
+    }
+  }
+
+  @override
+  Future<void> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      await _auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      throw FirebaseAuthHandleException(e.code, _lang);
+    }
+  }
 
   @override
   Future<void> logout() async {

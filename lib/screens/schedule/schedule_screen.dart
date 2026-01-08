@@ -9,6 +9,7 @@ import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/app_routes_util.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({super.key});
@@ -31,8 +32,8 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   Widget build(BuildContext context) {
     final traslation = Translations.of(context).translate('schedule');
     return Scaffold(
-      appBar: AppBar(
-        title: Text(traslation["title"]),
+      appBar: GradientAppBar(
+        title: traslation["title"],
         leading: const NotificationButton(),
         actions: [
           IconButton(

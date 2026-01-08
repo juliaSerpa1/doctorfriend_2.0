@@ -4,6 +4,7 @@ import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:doctorfriend/utils/tools_util.dart';
 import 'package:flutter/material.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class CommonQuestionsScreen extends StatelessWidget {
   final List<CommonQuestion> commonQuestions;
@@ -21,7 +22,7 @@ class CommonQuestionsScreen extends StatelessWidget {
     final traslation =
         Translations.of(context).translate('common_questions_screen');
     return Scaffold(
-      appBar: AppBar(title: Text(traslation["title"])),
+      appBar: GradientAppBar(title: traslation["title"]),
       body: Column(
         children: [
           Expanded(

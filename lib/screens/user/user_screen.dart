@@ -26,12 +26,19 @@ import 'package:doctorfriend/components/loading_indicator.dart';
 import 'package:doctorfriend/models/app_user.dart';
 import 'package:doctorfriend/services/auth/auth_service.dart';
 import 'package:doctorfriend/utils/app_routes_util.dart';
+import 'package:intl/intl.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class UserScreen extends StatelessWidget {
   const UserScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+debugPrint('🔥 USER SCREEN BUILD EXECUTADO');
+
+    final locale = Localizations.localeOf(context).toString();
+    final currencyFormatter = NumberFormat.simpleCurrency(locale: locale);
+
     final traslation = Translations.of(context).translate('user_screen');
     logout() async {
       final res = await Callback.confirm(
@@ -59,8 +66,8 @@ class UserScreen extends StatelessWidget {
 
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(traslation["title"]),
+      appBar: GradientAppBar(
+        title: traslation["title"],
         leading: IconButton(
           onPressed: () => context.go(AppRoutesUtil.appType),
           icon: const Icon(
@@ -287,18 +294,48 @@ class UserScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: height),
-                      Column(
-                        children: user.services
-                            .map(
-                              (val) => val.string.trim() != ""
-                                  ? RowText(
-                                      title: "  ",
-                                      content: "* ${val.string}",
-                                    )
-                                  : const SizedBox(),
-                            )
-                            .toList(),
-                      ),
+
+       Column(
+  children: user.services
+      .where((val) => val.string.trim().isNotEmpty)
+      .map((val) {
+    final text = val.string.trim();
+
+    final match =
+        RegExp(r'(\d{1,3}([.,]\d{3})*([.,]\d+)?)').firstMatch(text);
+
+    if (match == null) {
+      return RowText(
+        title: "  ",
+        content: "* $text",
+      );
+    }
+
+    final raw = match.group(0)!
+        .replaceAll('.', '')
+        .replaceAll(',', '.');
+
+    final value = double.tryParse(raw);
+
+    if (value == null) {
+      return RowText(
+        title: "  ",
+        content: "* $text",
+      );
+    }
+
+    final formatted = currencyFormatter.format(value);
+    final finalText = text.replaceFirst(match.group(0)!, formatted);
+
+    return RowText(
+      title: "  ",
+      content: "* $finalText",
+    );
+  }).toList(),
+),
+
+
+
                       const Divider(height: 40), //EXPERIENCIA
 
                       Row(

@@ -34,6 +34,30 @@ abstract class AuthService {
     required bool terms,
     required bool norms,
   });
+
+   Future<void> signupWithEmailAndPassword({
+    required String email,
+    required String password,
+    required String name,
+    required String phone,
+    required String local,
+    required double longitude,
+    required double latitude,
+    required String profession,
+    required String specialty,
+    required String? registerNumber,
+    required String? registerClassOrder,
+    required bool isHealthInsurance,
+    required bool terms,
+    required bool norms,
+  });
+
+  // Novo método para login com e-mail e senha
+  Future<void> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  });
+  
   Future<void> editProfile({
     required String name,
     required String profession,
