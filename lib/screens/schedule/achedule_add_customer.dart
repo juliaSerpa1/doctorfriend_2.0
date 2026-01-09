@@ -12,6 +12,7 @@ import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:doctorfriend/utils/validator_util.dart';
 import 'package:flutter/material.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class ScheduleAddCustomer extends StatefulWidget {
   final ScheduletimeOfDay scheduletimeOfDay;
@@ -116,7 +117,7 @@ class _ScheduleAddCustomerState extends State<ScheduleAddCustomer> {
 
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(_traslation["title"])),
+      appBar: GradientAppBar(title: _traslation["title"]),
       body: Builder(builder: (context) {
         return Form(
           key: _formKey,

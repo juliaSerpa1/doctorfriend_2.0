@@ -7,6 +7,7 @@ import 'package:doctorfriend/services/auth/auth_service.dart';
 import 'package:doctorfriend/services/schedule/schedule_service.dart';
 import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/app_routes_util.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -32,8 +33,8 @@ class _ScheduleSettingsScreenState extends State<ScheduleSettingsScreen> {
     final traslationContext = Translations.of(context);
     final traslation = traslationContext.translate('settings_schedule');
     return Scaffold(
-      appBar: AppBar(
-        title: Text(traslation["title"]),
+      appBar: GradientAppBar(
+        title: traslation["title"],
         actions: [
           IconButton(
             onPressed: () => context.push(AppRoutesUtil.scheduleEditDays),

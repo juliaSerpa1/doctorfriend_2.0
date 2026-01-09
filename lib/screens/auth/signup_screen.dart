@@ -60,6 +60,13 @@ class _SignupScreenState extends State<SignupScreen> {
   double? _lng;
   String? _local;
 
+  bool _isFromApple = false;
+  bool _isFromGoogle = false;
+
+  // Nova variável para simplificar
+  bool get _isSocialLogin => _isFromApple || _isFromGoogle;
+
+
   Profession? _profisionSelected;
 
   final List<Specialties> _specialties = [];
@@ -82,7 +89,6 @@ class _SignupScreenState extends State<SignupScreen> {
 
   late Map<String, dynamic> _traslation;
   AppData? _appData;
-  bool _isFromApple = false;
 
 
   late List<Map<String, dynamic>> _states;
@@ -112,6 +118,17 @@ class _SignupScreenState extends State<SignupScreen> {
 
 
     final String lang = Translations.currentLocale.languageCode;
+
+     // 🔒 garante localização
+    if (_lat == null || _lng == null) {
+      throw HandleException("no_lat_lng", lang);
+    }
+
+    final authUser = AuthService().authUser;
+    if (authUser == null) {
+      throw HandleException("unexpected_error", lang);
+    }
+
 
     final crmService = CrmService();
 
@@ -149,11 +166,32 @@ class _SignupScreenState extends State<SignupScreen> {
       throw HandleException("select_specialty", lang);
     }
 
+   if (_isSocialLogin) {
+  await _authService.signup(
+    name: authUser.displayName ?? _controllerName.text,
+    phone: _controllerPhone.text,
+    local: _controllerLocation.text,
+    longitude: _lng!,
+    latitude: _lat!,
+    profession: profession.id,
+    specialty: specialty.id,
+    registerNumber: _controllerRegisterNumber.text,
+    registerClassOrder: _profisionSelected?.classOrder,
+    isHealthInsurance: false,
+    terms: _agreeTerms,
+    norms: _agreeContact,
+  );
+
+  Callback.snackBar(context, error: false);
+  context.go(AppRoutesUtil.home);
+  return;
+}
+
     // Aqui você utiliza o método de signup com e-mail e senha
     await _authService.signupWithEmailAndPassword(
-      email: _controllerEmail.text.trim(),
-      password: _controllerPassword.text,
-      name: _isFromApple ? "" : _controllerName.text,
+      email: _isSocialLogin ? _controllerEmail.text.trim() : _controllerEmail.text.trim(),
+      password: _isSocialLogin ? "" : _controllerPassword.text,
+      name: _controllerName.text,
       phone: _controllerPhone.text,
       local: _controllerLocation.text,
       latitude: _lat!,
@@ -269,21 +307,25 @@ class _SignupScreenState extends State<SignupScreen> {
     _loadStatesAndCities();
 
     final authUser = AuthService().authUser;
-    if (authUser == null) return;
-    _updateUser = widget.updateUser;
-    if (authUser.providerData.isNotEmpty) {
-      if (authUser.providerData[0].providerId == "apple.com") {
+    if (authUser != null && authUser.providerData.isNotEmpty) {
+      final providerId = authUser.providerData[0].providerId;
+      if (providerId == "apple.com") {
         _isFromApple = true;
+      } else if (providerId == "google.com") {
+        _isFromGoogle = true;
       }
     }
-    _controllerName.text = authUser.displayName ?? "";
-    _controllerPhone.text = authUser.phoneNumber ?? _controllerPhone.text;
+
+    _controllerName.text = authUser?.displayName ?? "";
+    _controllerPhone.text = authUser?.phoneNumber ?? _controllerPhone.text;
+
     if (_updateUser) {
       getCutomerData();
     }
   }
 
   Future<void> getCutomerData() async {
+
     final authUser = AuthService().authUser;
     if (authUser == null) {
       return logout();
@@ -364,14 +406,6 @@ class _SignupScreenState extends State<SignupScreen> {
                 onChanged: isComplete,
               ),
             CustomInput(
-              label: _traslation["email"],
-              controller: _controllerEmail,
-              validator: ValidatorUtil.validateEmail,
-              requiredField: true,
-              onChanged: isComplete,
-              textCapitalization: TextCapitalization.none,
-            ),
-            CustomInput(
               label: _traslation["phone"],
               controller: _controllerPhone,
               requiredField: true,
@@ -407,38 +441,47 @@ class _SignupScreenState extends State<SignupScreen> {
             //     ),
             //   ],
             // ),
-            if (!_updateUser)
-              CustomInput(
-                label: _traslation["pass"],
-                obscureText: _obscureText,
-                controller: _controllerPassword,
-                validator: ValidatorUtil.validatePassoword,
-                requiredField: true,
-                onFieldSubmitted: (_) => _submitForm(),
-                textCapitalization: TextCapitalization.none,
-                onChanged: isComplete,
-                suffixIcon: ViewPassIcon(
-                  obscureText: _obscureText,
-                  onPressed: () => setState(() => _obscureText = !_obscureText),
-                ),
-              ),
-
-            if (!_updateUser)
-              CustomInput(
-                label: _traslation["pass_repeat"],
-                obscureText: _obscureText,
-                controller: _controllerConfirmPassword,
-                validator: (value) => ValidatorUtil.validateConfirmPassword(
-                    _controllerPassword.text, value),
-                requiredField: true,
-                onFieldSubmitted: (_) => _submitForm(),
-                textCapitalization: TextCapitalization.none,
-                onChanged: isComplete,
-                suffixIcon: ViewPassIcon(
-                  obscureText: _obscureText,
-                  onPressed: () => setState(() => _obscureText = !_obscureText),
-                ),
-              ),
+           if (!_isSocialLogin) ...[
+  CustomInput(
+    label: _traslation["email"],
+    controller: _controllerEmail,
+    validator: ValidatorUtil.validateEmail,
+    requiredField: true,
+    onChanged: isComplete,
+    textCapitalization: TextCapitalization.none,
+  ),
+  if (!_updateUser)
+    CustomInput(
+      label: _traslation["pass"],
+      obscureText: _obscureText,
+      controller: _controllerPassword,
+      validator: ValidatorUtil.validatePassoword,
+      requiredField: true,
+      onFieldSubmitted: (_) => _submitForm(),
+      textCapitalization: TextCapitalization.none,
+      onChanged: isComplete,
+      suffixIcon: ViewPassIcon(
+        obscureText: _obscureText,
+        onPressed: () => setState(() => _obscureText = !_obscureText),
+      ),
+    ),
+  if (!_updateUser)
+    CustomInput(
+      label: _traslation["pass_repeat"],
+      obscureText: _obscureText,
+      controller: _controllerConfirmPassword,
+      validator: (value) => ValidatorUtil.validateConfirmPassword(
+          _controllerPassword.text, value),
+      requiredField: true,
+      onFieldSubmitted: (_) => _submitForm(),
+      textCapitalization: TextCapitalization.none,
+      onChanged: isComplete,
+      suffixIcon: ViewPassIcon(
+        obscureText: _obscureText,
+        onPressed: () => setState(() => _obscureText = !_obscureText),
+      ),
+    ),
+],
             CustomCheckbox(
               label: RichText(
                 text: TextSpan(

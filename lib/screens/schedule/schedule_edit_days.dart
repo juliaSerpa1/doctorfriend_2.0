@@ -11,6 +11,7 @@ import 'package:doctorfriend/services/traslation/traslation.dart';
 import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:doctorfriend/utils/preferences_util.dart';
 import 'package:flutter/material.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class ScheduleEditDays extends StatefulWidget {
   const ScheduleEditDays({
@@ -184,8 +185,8 @@ class _ScheduleEditDaysState extends State<ScheduleEditDays> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height - 325;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_traslation["title"]),
+      appBar: GradientAppBar(
+        title: _traslation["title"],
       ),
       body: Column(
         children: [

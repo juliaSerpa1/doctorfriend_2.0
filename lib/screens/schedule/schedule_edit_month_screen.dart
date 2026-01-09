@@ -11,6 +11,7 @@ import 'package:doctorfriend/utils/app_routes_util.dart';
 import 'package:doctorfriend/utils/formater_util.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:doctorfriend/components/gradient_app_bar.dart';
 
 class ScheduleEditMonth extends StatefulWidget {
   final ScheduleMonth scheduleMonth;
@@ -207,9 +208,9 @@ class _ScheduleEditMonthState extends State<ScheduleEditMonth> {
     final int month = _scheduleMonth.month.month;
     final height = MediaQuery.of(context).size.height - 325;
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
         title:
-            Text("${FormaterUtil.capitalize(_montsOfYear[month - 1])} $year"),
+            "${FormaterUtil.capitalize(_montsOfYear[month - 1])} $year",
         actions: [
           if (_isSaved && _canDelete())
             IconButton(
