@@ -26,6 +26,7 @@ import 'package:flutter/services.dart';
 import 'package:doctorfriend/utils/validator_util.dart';
 import 'package:doctorfriend/screens/auth/components/view_pass_icon.dart';
 import 'package:doctorfriend/data/cities.dart';  // Aponte para o local correto onde o arquivo cities.dart está localizado
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SignupScreen extends StatefulWidget {
   final bool updateUser;
@@ -111,6 +112,70 @@ class _SignupScreenState extends State<SignupScreen> {
       _cities = _states.isNotEmpty ? List<String>.from(_states[0]['cidades']) : [];
     });
   }
+ Future<void> _loadPreRegisterByCrm(String crm) async {
+  try {
+    final doc = await FirebaseFirestore.instance
+        .collection("pre_registered_doctors")
+        .doc(crm)
+        .get();
+
+    if (!doc.exists) return;
+
+    final data = doc.data()!;
+
+    // 🔒 impede reutilização do CRM
+    if (data["linkedUid"] != null) {
+      Callback.snackBar(
+        context,
+        title: "Este CRM já está vinculado a outra conta",
+      );
+      return;
+    }
+
+    // Nome
+    if (data["name"] != null) {
+      _controllerName.text = data["name"];
+    }
+
+    // CRM
+    _controllerRegisterNumber.text = data["crm"] ?? crm;
+
+    // Telefone
+    if (data["phone"] != null && data["phone"].toString().isNotEmpty) {
+      _controllerPhone.text = data["phone"];
+    }
+
+    // 🔒 cidade SEMPRE vazia
+   // 📍 mantém localização se já estiver definida
+if (_lat == null || _lng == null) {
+  _controllerLocation.clear();
+  _local = null;
+}
+
+    // Especialidade
+    if (data["specialty"] != null) {
+      _controllerspecialty.text = data["specialty"];
+    }
+
+    // Profissão fixa: médico
+    try {
+      _controllerprofession.text = _suggestionsprofessions
+          .firstWhere((p) => p.id == "medico")
+          .name;
+      await _onProfissionChange(_controllerprofession.text);
+    } catch (_) {}
+
+    // Atualiza botão
+    isComplete("_");
+
+    setState(() {});
+  } catch (e) {
+    Callback.snackBar(
+      context,
+      title: "Erro ao buscar pré-cadastro do médico",
+    );
+  }
+}
 
   Future<void> _handleSignup() async {
   setState(() => _loading = true);
@@ -123,12 +188,6 @@ class _SignupScreenState extends State<SignupScreen> {
     if (_lat == null || _lng == null) {
       throw HandleException("no_lat_lng", lang);
     }
-
-    final authUser = AuthService().authUser;
-    if (authUser == null) {
-      throw HandleException("unexpected_error", lang);
-    }
-
 
     final crmService = CrmService();
 
@@ -167,6 +226,10 @@ class _SignupScreenState extends State<SignupScreen> {
     }
 
    if (_isSocialLogin) {
+  final authUser = AuthService().authUser;
+  if (authUser == null) {
+    throw HandleException("unexpected_error", lang);
+  }
   await _authService.signup(
     name: authUser.displayName ?? _controllerName.text,
     phone: _controllerPhone.text,
@@ -181,6 +244,15 @@ class _SignupScreenState extends State<SignupScreen> {
     terms: _agreeTerms,
     norms: _agreeContact,
   );
+
+  await FirebaseFirestore.instance
+    .collection("pre_registered_doctors")
+    .doc(_controllerRegisterNumber.text.trim())
+    .update({
+  "linkedUid": authUser.uid,
+  "status": "linked",
+  "linkedAt": FieldValue.serverTimestamp(),
+  });
 
   Callback.snackBar(context, error: false);
   context.go(AppRoutesUtil.home);
@@ -204,6 +276,20 @@ class _SignupScreenState extends State<SignupScreen> {
       norms: _agreeContact,
       isHealthInsurance: false,
     );
+    final authUser = AuthService().authUser;
+if (authUser == null) {
+  throw HandleException("unexpected_error", lang);
+}
+
+
+    await FirebaseFirestore.instance
+      .collection("pre_registered_doctors")
+      .doc(_controllerRegisterNumber.text.trim())
+      .update({
+    "linkedUid": authUser.uid,
+    "status": "linked",
+    "linkedAt": FieldValue.serverTimestamp(),
+    });
 
   } on FirebaseAuthHandleException catch (error) {
     Callback.snackBar(context, title: error.message);
@@ -211,9 +297,11 @@ class _SignupScreenState extends State<SignupScreen> {
     Callback.snackBar(context, title: error.message);
   } on HandleException catch (error) {
     Callback.snackBar(context, title: error.message);
-  } catch (error) {
-    Callback.snackBar(context);
-  } finally {
+ } catch (error, stack) {
+  debugPrint("Signup error: $error");
+  debugPrintStack(stackTrace: stack);
+  Callback.snackBar(context);
+} finally {
     if (mounted) {
       setState(() => _loading = false);
     }
@@ -333,12 +421,19 @@ class _SignupScreenState extends State<SignupScreen> {
     final userWeb = await UsersService().getUserCustomer(authUser.uid);
     _controllerName.text = userWeb?.name ?? "";
     _controllerPhone.text = userWeb?.phone ?? _controllerPhone.text;
-    _controllerLocation.text = userWeb?.local ?? "";
-    if (_controllerLocation.text.trim() != "") {
-      _lat = userWeb?.coordinates.lat;
-      _lng = userWeb?.coordinates.lng;
-      _local = userWeb?.local;
-    }
+    _controllerLocation.clear();
+    _lat = null;
+    _lng = null;
+    _local = null;
+    if (_controllerPhone.text.trim().isNotEmpty &&
+    _local != null &&
+    _lat != null &&
+    _lng != null &&
+    _controllerprofession.text.trim().isNotEmpty &&
+    _agreeTerms &&
+    _agreeContact) {
+}
+
     _agreeTerms = userWeb?.terms != null ? true : false;
   }
 
@@ -368,6 +463,28 @@ class _SignupScreenState extends State<SignupScreen> {
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
           children: [
+            if (_profisionSelected != null)
+              CustomInput(
+                label: _profisionSelected?.classOrder ?? "",
+                controller: _controllerRegisterNumber,
+                requiredField: true,
+                keyboardType: TextInputType.number,
+                onChanged: (value) {
+                  isComplete(value);
+
+                  // 🔍 busca pré-cadastro quando CRM tiver tamanho mínimo
+                  if (value.trim().length >= 5) {
+                   _loadPreRegisterByCrm(value.trim());
+                  }
+                },
+              ),
+               if (!_isFromApple)
+              CustomInput(
+                label: _traslation["name"],
+                controller: _controllerName,
+                requiredField: true,
+                onChanged: isComplete,
+              ),
             InputLocationSugest(
               controller: _controllerLocation,
               label: _traslation["city"],
@@ -390,21 +507,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 requiredField: true,
                 done: true,
               ),
-            if (_profisionSelected != null)
-              CustomInput(
-                label: _profisionSelected?.classOrder ?? "",
-                controller: _controllerRegisterNumber,
-                requiredField: true,
-                keyboardType: TextInputType.number,
-                onChanged: isComplete,
-              ),
-            if (!_isFromApple)
-              CustomInput(
-                label: _traslation["name"],
-                controller: _controllerName,
-                requiredField: true,
-                onChanged: isComplete,
-              ),
+           
             CustomInput(
               label: _traslation["phone"],
               controller: _controllerPhone,
